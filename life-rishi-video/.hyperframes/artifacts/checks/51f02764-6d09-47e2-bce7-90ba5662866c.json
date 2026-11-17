@@ -1,0 +1,825 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 6,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 4 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/compositions/scene1.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "gsap_repeated_fromto_without_baseline",
+        "severity": "warning",
+        "message": "2 tl.fromTo() calls target \"#s2-mascot-pulse\" with no stable baseline. The last-authored fromTo \"from\" values become the element's resting state for any seek before the first tween actually runs, because GSAP applies fromTo from-values at authoring time (immediateRender), not at tween position.",
+        "selector": "#s2-mascot-pulse",
+        "dataAttributes": {},
+        "sourceFile": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/compositions/scene2.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Add `immediateRender: false` to every fromTo except the earliest-positioned one (at 0.8s), so pre-first-tween seeks keep its \"from\" values. A hiding `tl.set(..., 0)` baseline trips gsap_timeline_set_initial_hide, and a `gsap.set` authored before the fromTo calls is overwritten by them."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 9 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/compositions/scene2.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 4 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/compositions/scene3.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 4 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/compositions/scene4.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 8 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/compositions/scene5.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 6
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 13,
+    "infoCount": 0,
+    "findings": [
+      {
+        "selector": "#s1-header > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 336.59,
+          "y": 149,
+          "width": 406.8,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 336.59,
+          "top": 149,
+          "right": 743.39,
+          "bottom": 184,
+          "width": 406.8,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Daily Vedic Alignment",
+        "message": "<div> \"Daily Vedic Alignment\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "#s1-header > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 140.78,
+          "y": 201,
+          "width": 798.42,
+          "height": 106.91
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 140.78,
+          "top": 201,
+          "right": 939.2,
+          "bottom": 307.91,
+          "width": 798.42,
+          "height": 106.91
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Start Each Day Aligned with Your Cosmic Blueprin",
+        "message": "<div> \"Start Each Day Aligned with Your Cosmic Blueprin\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top and right edges).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "#s2-header > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 331.08,
+          "y": 149,
+          "width": 417.84,
+          "height": 35
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 331.08,
+          "top": 149,
+          "right": 748.92,
+          "bottom": 184,
+          "width": 417.84,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "24/7 Conversational AI",
+        "message": "<div> \"24/7 Conversational AI\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "#s2-header > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 130.19,
+          "y": 201,
+          "width": 819.62,
+          "height": 55
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 130.19,
+          "top": 201,
+          "right": 949.81,
+          "bottom": 256,
+          "width": 819.62,
+          "height": 55
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Meet AI Rishi: Your Personal Cosmic Guide",
+        "message": "<div> \"Meet AI Rishi: Your Personal Cosmic Guide\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "#s3-header > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 286.56,
+          "y": 149,
+          "width": 506.86,
+          "height": 35
+        },
+        "time": 12,
+        "rect": {
+          "left": 286.56,
+          "top": 149,
+          "right": 793.42,
+          "bottom": 184,
+          "width": 506.86,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Planetary Timing & Insights",
+        "message": "<div> \"Planetary Timing & Insights\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "#s3-header > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 165.45,
+          "y": 201,
+          "width": 749.1,
+          "height": 106.91
+        },
+        "time": 12,
+        "rect": {
+          "left": 165.45,
+          "top": 201,
+          "right": 914.55,
+          "bottom": 307.91,
+          "width": 749.1,
+          "height": 106.91
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Actionable Daily Wisdom & Auspicious Timing",
+        "message": "<div> \"Actionable Daily Wisdom & Auspicious Timing\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top and right edges).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "#s4-header > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 304.2,
+          "y": 149,
+          "width": 471.6,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 304.2,
+          "top": 149,
+          "right": 775.8,
+          "bottom": 184,
+          "width": 471.6,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Verified Gurukul Masters",
+        "message": "<div> \"Verified Gurukul Masters\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "#s4-header > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 131.33,
+          "y": 201,
+          "width": 817.34,
+          "height": 55
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 131.33,
+          "top": 201,
+          "right": 948.67,
+          "bottom": 256,
+          "width": 817.34,
+          "height": 55
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "1-on-1 Guidance for Critical Life Decisions",
+        "message": "<div> \"1-on-1 Guidance for Critical Life Decisions\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "#s5-tagline",
+        "dataAttributes": {
+          "data-start": "0.3",
+          "data-duration": "2.7",
+          "data-track-index": "0"
+        },
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 234.59,
+          "y": 958.91,
+          "width": 610.8,
+          "height": 43
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 234.59,
+          "top": 958.91,
+          "right": 845.39,
+          "bottom": 1001.91,
+          "width": 610.8,
+          "height": 43
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Ancient Vedic Wisdom. Everyday Clarity.",
+        "message": "<div> \"Ancient Vedic Wisdom. Everyday Clarity.\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      },
+      {
+        "selector": "div.store-badges-row > div:nth-of-type(1) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 321.55,
+          "y": 1227.09,
+          "width": 26.87,
+          "height": 43
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 321.55,
+          "top": 1227.09,
+          "right": 348.42,
+          "bottom": 1270.09,
+          "width": 26.87,
+          "height": 43
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "",
+        "message": "<div> \"\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      },
+      {
+        "selector": "div.store-badges-row > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 362.42,
+          "y": 1232.09,
+          "width": 120.08,
+          "height": 33
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 362.42,
+          "top": 1232.09,
+          "right": 482.5,
+          "bottom": 1265.09,
+          "width": 120.08,
+          "height": 33
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "App Store",
+        "message": "<div> \"App Store\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      },
+      {
+        "selector": "div.store-badges-row > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 570.5,
+          "y": 1227.09,
+          "width": 29.92,
+          "height": 43
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 570.5,
+          "top": 1227.09,
+          "right": 600.42,
+          "bottom": 1270.09,
+          "width": 29.92,
+          "height": 43
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "▶",
+        "message": "<div> \"▶\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      },
+      {
+        "selector": "div.store-badges-row > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 614.42,
+          "y": 1232.09,
+          "width": 144,
+          "height": 33
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 614.42,
+          "top": 1232.09,
+          "right": 758.42,
+          "bottom": 1265.09,
+          "width": 144,
+          "height": 33
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Google Play",
+        "message": "<div> \"Google Play\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      }
+    ],
+    "duration": 24,
+    "samples": [
+      1.333,
+      4,
+      6.667,
+      9.333,
+      12,
+      14.667,
+      17.333,
+      20,
+      22.667
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 13,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 4,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.84:1; WCAG AA requires 3:1.",
+        "text": "Cosmic Blueprint",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(254,240,229)",
+        "ratio": 2.84,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(242,90,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(1) > div > div:nth-of-type(3) > div:nth-of-type(2) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 448.75,
+          "y": 201,
+          "width": 490.453125,
+          "height": 106.90625
+        },
+        "time": 1.333,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.92:1; WCAG AA requires 3:1.",
+        "text": "Cosmic Guide",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,244,235)",
+        "ratio": 2.92,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(246,92,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(8) > div:nth-of-type(2) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 681.125,
+          "y": 201,
+          "width": 268.6875,
+          "height": 55
+        },
+        "time": 6.667,
+        "times": [
+          6.667
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.92:1; WCAG AA requires 3:1.",
+        "text": "Auspicious Timing",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(254,244,236)",
+        "ratio": 2.92,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(246,92,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div:nth-of-type(3) > div:nth-of-type(2) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 471.1875,
+          "y": 201,
+          "width": 443.359375,
+          "height": 106.90625
+        },
+        "time": 12,
+        "times": [
+          12
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.76:1; WCAG AA requires 3:1.",
+        "text": "Critical Life Decisions",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,236,221)",
+        "ratio": 2.76,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(238,89,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(4) > div > div:nth-of-type(3) > div:nth-of-type(2) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 523.640625,
+          "y": 201,
+          "width": 425.03125,
+          "height": 55
+        },
+        "time": 17.333,
+        "times": [
+          17.333
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.333,
+      6.667,
+      12,
+      17.333,
+      22.667
+    ],
+    "checked": 24,
+    "passed": 20
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 24 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and 6 text elements stay under it for 0.5 s or more, the smallest \"Vedic Charts\" at 26 px: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Vedic Charts",
+        "selector": "#s5-pillars > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 308.42,
+          "y": 1058.37,
+          "width": 147,
+          "height": 32.44
+        },
+        "time": 21.5,
+        "times": [
+          21.5,
+          21.5,
+          21.5,
+          21.625,
+          21.625,
+          21.625
+        ],
+        "fontPx": 25.56,
+        "floorPx": 28,
+        "seconds": 2.5,
+        "elements": [
+          {
+            "selector": "#s5-pillars > span:nth-of-type(1)",
+            "text": "Vedic Charts",
+            "fontPx": 25.56,
+            "time": 21.5,
+            "seconds": 2.5
+          },
+          {
+            "selector": "#s5-pillars > span:nth-of-type(2)",
+            "text": "AI Rishi",
+            "fontPx": 25.56,
+            "time": 21.5,
+            "seconds": 2.5
+          },
+          {
+            "selector": "#s5-pillars > span:nth-of-type(3)",
+            "text": "Astrologers",
+            "fontPx": 25.56,
+            "time": 21.5,
+            "seconds": 2.5
+          },
+          {
+            "selector": "div.download-cta-label",
+            "text": "Available on iOS & Android",
+            "fontPx": 26,
+            "time": 21.625,
+            "seconds": 2.375
+          },
+          {
+            "selector": "div.store-badges-row > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "App Store",
+            "fontPx": 26,
+            "time": 21.625,
+            "seconds": 2.375
+          },
+          {
+            "selector": "div.store-badges-row > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+            "text": "Google Play",
+            "fontPx": 26,
+            "time": 21.625,
+            "seconds": 2.375
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 192
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

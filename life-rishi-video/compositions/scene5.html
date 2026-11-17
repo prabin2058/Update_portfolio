@@ -1,0 +1,260 @@
+<template>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      width: 1080px;
+      height: 1920px;
+      background: radial-gradient(circle at 50% 35%, #FFF0E2 0%, #FFF9F3 50%, #FFFFFF 100%);
+      font-family: 'Outfit', sans-serif;
+      overflow: hidden;
+      color: #2A1608;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* Ambient Solar Aura Rings */
+    .brand-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1.5px solid rgba(250, 93, 0, 0.18);
+      pointer-events: none;
+    }
+    #s5-ring-1 {
+      width: 440px;
+      height: 440px;
+    }
+    #s5-ring-2 {
+      width: 720px;
+      height: 720px;
+      border: 1.5px dashed rgba(250, 93, 0, 0.14);
+    }
+    #s5-ring-3 {
+      width: 1040px;
+      height: 1040px;
+      border: 1px solid rgba(250, 93, 0, 0.08);
+    }
+
+    .brand-content {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 100px;
+      max-width: 900px;
+    }
+
+    /* Central Sacred Star Emblem */
+    .brand-icon-wrap {
+      width: 190px;
+      height: 190px;
+      border-radius: 50px;
+      background: linear-gradient(135deg, #FFA24A 0%, #FA5D00 100%);
+      box-shadow: 0 24px 64px rgba(250, 93, 0, 0.45), 0 0 80px rgba(250, 93, 0, 0.25);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 32px;
+      position: relative;
+    }
+    .brand-star-svg {
+      width: 105px;
+      height: 105px;
+      fill: #FFFFFF;
+    }
+
+    /* Brand Wordmark */
+    .brand-title {
+      font-size: 72px;
+      font-weight: 800;
+      color: #2A1608;
+      letter-spacing: -0.03em;
+      margin-bottom: 14px;
+    }
+    .brand-title span {
+      color: #D63E00;
+    }
+
+    /* Tagline */
+    .brand-tagline {
+      font-size: 34px;
+      font-weight: 600;
+      color: #7C6555;
+      letter-spacing: -0.01em;
+      margin-bottom: 38px;
+      line-height: 1.3;
+    }
+
+    /* Pillars Pill */
+    .pillars-pill {
+      background: #FFFFFF;
+      border: 1.5px solid rgba(250, 93, 0, 0.22);
+      border-radius: 36px;
+      padding: 16px 36px;
+      font-size: 28px;
+      font-weight: 700;
+      color: #FA5D00;
+      box-shadow: 0 10px 28px rgba(250, 93, 0, 0.08);
+      margin-bottom: 48px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+    }
+    .pillars-pill span {
+      color: #2A1608;
+      font-weight: 600;
+    }
+
+    /* App Store Badges Row */
+    .download-cta-label {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7C6555;
+      margin-bottom: 20px;
+    }
+    .store-badges-row {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+    .store-badge {
+      background: #2A1608;
+      color: #FFFFFF;
+      border-radius: 26px;
+      padding: 18px 34px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+    .store-badge-icon {
+      font-size: 34px;
+    }
+    .store-badge-text {
+      text-align: left;
+    }
+    .store-main {
+      font-size: 28px;
+      font-weight: 700;
+    }
+  </style>
+
+  <div id="root" data-composition-id="scene5" data-width="1080" data-height="1920">
+    <!-- Concentric Rings -->
+    <div id="s5-ring-1" class="brand-ring clip" data-start="0" data-duration="3" data-track-index="0" data-layout-ignore></div>
+    <div id="s5-ring-2" class="brand-ring clip" data-start="0" data-duration="3" data-track-index="0" data-layout-ignore></div>
+    <div id="s5-ring-3" class="brand-ring clip" data-start="0" data-duration="3" data-track-index="0" data-layout-ignore></div>
+
+    <div class="brand-content">
+      <!-- Icon Emblem -->
+      <div id="s5-icon-wrap" class="brand-icon-wrap clip" data-start="0.1" data-duration="2.9" data-track-index="0">
+        <svg class="brand-star-svg" viewBox="0 0 24 24">
+          <path d="M12 2L14.39 8.26L21 9.27L16.5 14.14L17.77 21L12 17.77L6.23 21L7.5 14.14L3 9.27L9.61 8.26L12 2Z"/>
+        </svg>
+      </div>
+
+      <!-- Title -->
+      <div id="s5-title" class="brand-title clip" data-start="0.2" data-duration="2.8" data-track-index="0">
+        Life <span>Rishi</span>
+      </div>
+
+      <!-- Tagline -->
+      <div id="s5-tagline" class="brand-tagline clip" data-start="0.3" data-duration="2.7" data-track-index="0">
+        Ancient Vedic Wisdom. Everyday Clarity.
+      </div>
+
+      <!-- Pillars Badge -->
+      <div id="s5-pillars" class="pillars-pill clip" data-start="0.4" data-duration="2.6" data-track-index="0">
+        <span>Vedic Charts</span> ✦ <span>AI Rishi</span> ✦ <span>Astrologers</span>
+      </div>
+
+      <!-- Download Badges -->
+      <div id="s5-download-section" class="clip" data-start="0.5" data-duration="2.5" data-track-index="0">
+        <div class="download-cta-label">Available on iOS & Android</div>
+        <div class="store-badges-row">
+          <div class="store-badge">
+            <div class="store-badge-icon"></div>
+            <div class="store-badge-text">
+              <div class="store-main">App Store</div>
+            </div>
+          </div>
+          <div class="store-badge">
+            <div class="store-badge-icon">▶</div>
+            <div class="store-badge-text">
+              <div class="store-main">Google Play</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    // Emblem expansion
+    tl.fromTo("#s5-icon-wrap",
+      { scale: 0.5, rotation: -20, opacity: 0 },
+      { scale: 1, rotation: 0, opacity: 1, duration: 0.6, ease: "back.out(1.8)" },
+      0.1
+    );
+
+    // Aura rings radiating
+    tl.fromTo(["#s5-ring-1", "#s5-ring-2", "#s5-ring-3"],
+      { scale: 0.6, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 0.7, stagger: 0.08, ease: "power3.out" },
+      0.15
+    );
+
+    // Title wipe
+    tl.fromTo("#s5-title",
+      { y: 25, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" },
+      0.2
+    );
+
+    // Tagline reveal
+    tl.fromTo("#s5-tagline",
+      { y: 20, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" },
+      0.3
+    );
+
+    // Pillars pill pop
+    tl.fromTo("#s5-pillars",
+      { scale: 0.92, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 0.4, ease: "back.out(1.5)" },
+      0.4
+    );
+
+    // Store buttons
+    tl.fromTo("#s5-download-section",
+      { y: 25, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.45, ease: "power3.out" },
+      0.5
+    );
+
+    // Gentle solar breathing on the icon during final hold
+    tl.to("#s5-icon-wrap", {
+      scale: 1.05,
+      boxShadow: "0 28px 80px rgba(250, 93, 0, 0.6), 0 0 100px rgba(250, 93, 0, 0.4)",
+      duration: 1.0,
+      yoyo: true,
+      repeat: 1,
+      ease: "sine.inOut"
+    }, 1.2);
+
+    window.__timelines["scene5"] = tl;
+  </script>
+</template>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Life Rishi — Ancient Vedic Wisdom. Everyday Clarity.</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --ground: #FFF9F4;
+        --ink: #2A1608;
+        --accent: #FA5D00;
+        --font-display: 'Outfit', sans-serif;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ground);
+        font-family: var(--font-display);
+      }
+      #root {
+        position: relative;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <div
+      id="root"
+      data-composition-id="main"
+      data-start="0"
+      data-duration="24"
+      data-width="1080"
+      data-height="1920"
+    >
+      <!-- Scene 1: Morning Vedic Alignment & Daily Energy (0s–4s) -->
+      <div
+        id="scene1"
+        data-composition-id="scene1"
+        data-composition-src="compositions/scene1.html"
+        data-start="0"
+        data-duration="4"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+      ></div>
+
+      <!-- Scene 2: 24/7 AI Rishi Celestial Companion (4s–10s) -->
+      <div
+        id="scene2"
+        data-composition-id="scene2"
+        data-composition-src="compositions/scene2.html"
+        data-start="4"
+        data-duration="6"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+      ></div>
+
+      <!-- Scene 3: Daily Planetary Insights & Event Timing (10s–16s) -->
+      <div
+        id="scene3"
+        data-composition-id="scene3"
+        data-composition-src="compositions/scene3.html"
+        data-start="10"
+        data-duration="6"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+      ></div>
+
+      <!-- Scene 4: Verified Gurukul Master Astrologer Consultation (16s–21s) -->
+      <div
+        id="scene4"
+        data-composition-id="scene4"
+        data-composition-src="compositions/scene4.html"
+        data-start="16"
+        data-duration="5"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+      ></div>
+
+      <!-- Scene 5: Brand Reveal & App Store Call to Action (21s–24s) -->
+      <div
+        id="scene5"
+        data-composition-id="scene5"
+        data-composition-src="compositions/scene5.html"
+        data-start="21"
+        data-duration="3"
+        data-track-index="0"
+        data-track-kind="graphics"
+        data-width="1080"
+        data-height="1920"
+      ></div>
+    </div>
+
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

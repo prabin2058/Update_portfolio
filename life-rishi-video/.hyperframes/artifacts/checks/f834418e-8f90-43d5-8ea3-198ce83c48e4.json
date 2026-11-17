@@ -1,0 +1,3418 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 4,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 7 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/compositions/scene1.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 8 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/compositions/scene2.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 4 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/compositions/scene3.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      },
+      {
+        "code": "timeline_track_too_dense",
+        "severity": "warning",
+        "message": "This HTML file has 8 timed elements. Smaller sub-compositions keep timelines easier to read, iterate on, and diff.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/compositions/scene5.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move coherent scene groups into smaller .html files and mount them from the parent with data-composition-src so the timeline stays easier to inspect, revise, and validate."
+      }
+    ],
+    "filesScanned": 6
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 70,
+    "infoCount": 2,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 6.667,
+        "selector": "#s2-chips-row > div:nth-of-type(3)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 862.53,
+          "top": 900,
+          "right": 1141.72,
+          "bottom": 973,
+          "width": 279.19,
+          "height": 73
+        },
+        "containerSelector": "#s2-chips-row",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 56,
+          "top": 900,
+          "right": 1024,
+          "bottom": 981,
+          "width": 968,
+          "height": 81
+        },
+        "overflow": {
+          "right": 117.72
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 862.53,
+          "y": 900,
+          "width": 279.19,
+          "height": 73
+        },
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "div.avatar-circle",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 72.19,
+          "y": 125.5,
+          "width": 23.62,
+          "height": 40
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 72.19,
+          "top": 125.5,
+          "right": 95.81,
+          "bottom": 165.5,
+          "width": 23.62,
+          "height": 40
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "N",
+        "message": "<div> \"N\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.user-greeting",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 140,
+          "y": 104,
+          "width": 173.61,
+          "height": 33
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 140,
+          "top": 104,
+          "right": 313.61,
+          "bottom": 137,
+          "width": 173.61,
+          "height": 33
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Good Morning,",
+        "message": "<div> \"Good Morning,\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.user-name",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 140,
+          "y": 137,
+          "width": 286.25,
+          "height": 50
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 140,
+          "top": 137,
+          "right": 426.25,
+          "bottom": 187,
+          "width": 286.25,
+          "height": 50
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Nimesh Gautam",
+        "message": "<div> \"Nimesh Gautam\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.badge-pro",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 894.83,
+          "y": 128,
+          "width": 108.17,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 894.83,
+          "top": 128,
+          "right": 1003,
+          "bottom": 163,
+          "width": 108.17,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Pro Plan",
+        "message": "<div> \"Pro Plan\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.badge-pro > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 856.83,
+          "y": 127,
+          "width": 28,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 856.83,
+          "top": 127,
+          "right": 884.83,
+          "bottom": 162,
+          "width": 28,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "👑",
+        "message": "<span> \"👑\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "#s1-intro-title",
+        "dataAttributes": {
+          "data-start": "0.1",
+          "data-duration": "3.9",
+          "data-track-index": "0"
+        },
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 48,
+          "y": 219,
+          "width": 864.33,
+          "height": 125.8
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 48,
+          "top": 219,
+          "right": 912.33,
+          "bottom": 344.8,
+          "width": 864.33,
+          "height": 125.8
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Start each day aligned with your Vedic cosmic bl",
+        "message": "<div> \"Start each day aligned with your Vedic cosmic bl\" is outside the safe area: TikTok (left and top edges), Instagram Reels (left and top edges), YouTube Shorts (top and right edges).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-left > div:nth-of-type(1) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 77,
+          "y": 409.59,
+          "width": 136.48,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 77,
+          "top": 409.59,
+          "right": 213.48,
+          "bottom": 444.59,
+          "width": 136.48,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Sun Sign",
+        "message": "<div> \"Sun Sign\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-left > div:nth-of-type(1) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 77,
+          "y": 448.59,
+          "width": 153.69,
+          "height": 43
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 77,
+          "top": 448.59,
+          "right": 230.69,
+          "bottom": 491.59,
+          "width": 153.69,
+          "height": 43
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Capricorn",
+        "message": "<div> \"Capricorn\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-left > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 77,
+          "y": 513.59,
+          "width": 170.69,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 77,
+          "top": 513.59,
+          "right": 247.69,
+          "bottom": 548.59,
+          "width": 170.69,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Moon Sign",
+        "message": "<div> \"Moon Sign\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-left > div:nth-of-type(2) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 77,
+          "y": 552.59,
+          "width": 102.69,
+          "height": 43
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 77,
+          "top": 552.59,
+          "right": 179.69,
+          "bottom": 595.59,
+          "width": 102.69,
+          "height": 43
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Taurus",
+        "message": "<div> \"Taurus\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-left > div:nth-of-type(3) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 77,
+          "y": 617.59,
+          "width": 174.61,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 77,
+          "top": 617.59,
+          "right": 251.61,
+          "bottom": 652.59,
+          "width": 174.61,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Rising Sign",
+        "message": "<div> \"Rising Sign\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-left > div:nth-of-type(3) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 77,
+          "y": 656.59,
+          "width": 116.45,
+          "height": 43
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 77,
+          "top": 656.59,
+          "right": 193.45,
+          "bottom": 699.59,
+          "width": 116.45,
+          "height": 43
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Scorpio",
+        "message": "<div> \"Scorpio\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-right > div:nth-of-type(1) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 867.23,
+          "y": 409.59,
+          "width": 135.77,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 867.23,
+          "top": 409.59,
+          "right": 1003,
+          "bottom": 444.59,
+          "width": 135.77,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Element",
+        "message": "<div> \"Element\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-right > div:nth-of-type(1) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 915.98,
+          "y": 448.59,
+          "width": 87.02,
+          "height": 43
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 915.98,
+          "top": 448.59,
+          "right": 1003,
+          "bottom": 491.59,
+          "width": 87.02,
+          "height": 43
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Earth",
+        "message": "<div> \"Earth\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-right > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 858.75,
+          "y": 513.59,
+          "width": 144.25,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 858.75,
+          "top": 513.59,
+          "right": 1003,
+          "bottom": 548.59,
+          "width": 144.25,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Polarity",
+        "message": "<div> \"Polarity\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-right > div:nth-of-type(2) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 862.58,
+          "y": 552.59,
+          "width": 140.42,
+          "height": 43
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 862.58,
+          "top": 552.59,
+          "right": 1003,
+          "bottom": 595.59,
+          "width": 140.42,
+          "height": 43
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Feminine",
+        "message": "<div> \"Feminine\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-right > div:nth-of-type(3) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 848.2,
+          "y": 617.59,
+          "width": 154.8,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 848.2,
+          "top": 617.59,
+          "right": 1003,
+          "bottom": 652.59,
+          "width": 154.8,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Modality",
+        "message": "<div> \"Modality\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.chart-col.col-right > div:nth-of-type(3) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 876.69,
+          "y": 656.59,
+          "width": 126.31,
+          "height": 43
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 876.69,
+          "top": 656.59,
+          "right": 1003,
+          "bottom": 699.59,
+          "width": 126.31,
+          "height": 43
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Mutable",
+        "message": "<div> \"Mutable\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.energy-eyebrow",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 85,
+          "y": 813.59,
+          "width": 409.7,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 85,
+          "top": 813.59,
+          "right": 494.7,
+          "bottom": 848.59,
+          "width": 409.7,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦ Your Current Energy",
+        "message": "<div> \"✦ Your Current Energy\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.energy-title",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 85,
+          "y": 866.59,
+          "width": 412.08,
+          "height": 58
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 85,
+          "top": 866.59,
+          "right": 497.08,
+          "bottom": 924.59,
+          "width": 412.08,
+          "height": 58
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Foundation Building",
+        "message": "<div> \"Foundation Building\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.energy-quote",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 85,
+          "y": 944.59,
+          "width": 882.19,
+          "height": 122
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 85,
+          "top": 944.59,
+          "right": 967.19,
+          "bottom": 1066.59,
+          "width": 882.19,
+          "height": 122
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "\"You are a natural initiator who leads with quie",
+        "message": "<div> \"\"You are a natural initiator who leads with quie\" is outside the safe area: TikTok (left and right edges), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.focus-label",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 117.61,
+          "y": 1118.46,
+          "width": 358.02,
+          "height": 35.12
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 117.61,
+          "top": 1118.46,
+          "right": 475.63,
+          "bottom": 1153.58,
+          "width": 358.02,
+          "height": 35.12
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Primary Focus Today",
+        "message": "<div> \"Primary Focus Today\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.focus-text",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 117.61,
+          "y": 1159.6,
+          "width": 444.29,
+          "height": 40.13
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 117.61,
+          "top": 1159.6,
+          "right": 561.9,
+          "bottom": 1199.73,
+          "width": 444.29,
+          "height": 40.13
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Prioritize structure over speed.",
+        "message": "<div> \"Prioritize structure over speed.\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.prompt-teaser-text",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 81,
+          "y": 1342.38,
+          "width": 513.22,
+          "height": 35
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 81,
+          "top": 1342.38,
+          "right": 594.22,
+          "bottom": 1377.38,
+          "width": 513.22,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Ask AI Rishi for today's karmic direction...",
+        "message": "<div> \"Ask AI Rishi for today's karmic direction...\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.prompt-teaser-btn",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 957.38,
+          "y": 1343.38,
+          "width": 23.25,
+          "height": 33
+        },
+        "time": 1.333,
+        "rect": {
+          "left": 957.38,
+          "top": 1343.38,
+          "right": 980.63,
+          "bottom": 1376.38,
+          "width": 23.25,
+          "height": 33
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "➔",
+        "message": "<div> \"➔\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "selector": "div.nav-title",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 120,
+          "y": 98.5,
+          "width": 136.42,
+          "height": 53
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 120,
+          "top": 98.5,
+          "right": 256.42,
+          "bottom": 151.5,
+          "width": 136.42,
+          "height": 53
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "AI Rishi",
+        "message": "<div> \"AI Rishi\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "#s2-top-nav > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 995.86,
+          "y": 104,
+          "width": 28.14,
+          "height": 40
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 995.86,
+          "top": 104,
+          "right": 1024,
+          "bottom": 144,
+          "width": 28.14,
+          "height": 40
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "☰",
+        "message": "<div> \"☰\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "div.greeting-desc",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 182.73,
+          "y": 808,
+          "width": 714.52,
+          "height": 80
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 182.73,
+          "top": 808,
+          "right": 897.25,
+          "bottom": 888,
+          "width": 714.52,
+          "height": 80
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Ask me for wisdom on your personal, career or ka",
+        "message": "<div> \"Ask me for wisdom on your personal, career or ka\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "#s2-chip-target",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 87,
+          "y": 919,
+          "width": 286.98,
+          "height": 35
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 87,
+          "top": 919,
+          "right": 373.98,
+          "bottom": 954,
+          "width": 286.98,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦ What is my sun sign?",
+        "message": "<div> \"✦ What is my sun sign?\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "#s2-chips-row > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 451.98,
+          "y": 919,
+          "width": 363.55,
+          "height": 35
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 451.98,
+          "top": 919,
+          "right": 815.53,
+          "bottom": 954,
+          "width": 363.55,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦ What should I wear today?",
+        "message": "<div> \"✦ What should I wear today?\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "#s2-chips-row > div:nth-of-type(3)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 893.53,
+          "y": 919,
+          "width": 217.19,
+          "height": 35
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 893.53,
+          "top": 919,
+          "right": 1110.72,
+          "bottom": 954,
+          "width": 217.19,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦ Career timing?",
+        "message": "<div> \"✦ Career timing?\" is outside the safe area: TikTok (right edge), Instagram Reels (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "#s2-user-msg",
+        "dataAttributes": {
+          "data-start": "2.1",
+          "data-duration": "3.9",
+          "data-track-index": "0"
+        },
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 479.17,
+          "y": 1035,
+          "width": 508.83,
+          "height": 38
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 479.17,
+          "top": 1035,
+          "right": 988,
+          "bottom": 1073,
+          "width": 508.83,
+          "height": 38
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "What is my sun sign & current energy?",
+        "message": "<div> \"What is my sun sign & current energy?\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "div.input-text",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 94,
+          "y": 1774.5,
+          "width": 251.39,
+          "height": 35
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 94,
+          "top": 1774.5,
+          "right": 345.39,
+          "bottom": 1809.5,
+          "width": 251.39,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Chat with me here...",
+        "message": "<div> \"Chat with me here...\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "div.send-circle",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 953.69,
+          "y": 1772,
+          "width": 28.61,
+          "height": 40
+        },
+        "time": 6.667,
+        "rect": {
+          "left": 953.69,
+          "top": 1772,
+          "right": 982.3,
+          "bottom": 1812,
+          "width": 28.61,
+          "height": 40
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "➔",
+        "message": "<div> \"➔\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      },
+      {
+        "selector": "#s2-rishi-reply",
+        "dataAttributes": {
+          "data-start": "3.4",
+          "data-duration": "2.6",
+          "data-track-index": "0"
+        },
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 93,
+          "y": 1205.19,
+          "width": 703.78,
+          "height": 122
+        },
+        "time": 9.333,
+        "rect": {
+          "left": 93,
+          "top": 1205.19,
+          "right": 796.78,
+          "bottom": 1327.19,
+          "width": 703.78,
+          "height": 122
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Your Sun in Capricorn with Rising Scorpio favors",
+        "message": "<div> \"Your Sun in Capricorn with Rising Scorpio favors\" is outside the safe area: TikTok (left and right and bottom edges), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 9.333,
+        "lastSeen": 9.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.333
+        ]
+      },
+      {
+        "selector": "div.rishi-msg-badge",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 93,
+          "y": 1158,
+          "width": 291.3,
+          "height": 35
+        },
+        "time": 9.333,
+        "rect": {
+          "left": 93,
+          "top": 1158,
+          "right": 384.3,
+          "bottom": 1193,
+          "width": 291.3,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦ AI Vedic Oracle",
+        "message": "<div> \"✦ AI Vedic Oracle\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 9.333,
+        "lastSeen": 9.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          9.333
+        ]
+      },
+      {
+        "selector": "div.section-eyebrow",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 52,
+          "y": 90,
+          "width": 391.59,
+          "height": 35
+        },
+        "time": 12,
+        "rect": {
+          "left": 52,
+          "top": 90,
+          "right": 443.59,
+          "bottom": 125,
+          "width": 391.59,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦ Planetary Guidance",
+        "message": "<div> \"✦ Planetary Guidance\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "div.section-title",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 52,
+          "y": 133,
+          "width": 445.59,
+          "height": 68
+        },
+        "time": 12,
+        "rect": {
+          "left": 52,
+          "top": 133,
+          "right": 497.59,
+          "bottom": 201,
+          "width": 445.59,
+          "height": 68
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Your Daily Insights",
+        "message": "<div> \"Your Daily Insights\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "#s3-tab-1",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 89,
+          "y": 248,
+          "width": 90.33,
+          "height": 35
+        },
+        "time": 12,
+        "rect": {
+          "left": 89,
+          "top": 248,
+          "right": 179.33,
+          "bottom": 283,
+          "width": 90.33,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Career",
+        "message": "<div> \"Career\" is outside the safe area: TikTok (left edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "#s3-tab-2",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 269.33,
+          "y": 248,
+          "width": 101.42,
+          "height": 35
+        },
+        "time": 12,
+        "rect": {
+          "left": 269.33,
+          "top": 248,
+          "right": 370.75,
+          "bottom": 283,
+          "width": 101.42,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Finance",
+        "message": "<div> \"Finance\" is outside the safe area: Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "#s3-tab-3",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 460.75,
+          "y": 248,
+          "width": 129.7,
+          "height": 35
+        },
+        "time": 12,
+        "rect": {
+          "left": 460.75,
+          "top": 248,
+          "right": 590.45,
+          "bottom": 283,
+          "width": 129.7,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Education",
+        "message": "<div> \"Education\" is outside the safe area: Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "#s3-tab-4",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 680.45,
+          "y": 248,
+          "width": 86.96,
+          "height": 35
+        },
+        "time": 12,
+        "rect": {
+          "left": 680.45,
+          "top": 248,
+          "right": 767.41,
+          "bottom": 283,
+          "width": 86.96,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Health",
+        "message": "<div> \"Health\" is outside the safe area: Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "div.category-icon",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 100.69,
+          "y": 386,
+          "width": 20.62,
+          "height": 33
+        },
+        "time": 12,
+        "rect": {
+          "left": 100.69,
+          "top": 386,
+          "right": 121.31,
+          "bottom": 419,
+          "width": 20.62,
+          "height": 33
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦",
+        "message": "<div> \"✦\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "div.status-badge",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 750.27,
+          "y": 385,
+          "width": 216.73,
+          "height": 35
+        },
+        "time": 12,
+        "rect": {
+          "left": 750.27,
+          "top": 385,
+          "right": 967,
+          "bottom": 420,
+          "width": 216.73,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Mixed Alignment",
+        "message": "<div> \"Mixed Alignment\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "div.insight-body",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 89,
+          "y": 452,
+          "width": 867.09,
+          "height": 168.5
+        },
+        "time": 12,
+        "rect": {
+          "left": 89,
+          "top": 452,
+          "right": 956.09,
+          "bottom": 620.5,
+          "width": 867.09,
+          "height": 168.5
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "True professional growth begins with a stable fo",
+        "message": "<div> \"True professional growth begins with a stable fo\" is outside the safe area: TikTok (left edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "div.take-action-text",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 123,
+          "y": 720,
+          "width": 806.19,
+          "height": 72.8
+        },
+        "time": 12,
+        "rect": {
+          "left": 123,
+          "top": 720,
+          "right": 929.19,
+          "bottom": 792.8,
+          "width": 806.19,
+          "height": 72.8
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Identify one core value and integrate it into yo",
+        "message": "<div> \"Identify one core value and integrate it into yo\" is outside the safe area: YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "div.event-plan-desc",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 175.5,
+          "y": 1161.59,
+          "width": 728.98,
+          "height": 113.38
+        },
+        "time": 12,
+        "rect": {
+          "left": 175.5,
+          "top": 1161.59,
+          "right": 904.48,
+          "bottom": 1274.97,
+          "width": 728.98,
+          "height": 113.38
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Choose optimal time guided by our Vedic System &",
+        "message": "<div> \"Choose optimal time guided by our Vedic System &\" is outside the safe area: TikTok (right and bottom edges), Instagram Reels (bottom edge), YouTube Shorts (right and bottom edges).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "#s3-event-btn",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 301.88,
+          "y": 1327.07,
+          "width": 476.24,
+          "height": 36.16
+        },
+        "time": 12,
+        "rect": {
+          "left": 301.88,
+          "top": 1327.07,
+          "right": 778.12,
+          "bottom": 1363.23,
+          "width": 476.24,
+          "height": 36.16
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Plan Event with Cosmic Timing",
+        "message": "<button> \"Plan Event with Cosmic Timing\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 12,
+        "lastSeen": 14.667,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          12,
+          14.667
+        ]
+      },
+      {
+        "selector": "div.back-btn",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 78.16,
+          "y": 92.5,
+          "width": 7.68,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 78.16,
+          "top": 92.5,
+          "right": 85.84,
+          "bottom": 127.5,
+          "width": 7.68,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "‹",
+        "message": "<div> \"‹\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "div.eyebrow-tag",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 276.55,
+          "y": 92.5,
+          "width": 559.17,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 276.55,
+          "top": 92.5,
+          "right": 835.72,
+          "bottom": 127.5,
+          "width": 559.17,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦ Certified Gurukul Astrologer",
+        "message": "<div> \"✦ Certified Gurukul Astrologer\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "#s4-top-nav > div:nth-of-type(3)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 1000.27,
+          "y": 92.5,
+          "width": 27.73,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 1000.27,
+          "top": 92.5,
+          "right": 1028,
+          "bottom": 127.5,
+          "width": 27.73,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "•••",
+        "message": "<div> \"•••\" is outside the safe area: TikTok (top edge), Instagram Reels (top edge), YouTube Shorts (top edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "div.astrologer-name",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 93,
+          "y": 605,
+          "width": 273.22,
+          "height": 66
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 93,
+          "top": 605,
+          "right": 366.22,
+          "bottom": 671,
+          "width": 273.22,
+          "height": 66
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Vikram Rao",
+        "message": "<div> \"Vikram Rao\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "span.rating-count",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 883.28,
+          "y": 625,
+          "width": 103.72,
+          "height": 40
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 883.28,
+          "top": 625,
+          "right": 987,
+          "bottom": 665,
+          "width": 103.72,
+          "height": 40
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "(1250+)",
+        "message": "<span> \"(1250+)\" is outside the safe area: TikTok (right edge), YouTube Shorts (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "div.credentials-grid > div:nth-of-type(1) > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 93,
+          "y": 691,
+          "width": 22.2,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 93,
+          "top": 691,
+          "right": 115.2,
+          "bottom": 726,
+          "width": 22.2,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦",
+        "message": "<span> \"✦\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "div.credentials-grid > div:nth-of-type(2) > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 93,
+          "y": 738,
+          "width": 22.2,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 93,
+          "top": 738,
+          "right": 115.2,
+          "bottom": 773,
+          "width": 22.2,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦",
+        "message": "<span> \"✦\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "div.credentials-grid > div:nth-of-type(3) > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 93,
+          "y": 785,
+          "width": 22.2,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 93,
+          "top": 785,
+          "right": 115.2,
+          "bottom": 820,
+          "width": 22.2,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "✦",
+        "message": "<span> \"✦\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "div.specs-title",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 93,
+          "y": 853,
+          "width": 266.84,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 93,
+          "top": 853,
+          "right": 359.84,
+          "bottom": 888,
+          "width": 266.84,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Specializations",
+        "message": "<div> \"Specializations\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "div.badges-wrap > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 118,
+          "y": 921,
+          "width": 89.03,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 118,
+          "top": 921,
+          "right": 207.03,
+          "bottom": 956,
+          "width": 89.03,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Career",
+        "message": "<div> \"Career\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "div.badges-wrap > div:nth-of-type(4)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 661.72,
+          "y": 921,
+          "width": 210.97,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 661.72,
+          "top": 921,
+          "right": 872.69,
+          "bottom": 956,
+          "width": 210.97,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Marriage Timing",
+        "message": "<div> \"Marriage Timing\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "div.badges-wrap > div:nth-of-type(5)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 118,
+          "y": 994,
+          "width": 209.22,
+          "height": 35
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 118,
+          "top": 994,
+          "right": 327.22,
+          "bottom": 1029,
+          "width": 209.22,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Spiritual Growth",
+        "message": "<div> \"Spiritual Growth\" is outside the safe area: TikTok (left edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "div.review-quote-box",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 122,
+          "y": 1089,
+          "width": 743.91,
+          "height": 74.19
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 122,
+          "top": 1089,
+          "right": 865.91,
+          "bottom": 1163.19,
+          "width": 743.91,
+          "height": 74.19
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "\"He explained my Saturn phase with such precisio",
+        "message": "<div> \"\"He explained my Saturn phase with such precisio\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "#s4-btn-consult",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 746.75,
+          "y": 1768,
+          "width": 31.83,
+          "height": 41
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 746.75,
+          "top": 1768,
+          "right": 778.58,
+          "bottom": 1809,
+          "width": 31.83,
+          "height": 41
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "➔",
+        "message": "<button> \"➔\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "#s4-btn-consult > span:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 301.41,
+          "y": 1768,
+          "width": 429.34,
+          "height": 41
+        },
+        "time": 17.333,
+        "rect": {
+          "left": 301.41,
+          "top": 1768,
+          "right": 730.75,
+          "bottom": 1809,
+          "width": 429.34,
+          "height": 41
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Book 1-on-1 Consultation",
+        "message": "<span> \"Book 1-on-1 Consultation\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 17.333,
+        "lastSeen": 20,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          17.333,
+          20
+        ]
+      },
+      {
+        "selector": "#s5-tagline",
+        "dataAttributes": {
+          "data-start": "0.3",
+          "data-duration": "2.7",
+          "data-track-index": "0"
+        },
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 198.67,
+          "y": 950,
+          "width": 682.66,
+          "height": 48
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 198.67,
+          "top": 950,
+          "right": 881.33,
+          "bottom": 998,
+          "width": 682.66,
+          "height": 48
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Ancient Vedic Wisdom. Everyday Clarity.",
+        "message": "<div> \"Ancient Vedic Wisdom. Everyday Clarity.\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      },
+      {
+        "selector": "#s5-pillars > span:nth-of-type(3)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 646.95,
+          "y": 1061,
+          "width": 148.57,
+          "height": 35
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 646.95,
+          "top": 1061,
+          "right": 795.52,
+          "bottom": 1096,
+          "width": 148.57,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Astrologers",
+        "message": "<span> \"Astrologers\" is outside the safe area: TikTok (right edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      },
+      {
+        "selector": "div.store-badges-row > div:nth-of-type(1) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 300.06,
+          "y": 1250,
+          "width": 30.03,
+          "height": 48
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 300.06,
+          "top": 1250,
+          "right": 330.09,
+          "bottom": 1298,
+          "width": 30.03,
+          "height": 48
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "",
+        "message": "<div> \"\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      },
+      {
+        "selector": "div.store-badges-row > div:nth-of-type(1) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 346.09,
+          "y": 1256.5,
+          "width": 129.32,
+          "height": 35
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 346.09,
+          "top": 1256.5,
+          "right": 475.41,
+          "bottom": 1291.5,
+          "width": 129.32,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "App Store",
+        "message": "<div> \"App Store\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      },
+      {
+        "selector": "div.store-badges-row > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 575.41,
+          "y": 1250,
+          "width": 33.43,
+          "height": 48
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 575.41,
+          "top": 1250,
+          "right": 608.84,
+          "bottom": 1298,
+          "width": 33.43,
+          "height": 48
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "▶",
+        "message": "<div> \"▶\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      },
+      {
+        "selector": "div.store-badges-row > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 624.84,
+          "y": 1256.5,
+          "width": 155.08,
+          "height": 35
+        },
+        "time": 22.667,
+        "rect": {
+          "left": 624.84,
+          "top": 1256.5,
+          "right": 779.92,
+          "bottom": 1291.5,
+          "width": 155.08,
+          "height": 35
+        },
+        "code": "outside_safe_zone",
+        "severity": "warning",
+        "text": "Google Play",
+        "message": "<div> \"Google Play\" is outside the safe area: TikTok (bottom edge), Instagram Reels (bottom edge), YouTube Shorts (bottom edge).",
+        "fixHint": "Move the text inside the safe area, or mark text meant to sit there with data-layout-allow-safe-zone.",
+        "firstSeen": 22.667,
+        "lastSeen": 22.667,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          22.667
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 1.333,
+        "selector": "#ring-2",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -10,
+          "top": 30,
+          "right": 1090,
+          "bottom": 1130,
+          "width": 1100,
+          "height": 1100
+        },
+        "containerSelector": "#scene1 > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 10,
+          "right": 10
+        },
+        "dataAttributes": {
+          "data-start": "0",
+          "data-duration": "4",
+          "data-track-index": "0"
+        },
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": -10,
+          "y": 30,
+          "width": 1100,
+          "height": 1100
+        },
+        "firstSeen": 1.333,
+        "lastSeen": 1.333,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 6.667,
+        "selector": "#s2-chips-row > div:nth-of-type(3)",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 893.53,
+          "top": 919,
+          "right": 1110.72,
+          "bottom": 954,
+          "width": 217.19,
+          "height": 35
+        },
+        "containerSelector": "#root",
+        "text": "✦ Career timing?",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 30.72
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 893.53,
+          "y": 919,
+          "width": 217.19,
+          "height": 35
+        },
+        "firstSeen": 6.667,
+        "lastSeen": 9.333,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.667,
+          9.333
+        ]
+      }
+    ],
+    "duration": 24,
+    "samples": [
+      1.333,
+      4,
+      6.667,
+      9.333,
+      12,
+      14.667,
+      17.333,
+      20,
+      22.667
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 72,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 19,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.68:1; WCAG AA requires 3:1.",
+        "text": "N",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,232,214)",
+        "ratio": 2.68,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(234,87,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(1) > div > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 48,
+          "y": 109.5,
+          "width": 72,
+          "height": 72
+        },
+        "time": 1.333,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.62:1; WCAG AA requires 3:1.",
+        "text": "👑 Pro Plan",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(254,229,212)",
+        "ratio": 2.62,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(232,86,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(1) > div > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 827.828125,
+          "y": 112,
+          "width": 204.171875,
+          "height": 67
+        },
+        "time": 1.333,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.88:1; WCAG AA requires 3:1.",
+        "text": "Vedic cosmic blueprint",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,242,232)",
+        "ratio": 2.88,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(244,91,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(1) > div > div:nth-of-type(3) > div:nth-of-type(2) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 48,
+          "y": 219,
+          "width": 864.328125,
+          "height": 125.796875
+        },
+        "time": 1.333,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.93:1; WCAG AA requires 3:1.",
+        "text": "Prioritize structure over speed.",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,244,236)",
+        "ratio": 2.93,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(246,92,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(1) > div > div:nth-of-type(3) > div:nth-of-type(4) > div:nth-of-type(4) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 117.61073303222656,
+          "y": 1159.595458984375,
+          "width": 850.7984008789062,
+          "height": 40.1319580078125
+        },
+        "time": 1.333,
+        "times": [
+          1.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.92:1; WCAG AA requires 3:1.",
+        "text": "Rishi",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,244,234)",
+        "ratio": 2.92,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(246,92,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(3) > div:nth-of-type(2) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 715.90625,
+          "y": 717,
+          "width": 122.734375,
+          "height": 73
+        },
+        "time": 6.667,
+        "times": [
+          6.667
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.93:1; WCAG AA requires 3:1.",
+        "text": "✦ What is my sun sign?",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,244,236)",
+        "ratio": 2.93,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(246,92,0)",
+        "large": true,
+        "selector": "#s2-chip-target",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 56,
+          "y": 900,
+          "width": 348.984375,
+          "height": 73
+        },
+        "time": 6.667,
+        "times": [
+          6.667
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.4:1; WCAG AA requires 3:1.",
+        "text": "➔",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(253,136,46)",
+        "ratio": 2.4,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(87,87,87)",
+        "large": true,
+        "selector": "div > div:nth-of-type(2) > div > div:nth-of-type(6) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 932,
+          "y": 1756,
+          "width": 72,
+          "height": 72
+        },
+        "time": 6.667,
+        "times": [
+          6.667
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.97:1; WCAG AA requires 3:1.",
+        "text": "✦ Planetary Guidance",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,246,239)",
+        "ratio": 2.97,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(248,92,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div > div:nth-of-type(1) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 52,
+          "y": 90,
+          "width": 976,
+          "height": 35
+        },
+        "time": 12,
+        "times": [
+          12
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.63:1; WCAG AA requires 3:1.",
+        "text": "Health",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(0,180,151)",
+        "ratio": 2.63,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(81,81,81)",
+        "large": true,
+        "selector": "#s3-tab-4",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 643.453125,
+          "y": 229,
+          "width": 160.953125,
+          "height": 73
+        },
+        "time": 12,
+        "times": [
+          12
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.88:1; WCAG AA requires 3:1.",
+        "text": "✦",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,242,232)",
+        "ratio": 2.88,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(244,91,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(1) > div",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 89,
+          "y": 380.5,
+          "width": 44,
+          "height": 44
+        },
+        "time": 12,
+        "times": [
+          12
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.43:1; WCAG AA requires 3:1.",
+        "text": "Mixed Alignment",
+        "fg": "rgb(0,180,151)",
+        "bg": "rgb(230,250,246)",
+        "ratio": 2.43,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(0,161,135)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div > div:nth-of-type(3) > div:nth-of-type(1) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 726.265625,
+          "y": 375,
+          "width": 264.734375,
+          "height": 55
+        },
+        "time": 12,
+        "times": [
+          12
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.88:1; WCAG AA requires 3:1.",
+        "text": "📅",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,242,232)",
+        "ratio": 2.88,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(244,91,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(3) > div > div > div:nth-of-type(4) > div:nth-of-type(1)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 500,
+          "y": 999.59375,
+          "width": 80,
+          "height": 80
+        },
+        "time": 12,
+        "times": [
+          12
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.5:1; WCAG AA requires 3:1.",
+        "text": "Plan Event with Cosmic Timing",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(253,130,40)",
+        "ratio": 2.5,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(84,84,84)",
+        "large": true,
+        "selector": "#s3-event-btn",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 87.01559448242188,
+          "y": 1302.96923828125,
+          "width": 905.96875,
+          "height": 85.3740234375
+        },
+        "time": 12,
+        "times": [
+          12
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.8:1; WCAG AA requires 3:1.",
+        "text": "✦ Certified Gurukul Astrologer",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,238,222)",
+        "ratio": 2.8,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(240,89,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(4) > div > div > div:nth-of-type(1) > div:nth-of-type(2)",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 276.546875,
+          "y": 92.5,
+          "width": 559.171875,
+          "height": 35
+        },
+        "time": 17.333,
+        "times": [
+          17.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.63:1; WCAG AA requires 3:1.",
+        "text": "✦",
+        "fg": "rgb(0,180,151)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.63,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(0,168,141)",
+        "large": true,
+        "selector": "div > div:nth-of-type(4) > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(1) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 93,
+          "y": 691,
+          "width": 22.203125,
+          "height": 35
+        },
+        "time": 17.333,
+        "times": [
+          17.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.63:1; WCAG AA requires 3:1.",
+        "text": "✦",
+        "fg": "rgb(0,180,151)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.63,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(0,168,141)",
+        "large": true,
+        "selector": "div > div:nth-of-type(4) > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 93,
+          "y": 738,
+          "width": 22.203125,
+          "height": 35
+        },
+        "time": 17.333,
+        "times": [
+          17.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.63:1; WCAG AA requires 3:1.",
+        "text": "✦",
+        "fg": "rgb(0,180,151)",
+        "bg": "rgb(255,255,255)",
+        "ratio": 2.63,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(0,168,141)",
+        "large": true,
+        "selector": "div > div:nth-of-type(4) > div > div > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(2) > div:nth-of-type(3) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 93,
+          "y": 785,
+          "width": 22.203125,
+          "height": 35
+        },
+        "time": 17.333,
+        "times": [
+          17.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.6:1; WCAG AA requires 3:1.",
+        "text": "Book 1-on-1 Consultation ➔",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(253,124,28)",
+        "ratio": 2.6,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(82,82,82)",
+        "large": true,
+        "selector": "#s4-btn-consult",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene4.html",
+        "bbox": {
+          "x": 52,
+          "y": 1738,
+          "width": 976,
+          "height": 102
+        },
+        "time": 17.333,
+        "times": [
+          17.333
+        ]
+      },
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.84:1; WCAG AA requires 3:1.",
+        "text": "Rishi",
+        "fg": "rgb(250,93,0)",
+        "bg": "rgb(255,240,228)",
+        "ratio": 2.84,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(243,90,0)",
+        "large": true,
+        "selector": "div > div:nth-of-type(5) > div > div:nth-of-type(4) > div:nth-of-type(2) > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene5.html",
+        "bbox": {
+          "x": 530.359375,
+          "y": 838,
+          "width": 160.828125,
+          "height": 96
+        },
+        "time": 22.667,
+        "times": [
+          22.667
+        ]
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      1.333,
+      6.667,
+      12,
+      17.333,
+      22.667
+    ],
+    "checked": 90,
+    "passed": 71
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 7,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "first_frame_empty",
+        "severity": "warning",
+        "message": "Frame 0 shows only the background, and the first frame is the thumbnail on social players: have the title or key image already on screen at 0 s instead of entering from nothing; see references/review.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 24 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"Good Morning,\" renders at 26 px for 3.88 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Good Morning,",
+        "selector": "div.user-greeting",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 140,
+          "y": 91.71,
+          "width": 173.61,
+          "height": 33
+        },
+        "time": 0.125,
+        "times": [
+          0.125
+        ],
+        "fontPx": 26,
+        "floorPx": 28,
+        "seconds": 3.875,
+        "elements": [
+          {
+            "selector": "div.user-greeting",
+            "text": "Good Morning,",
+            "fontPx": 26,
+            "time": 0.125,
+            "seconds": 3.875
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"\"You are a natural initiator who leads with quiet strengt...\" (31 words) is on screen 3.23 s (±0.01 s), under its 7.35 s floor: hold it about 0.5 s + 0.3 s a word (9.80 s here) before it leaves or changes; see references/motion.md.",
+        "text": "\"You are a natural initiator who leads with quiet strength. Your life's journey is defined by a delicate balance between your bold outer actions and a deeply intuitive inner emotional world.\"",
+        "selector": "div.energy-quote",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene1.html",
+        "bbox": {
+          "x": 85,
+          "y": 951.26,
+          "width": 882.19,
+          "height": 122
+        },
+        "time": 0.773,
+        "words": 31,
+        "seconds": 3.227,
+        "floorSeconds": 7.35,
+        "measured": [
+          {
+            "time": 0.5,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 0.625,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 0.75,
+            "opacity": 0.45,
+            "heightPx": 122
+          },
+          {
+            "time": 0.875,
+            "opacity": 0.83,
+            "heightPx": 122
+          },
+          {
+            "time": 1,
+            "opacity": 0.97,
+            "heightPx": 122
+          },
+          {
+            "time": 1.125,
+            "opacity": 1,
+            "heightPx": 122
+          },
+          {
+            "time": 1.25,
+            "opacity": 1,
+            "heightPx": 122
+          },
+          {
+            "time": 3.5,
+            "opacity": 0.99,
+            "heightPx": 122
+          },
+          {
+            "time": 3.625,
+            "opacity": 0.99,
+            "heightPx": 123
+          },
+          {
+            "time": 3.75,
+            "opacity": 0.97,
+            "heightPx": 124
+          },
+          {
+            "time": 3.875,
+            "opacity": 0.94,
+            "heightPx": 126
+          },
+          {
+            "time": 4,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 4.125,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 4.25,
+            "opacity": null,
+            "heightPx": null
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"✦ AI VEDIC ORACLE Your Sun in Capricorn with Rising Scorp...\" (20 words) is on screen 2.50 s (±0.01 s), under its 4.88 s floor: hold it about 0.5 s + 0.3 s a word (6.50 s here) before it leaves or changes; see references/motion.md.",
+        "text": "✦ AI VEDIC ORACLE Your Sun in Capricorn with Rising Scorpio favors quiet structure today. Hold your pace and strengthen foundations.",
+        "selector": "#s2-rishi-reply",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene2.html",
+        "bbox": {
+          "x": 103.33,
+          "y": 1216.59,
+          "width": 684.36,
+          "height": 118.62999999999988
+        },
+        "time": 7.5,
+        "words": 20,
+        "seconds": 2.5,
+        "floorSeconds": 4.875,
+        "measured": [
+          {
+            "time": 7.125,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 7.25,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 7.375,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 7.5,
+            "opacity": 0.65,
+            "heightPx": 119
+          },
+          {
+            "time": 7.625,
+            "opacity": 0.97,
+            "heightPx": 122
+          },
+          {
+            "time": 7.75,
+            "opacity": 1,
+            "heightPx": 123
+          },
+          {
+            "time": 7.875,
+            "opacity": 1,
+            "heightPx": 122
+          },
+          {
+            "time": 9.5,
+            "opacity": 1,
+            "heightPx": 122
+          },
+          {
+            "time": 9.625,
+            "opacity": 1,
+            "heightPx": 122
+          },
+          {
+            "time": 9.75,
+            "opacity": 0.99,
+            "heightPx": 123
+          },
+          {
+            "time": 9.875,
+            "opacity": 0.98,
+            "heightPx": 124
+          },
+          {
+            "time": 10,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 10.125,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 10.25,
+            "opacity": null,
+            "heightPx": null
+          }
+        ]
+      },
+      {
+        "code": "text_below_floor",
+        "severity": "warning",
+        "message": "Type floor is 28 px (2.6% of the 1080 px short side, what a phone can read) and \"Health\" renders at 25 px for 0.50 s: set reading text to at least 28 px, or put data-layout-ignore on text that is texture rather than reading; see references/look.md.",
+        "text": "Health",
+        "selector": "#s3-tab-4",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 694.24,
+          "y": 249.75,
+          "width": 78.26,
+          "height": 31.5
+        },
+        "time": 10.375,
+        "times": [
+          10.375
+        ],
+        "fontPx": 25.2,
+        "floorPx": 28,
+        "seconds": 0.5,
+        "elements": [
+          {
+            "selector": "#s3-tab-4",
+            "text": "Health",
+            "fontPx": 25.2,
+            "time": 10.375,
+            "seconds": 0.5
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "\"True professional growth begins with a stable foundation ...\" (35 words) is on screen 5.46 s (±0.01 s), under its 8.25 s floor: hold it about 0.5 s + 0.3 s a word (11.00 s here) before it leaves or changes; see references/motion.md.",
+        "text": "True professional growth begins with a stable foundation and a clear sense of purpose in your daily routine. Prioritize consistency over intensity to ensure your work remains sustainable and deeply aligned with your cosmic timing.",
+        "selector": "div.insight-body",
+        "dataAttributes": {},
+        "sourceFile": "compositions/scene3.html",
+        "bbox": {
+          "x": 89,
+          "y": 463.49,
+          "width": 867.09,
+          "height": 168.5
+        },
+        "time": 10.539,
+        "words": 35,
+        "seconds": 5.461,
+        "floorSeconds": 8.25,
+        "measured": [
+          {
+            "time": 10.25,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 10.375,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 10.5,
+            "opacity": 0.49,
+            "heightPx": 169
+          },
+          {
+            "time": 10.625,
+            "opacity": 0.77,
+            "heightPx": 169
+          },
+          {
+            "time": 10.75,
+            "opacity": 0.94,
+            "heightPx": 168
+          },
+          {
+            "time": 10.875,
+            "opacity": 0.99,
+            "heightPx": 168
+          },
+          {
+            "time": 11,
+            "opacity": 1,
+            "heightPx": 169
+          },
+          {
+            "time": 15.5,
+            "opacity": 1,
+            "heightPx": 169
+          },
+          {
+            "time": 15.625,
+            "opacity": 0.99,
+            "heightPx": 169
+          },
+          {
+            "time": 15.75,
+            "opacity": 0.98,
+            "heightPx": 170
+          },
+          {
+            "time": 15.875,
+            "opacity": 0.96,
+            "heightPx": 172
+          },
+          {
+            "time": 16,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16.125,
+            "opacity": null,
+            "heightPx": null
+          },
+          {
+            "time": 16.25,
+            "opacity": null,
+            "heightPx": null
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 192
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

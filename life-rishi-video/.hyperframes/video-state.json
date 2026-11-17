@@ -1,0 +1,1642 @@
+{
+  "version": 1,
+  "historyId": "18374c13-22b1-43ce-a304-ea370566a68f",
+  "currentRevision": "04130b8b-88b7-48ff-a74c-16917631dd49",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "CLAUDE.md": {
+      "hash": "268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/26/268ff46777938da818baa92a718571785e9acf2cef2d3ffbacbb93483dcba37a"
+    },
+    "SPEC.md": {
+      "hash": "cb8f89df0b7ce85c7ed26c97f5a6aa29667e99a673b8ec4ce8f361fcb368abf2",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/cb/cb8f89df0b7ce85c7ed26c97f5a6aa29667e99a673b8ec4ce8f361fcb368abf2"
+    },
+    "STORYLINES.md": {
+      "hash": "d091d86c74b91f0ecdd12706d7183d45112c3cae4be9465fdf79fd75dff42bba",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/d0/d091d86c74b91f0ecdd12706d7183d45112c3cae4be9465fdf79fd75dff42bba"
+    },
+    "hyperframes.json": {
+      "hash": "b8ef197e4719583c21166c3d49db84ba64bb527b72ecad3c59c2b0ddad7aca13",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/b8/b8ef197e4719583c21166c3d49db84ba64bb527b72ecad3c59c2b0ddad7aca13"
+    },
+    "index.html": {
+      "hash": "bfd180c8c07b74a4784bf53a22faf669325738c395dc8946e9e9341a8604287e",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/bf/bfd180c8c07b74a4784bf53a22faf669325738c395dc8946e9e9341a8604287e"
+    },
+    "meta.json": {
+      "hash": "0596a55f06d2ccaffb83c5530de16a077381a68609facfc0807f41517d468ec6",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/05/0596a55f06d2ccaffb83c5530de16a077381a68609facfc0807f41517d468ec6"
+    },
+    "package.json": {
+      "hash": "136d5a9cc4fe042f6c6b2fcedcf13d9008a43faca016aa6dda95f16be8024101",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/13/136d5a9cc4fe042f6c6b2fcedcf13d9008a43faca016aa6dda95f16be8024101"
+    },
+    "assets/screen-ai-rishi.png": {
+      "hash": "88e818daa08ae3436301bacd257f448ce5be9f388592f99210f3c25d4ade3557",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/88/88e818daa08ae3436301bacd257f448ce5be9f388592f99210f3c25d4ade3557"
+    },
+    "assets/screen-astrologer.png": {
+      "hash": "c0277349d6f2d37f7c8ef1bc4b12aed1a8e3dae449c5c3705a57fe0d09720531",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/c0/c0277349d6f2d37f7c8ef1bc4b12aed1a8e3dae449c5c3705a57fe0d09720531"
+    },
+    "assets/screen-dashboard.png": {
+      "hash": "1d3a66788d3668f366b811a26137feba12da3c1cef0a7ad7bcc0e0a52625e0af",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/1d/1d3a66788d3668f366b811a26137feba12da3c1cef0a7ad7bcc0e0a52625e0af"
+    },
+    "compositions/scene1.html": {
+      "hash": "59b883f656d02f1f9402d5d79c02e110d535fdad9694f7f6bb541c6a3f4a987f",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/59/59b883f656d02f1f9402d5d79c02e110d535fdad9694f7f6bb541c6a3f4a987f"
+    },
+    "compositions/scene2.html": {
+      "hash": "4a192152dde33f62ee51786e090132685bb281075c250eeddc803e7ffb657854",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/4a/4a192152dde33f62ee51786e090132685bb281075c250eeddc803e7ffb657854"
+    },
+    "compositions/scene3.html": {
+      "hash": "bd63e22c01b53849188f8fa9e0d57e7686bf3acf5a551e5bdf76e2eec8ba81c3",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/bd/bd63e22c01b53849188f8fa9e0d57e7686bf3acf5a551e5bdf76e2eec8ba81c3"
+    },
+    "compositions/scene4.html": {
+      "hash": "45eeaa874fd296b4ff1065eeae42d8daa2f4589aeed7a8804b56c967695ba7dd",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/45/45eeaa874fd296b4ff1065eeae42d8daa2f4589aeed7a8804b56c967695ba7dd"
+    },
+    "compositions/scene5.html": {
+      "hash": "9d18324e023a4c0c335c96a0ab81beda0eb1e63ac14cfee7dae199866eb867b8",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/9d/9d18324e023a4c0c335c96a0ab81beda0eb1e63ac14cfee7dae199866eb867b8"
+    },
+    "image.png": {
+      "hash": "c0277349d6f2d37f7c8ef1bc4b12aed1a8e3dae449c5c3705a57fe0d09720531",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/c0/c0277349d6f2d37f7c8ef1bc4b12aed1a8e3dae449c5c3705a57fe0d09720531"
+    },
+    "hyperframes.lock.json": {
+      "hash": "db9ac2e92f68a089089ff60212ec9189e640a5549294114db9422299e121fed7",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/db/db9ac2e92f68a089089ff60212ec9189e640a5549294114db9422299e121fed7"
+    }
+  },
+  "revisions": {
+    "54c958ba-399b-4b1f-9c6d-ee520bf4095b": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794830801266,
+      "endedAt": 1794830801377,
+      "files": {
+        "assets/screen-ai-rishi.png": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/07/07293881626e79123b7ae59c098583c90f2211f7c76b0fab05765b05505be093"
+        },
+        "assets/screen-astrologer.png": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/40/40f5378f84d97f10055a32e94971e3487eb9c96688325fda413d9b5200fa5c27"
+        },
+        "assets/screen-dashboard.png": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/1e/1e2a6b7c3a7d4356884ffc4c75bb721f1dcaa0447946bdb7a7ea885c18aed128"
+        },
+        "compositions/scene1.html": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/ef/efbcb469d090cdda79799175f7249b82e292d7c3ab722c53165215ecf1a40457"
+        },
+        "compositions/scene2.html": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/52/52857b4436a74920a1617411ced0c0d1030065a02b8e13f87d8001484a4d0160"
+        },
+        "compositions/scene3.html": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/19/1994003dd542f5706d1d0bc6711da32c6a46fea3954d8bf814f125a4853c26e3"
+        },
+        "compositions/scene4.html": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/ec/ec049ee7356ebcf0e49918c1b55a4ecb794c3ff8d14571691d2989aa70c6fa08"
+        },
+        "compositions/scene5.html": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/3b/3b2a70bd85b28506cbbd7311eaf8656bc74d5cab298b7ae79de28004288dae06"
+        },
+        "image.png": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/c0/c0277349d6f2d37f7c8ef1bc4b12aed1a8e3dae449c5c3705a57fe0d09720531"
+        },
+        "index.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/bc/bc7ff2e743d8c95e30ff5c0cc87ad41e44151942473924011cdad94a9a5e35fe",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/bf/bfd180c8c07b74a4784bf53a22faf669325738c395dc8946e9e9341a8604287e"
+        },
+        "STORYLINES.md": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/73/73d092caf0482363028a74423351e7f516d52e931e95999293356f9ebba51aea",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/d0/d091d86c74b91f0ecdd12706d7183d45112c3cae4be9465fdf79fd75dff42bba"
+        }
+      }
+    },
+    "ad8cd34c-5467-49fa-ac2b-9c78b9360b47": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794830925658,
+      "endedAt": 1794830925663,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/ef/efbcb469d090cdda79799175f7249b82e292d7c3ab722c53165215ecf1a40457",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/8c/8ce66aa980642eb3434a6c5f661e5631b5526a72ab5f2d17a7f6d4b77258643c"
+        },
+        "compositions/scene2.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/52/52857b4436a74920a1617411ced0c0d1030065a02b8e13f87d8001484a4d0160",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/56/5684cd684decb2ded18bcdfec7dd2fa0b89c4c49f7930174292ce145ba086e49"
+        },
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/19/1994003dd542f5706d1d0bc6711da32c6a46fea3954d8bf814f125a4853c26e3",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/b1/b108d36d07175bdfadc49fb213d48e18a5cbbe05834578ea590748f0710f5908"
+        },
+        "compositions/scene4.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/ec/ec049ee7356ebcf0e49918c1b55a4ecb794c3ff8d14571691d2989aa70c6fa08",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/6c/6cd126e6bc0bfbdbbf157f56682743da4aa1ba7fb449083063c63b286694d8c1"
+        },
+        "compositions/scene5.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/3b/3b2a70bd85b28506cbbd7311eaf8656bc74d5cab298b7ae79de28004288dae06",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/1c/1ce0fb14d0e0c1b6dcd677fde3de655b24487bc8f0d690b83b7367fd47f2e93d"
+        }
+      }
+    },
+    "a240bcd6-9578-4368-b604-cd588f739799": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794830986124,
+      "endedAt": 1794830986127,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/8c/8ce66aa980642eb3434a6c5f661e5631b5526a72ab5f2d17a7f6d4b77258643c",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/b7/b7a5b78d5a7ccd2af4a0e5260f83bacd775046422b1597e177b0659a710dd3c0"
+        },
+        "compositions/scene2.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/56/5684cd684decb2ded18bcdfec7dd2fa0b89c4c49f7930174292ce145ba086e49",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/ca/ca5c4c3a00038c23896aa239de8787cd19350e7bba88bd39a97cf06cf8df073d"
+        },
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/b1/b108d36d07175bdfadc49fb213d48e18a5cbbe05834578ea590748f0710f5908",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/94/94a32d2e648c8c827401dad8e680a7d606e8d5153c407fbe064edf2cbd3fb4fe"
+        }
+      }
+    },
+    "1f955edc-b72f-4f23-8aa8-3ca662f143ad": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794831059497,
+      "endedAt": 1794831059585,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/b7/b7a5b78d5a7ccd2af4a0e5260f83bacd775046422b1597e177b0659a710dd3c0",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/fb/fb230a6640e7d28b21258283ff64d1d0a66ce8f7e63be4aab439aa68deeef021"
+        },
+        "compositions/scene4.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/6c/6cd126e6bc0bfbdbbf157f56682743da4aa1ba7fb449083063c63b286694d8c1",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/32/32646a84afcf244a08c08679b99af5cf27d92f294134e5bbffd4fbcb6487d028"
+        },
+        "compositions/scene5.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/1c/1ce0fb14d0e0c1b6dcd677fde3de655b24487bc8f0d690b83b7367fd47f2e93d",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/16/16cb8b5809c62e9ac5fce775fcbdcc5f827531b4c9e434df9c8d1cae5eb31705"
+        }
+      }
+    },
+    "67f56bd9-1298-486e-b04c-39e3a950aeb5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893592168,
+      "endedAt": 1794893594172,
+      "files": {
+        "assets/screen-ai-rishi.png": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/07/07293881626e79123b7ae59c098583c90f2211f7c76b0fab05765b05505be093",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/88/88e818daa08ae3436301bacd257f448ce5be9f388592f99210f3c25d4ade3557"
+        },
+        "assets/screen-dashboard.png": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/1e/1e2a6b7c3a7d4356884ffc4c75bb721f1dcaa0447946bdb7a7ea885c18aed128",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/1d/1d3a66788d3668f366b811a26137feba12da3c1cef0a7ad7bcc0e0a52625e0af"
+        }
+      }
+    },
+    "e43ebb55-cd48-4bff-8d13-c20814301063": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893641689,
+      "endedAt": 1794893643690,
+      "files": {
+        "assets/screen-astrologer.png": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/40/40f5378f84d97f10055a32e94971e3487eb9c96688325fda413d9b5200fa5c27",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/c0/c0277349d6f2d37f7c8ef1bc4b12aed1a8e3dae449c5c3705a57fe0d09720531"
+        }
+      }
+    },
+    "a65513d6-e584-4ccc-bf1c-6c1aa562d6db": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893737240,
+      "endedAt": 1794893739241,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/fb/fb230a6640e7d28b21258283ff64d1d0a66ce8f7e63be4aab439aa68deeef021",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/16/1634f49a8103d9177ecf0328bc6ed57724f04aed3845eb7d552978ed93c2dd7d"
+        }
+      }
+    },
+    "b763b54c-ec55-4e1c-be79-a9082480b5de": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893761280,
+      "endedAt": 1794893763281,
+      "files": {
+        "compositions/scene2.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/ca/ca5c4c3a00038c23896aa239de8787cd19350e7bba88bd39a97cf06cf8df073d",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/5e/5e5d291bed69e20452baa8c7720bd4f53a65484bc26260d062e52447476cfeb8"
+        }
+      }
+    },
+    "bbc30db8-b1b7-4048-9bc0-c25717f3b7db": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893781407,
+      "endedAt": 1794893783408,
+      "files": {
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/94/94a32d2e648c8c827401dad8e680a7d606e8d5153c407fbe064edf2cbd3fb4fe",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/7f/7f43d76ecf2b1e4b2ded98424bcf103f58688897ecba14caba32e166b79e8b0a"
+        }
+      }
+    },
+    "9b989888-1258-47af-92a1-8802b0454507": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893801213,
+      "endedAt": 1794893803214,
+      "files": {
+        "compositions/scene4.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/32/32646a84afcf244a08c08679b99af5cf27d92f294134e5bbffd4fbcb6487d028",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/88/8845e23be4e754ece800ed9bfb6a1ceb1b43ee185ccc8e51a9b55fb59fa666e3"
+        }
+      }
+    },
+    "7cd7b6ff-00f7-453a-a624-583ec1922a67": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893866819,
+      "endedAt": 1794893868821,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/16/1634f49a8103d9177ecf0328bc6ed57724f04aed3845eb7d552978ed93c2dd7d",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/da/dad04a0461ad56cf8ec2afccbfc81df42c6b52d86fffb8ebda5ebf86e5013a11"
+        }
+      }
+    },
+    "0a7cef7d-64f7-46a8-b02c-e637b0a69880": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893891256,
+      "endedAt": 1794893893257,
+      "files": {
+        "compositions/scene2.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/5e/5e5d291bed69e20452baa8c7720bd4f53a65484bc26260d062e52447476cfeb8",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/e7/e7d5dbda4a77069c120f5156d0721b2caf76c08062cf2a53df38435cc3027bac"
+        }
+      }
+    },
+    "ee5b13c1-88b2-49a8-8f48-fe539579fcb5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893908130,
+      "endedAt": 1794893910131,
+      "files": {
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/7f/7f43d76ecf2b1e4b2ded98424bcf103f58688897ecba14caba32e166b79e8b0a",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/27/270c0f2498e6e0fb4e2e9cbc56edd2ada44f77541d3ba48dbe6e2809d682bc16"
+        }
+      }
+    },
+    "b90a24c8-71be-4799-b306-cf95b5e7fd8f": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893926388,
+      "endedAt": 1794893928388,
+      "files": {
+        "compositions/scene4.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/88/8845e23be4e754ece800ed9bfb6a1ceb1b43ee185ccc8e51a9b55fb59fa666e3",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/28/281dada3bebe24e320c5f4a1e17058fbcae17b256c4cd82bbe69f3a3ab7a8fbd"
+        }
+      }
+    },
+    "3d43c9fd-f0aa-4904-91d1-0684c6630797": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893948760,
+      "endedAt": 1794893950762,
+      "files": {
+        "compositions/scene5.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/16/16cb8b5809c62e9ac5fce775fcbdcc5f827531b4c9e434df9c8d1cae5eb31705",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/44/4459cab85310f2f23f066546d007ed86120400986ba9e525f299385cd1cc745b"
+        }
+      }
+    },
+    "1aee0af8-b412-4c8e-a696-c3b148825365": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893965502,
+      "endedAt": 1794893967504,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/da/dad04a0461ad56cf8ec2afccbfc81df42c6b52d86fffb8ebda5ebf86e5013a11",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/50/5049164b8dde8936e2c92cae1366f21b642f47714c6eedc005f4ae92ba3b1b28"
+        }
+      }
+    },
+    "8f0295a2-6f43-4c83-a534-2e6eee49f5d9": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893969734,
+      "endedAt": 1794893971734,
+      "files": {
+        "compositions/scene2.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/e7/e7d5dbda4a77069c120f5156d0721b2caf76c08062cf2a53df38435cc3027bac",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/d0/d0e9f6f3e212699b6571f796095fadfc6349da6685a0c20e3d1fe92410c546a9"
+        }
+      }
+    },
+    "12111a69-47a2-41c3-9b1d-96deee7c8a02": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893973797,
+      "endedAt": 1794893975797,
+      "files": {
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/27/270c0f2498e6e0fb4e2e9cbc56edd2ada44f77541d3ba48dbe6e2809d682bc16",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/36/364c7474d004236aee70eaad0e7e848be837421373cd9f23ba7d44a28d474b0d"
+        }
+      }
+    },
+    "a554abf5-cd4d-4be4-a5bc-0207af789f0a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893977535,
+      "endedAt": 1794893979537,
+      "files": {
+        "compositions/scene4.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/28/281dada3bebe24e320c5f4a1e17058fbcae17b256c4cd82bbe69f3a3ab7a8fbd",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/fe/fe45490d0bb75d74e814eb5fec43e20a61eb46ede84e89b5a4f42df7763c67bb"
+        }
+      }
+    },
+    "bd249105-6ef3-4384-98cd-c82ac491b1a4": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794893991693,
+      "endedAt": 1794893993694,
+      "files": {
+        "compositions/scene5.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/44/4459cab85310f2f23f066546d007ed86120400986ba9e525f299385cd1cc745b",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/9d/9d18324e023a4c0c335c96a0ab81beda0eb1e63ac14cfee7dae199866eb867b8"
+        }
+      }
+    },
+    "7c6aeec5-d24e-4d8c-b126-95cf9fd792a3": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894050923,
+      "endedAt": 1794894052925,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/50/5049164b8dde8936e2c92cae1366f21b642f47714c6eedc005f4ae92ba3b1b28",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/aa/aa5f0dfee690910b3288e95fcc561ead599b732f30c50b205a43c3521d227b3f"
+        }
+      }
+    },
+    "d5b8a0bb-8046-4b58-8828-9232f59ad2ec": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894101363,
+      "endedAt": 1794894103364,
+      "files": {
+        "compositions/scene2.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/d0/d0e9f6f3e212699b6571f796095fadfc6349da6685a0c20e3d1fe92410c546a9",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/39/398223ff91da2fec52d441b88ce45a82e636cefc9553b27fe8ac9205151f2d42"
+        }
+      }
+    },
+    "fcf6d559-fb1c-4b03-a33d-3120309f568e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894153774,
+      "endedAt": 1794894155775,
+      "files": {
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/36/364c7474d004236aee70eaad0e7e848be837421373cd9f23ba7d44a28d474b0d",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/06/0689bb6c483a8ba14e3a8705784f7df23bdf5435a7ec3cb62524b2ac039b4473"
+        }
+      }
+    },
+    "90bc8fa6-b918-4d77-b64b-e1b0e7514859": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894161475,
+      "endedAt": 1794894163475,
+      "files": {
+        "compositions/scene4.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/fe/fe45490d0bb75d74e814eb5fec43e20a61eb46ede84e89b5a4f42df7763c67bb",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/01/01117806b543222827971f61241cfb5e0393c6fae1db31c274000660609e8920"
+        }
+      }
+    },
+    "7474d037-2209-4d47-a77d-d6de71b1360d": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894625324,
+      "endedAt": 1794894627325,
+      "files": {
+        "compositions/components/device-frame-stage.html": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/8c/8c9ab0e2278a01b88f70dc47e51e6a4960533fcda5b1f0b95d7e41dd1a0bb6cf"
+        },
+        "hyperframes.json": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/b8/b8ef197e4719583c21166c3d49db84ba64bb527b72ecad3c59c2b0ddad7aca13"
+        },
+        "hyperframes.lock.json": {
+          "before": null,
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/db/db9ac2e92f68a089089ff60212ec9189e640a5549294114db9422299e121fed7"
+        }
+      }
+    },
+    "865bea48-d382-4fb6-ac7d-e86d5da28343": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894658008,
+      "endedAt": 1794894660009,
+      "files": {
+        "compositions/components/device-frame-stage.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/8c/8c9ab0e2278a01b88f70dc47e51e6a4960533fcda5b1f0b95d7e41dd1a0bb6cf",
+          "after": null
+        }
+      }
+    },
+    "78337ed2-11da-479f-9501-13b747b0fc3e": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894688627,
+      "endedAt": 1794894690629,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/aa/aa5f0dfee690910b3288e95fcc561ead599b732f30c50b205a43c3521d227b3f",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/59/59b883f656d02f1f9402d5d79c02e110d535fdad9694f7f6bb541c6a3f4a987f"
+        }
+      }
+    },
+    "d9ec0afe-b593-4f86-b9fd-1406958eca60": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894714616,
+      "endedAt": 1794894716617,
+      "files": {
+        "compositions/scene2.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/39/398223ff91da2fec52d441b88ce45a82e636cefc9553b27fe8ac9205151f2d42",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/4a/4a192152dde33f62ee51786e090132685bb281075c250eeddc803e7ffb657854"
+        }
+      }
+    },
+    "7b2e4455-0c57-4817-b3da-35c26af4ca89": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894735126,
+      "endedAt": 1794894737128,
+      "files": {
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/06/0689bb6c483a8ba14e3a8705784f7df23bdf5435a7ec3cb62524b2ac039b4473",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/57/57ba3ff44253d2472ac44cb77bb0e395459f201b6f00f564e5d172676d565112"
+        }
+      }
+    },
+    "359cc889-55d8-48f2-8968-b75bb29fb5dc": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894757543,
+      "endedAt": 1794894759544,
+      "files": {
+        "compositions/scene4.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/01/01117806b543222827971f61241cfb5e0393c6fae1db31c274000660609e8920",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/45/45eeaa874fd296b4ff1065eeae42d8daa2f4589aeed7a8804b56c967695ba7dd"
+        }
+      }
+    },
+    "5d358068-24db-4e95-b3da-2a83772cabf6": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894801446,
+      "endedAt": 1794894803447,
+      "files": {
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/57/57ba3ff44253d2472ac44cb77bb0e395459f201b6f00f564e5d172676d565112",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/df/dfbee16a6fa3a7f1e13cc71ddb4e6ec0b21b5a2f8e89742cbea131dd32165d72"
+        }
+      }
+    },
+    "0dc3d713-8aa2-4f53-8714-a84c6f5ad1e4": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894811528,
+      "endedAt": 1794894813530,
+      "files": {
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/df/dfbee16a6fa3a7f1e13cc71ddb4e6ec0b21b5a2f8e89742cbea131dd32165d72",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/9a/9adbbcc9525c06b4bbdc00bceae44cfdc387b2d55e5521dde4ad2bd0638d9acc"
+        }
+      }
+    },
+    "0fb3172d-c4cf-4647-af3d-4889dfd1b599": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894858448,
+      "endedAt": 1794894860448,
+      "files": {
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/9a/9adbbcc9525c06b4bbdc00bceae44cfdc387b2d55e5521dde4ad2bd0638d9acc",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/b6/b6d073af73b08d31b44a1fedd6a4f9b228987f03971164fa5b03e15691c914cd"
+        }
+      }
+    },
+    "04130b8b-88b7-48ff-a74c-16917631dd49": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1794894866572,
+      "endedAt": 1794894868572,
+      "files": {
+        "compositions/scene3.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/b6/b6d073af73b08d31b44a1fedd6a4f9b228987f03971164fa5b03e15691c914cd",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/bd/bd63e22c01b53849188f8fa9e0d57e7686bf3acf5a551e5bdf76e2eec8ba81c3"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "04130b8b-88b7-48ff-a74c-16917631dd49",
+      "id": "3766e492-8297-4ff0-918d-240503c2a5e9"
+    },
+    "revisions": {
+      "54c958ba-399b-4b1f-9c6d-ee520bf4095b": [
+        {
+          "id": "d652a553-0cbb-43e3-9082-af920ae2b974",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/d652a553-0cbb-43e3-9082-af920ae2b974.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794830806370,
+          "contentHash": "81c59afd872159bca17a4a151417976484534e5d9c50c5aa6355935d86c45518",
+          "revision": "54c958ba-399b-4b1f-9c6d-ee520bf4095b",
+          "inputFingerprint": "d2c94cd1bd1f672f0c65a5783fc8fe3e6243c5bf9bad8e0fd123d708ff11ecb3",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "ad8cd34c-5467-49fa-ac2b-9c78b9360b47": [
+        {
+          "id": "f834418e-8f90-43d5-8ea3-198ce83c48e4",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/f834418e-8f90-43d5-8ea3-198ce83c48e4.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794830929494,
+          "contentHash": "8ea3ac3063bc395c06a1a99f08fcde00806a27b69769b00f5f345413202c76c9",
+          "revision": "ad8cd34c-5467-49fa-ac2b-9c78b9360b47",
+          "inputFingerprint": "147abee6e4f2a6993e9679c4d74517b1c82204db7df05e7b14cf2463160858cf",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "a240bcd6-9578-4368-b604-cd588f739799": [
+        {
+          "id": "60926909-c9fb-431f-ad65-3ad5538277e5",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/60926909-c9fb-431f-ad65-3ad5538277e5.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794830990118,
+          "contentHash": "0fefb47a2673615786c039173c38da99e823f90ec14b73116d38706c54e962ed",
+          "revision": "a240bcd6-9578-4368-b604-cd588f739799",
+          "inputFingerprint": "1f9c0c73e06c064346090be02ac39a464a60c30096177d95d6c61157c752edcd",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "1f955edc-b72f-4f23-8aa8-3ca662f143ad": [
+        {
+          "id": "9d222fa9-c0ef-4eac-a675-0001163273f3",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/9d222fa9-c0ef-4eac-a675-0001163273f3.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794831063590,
+          "contentHash": "9242da2d40c3180168f33f920498a04949379da78a09359fbad38c7876bbfe98",
+          "revision": "1f955edc-b72f-4f23-8aa8-3ca662f143ad",
+          "inputFingerprint": "11ef7cbcf33cb7bc2d879e7a416c396bf5a029f507551d67393cb3416170e419",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "id": "95f3110b-4022-48e9-af04-737c7572f69a",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/95f3110b-4022-48e9-af04-737c7572f69a.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794893414736,
+          "contentHash": "9242da2d40c3180168f33f920498a04949379da78a09359fbad38c7876bbfe98",
+          "revision": "1f955edc-b72f-4f23-8aa8-3ca662f143ad",
+          "inputFingerprint": "11ef7cbcf33cb7bc2d879e7a416c396bf5a029f507551d67393cb3416170e419",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "9b989888-1258-47af-92a1-8802b0454507": [
+        {
+          "id": "8d2f32dc-cccf-4807-a7fb-87e61bd8dc47",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/8d2f32dc-cccf-4807-a7fb-87e61bd8dc47.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794893817763,
+          "contentHash": "251c745f4d5fc3f3c0151df1eaae66a312c73f992e5b7190c3e0d4e30fa50977",
+          "revision": "9b989888-1258-47af-92a1-8802b0454507",
+          "inputFingerprint": "c4af4721498e28b57197382433c975832b3e65527c088ca5eb448c9e9ebcd7d5",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "3d43c9fd-f0aa-4904-91d1-0684c6630797": [
+        {
+          "id": "51f02764-6d09-47e2-bce7-90ba5662866c",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/51f02764-6d09-47e2-bce7-90ba5662866c.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794893957448,
+          "contentHash": "a96f65c8533172a01c9313917391e0ac3bd8654e5200ce4890925a0c4c071893",
+          "revision": "3d43c9fd-f0aa-4904-91d1-0684c6630797",
+          "inputFingerprint": "2cde5855b4616806160dbe24d5308729d400cb804794ad7a6b79f5c7453ac06b",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "bd249105-6ef3-4384-98cd-c82ac491b1a4": [
+        {
+          "id": "2883359a-ca02-4c12-91aa-c024cc1604f5",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/2883359a-ca02-4c12-91aa-c024cc1604f5.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794894000396,
+          "contentHash": "ab9f48eaa5b27c734eb23bba061f7aae2b007cf0417493584193a4cbb0ea5552",
+          "revision": "bd249105-6ef3-4384-98cd-c82ac491b1a4",
+          "inputFingerprint": "6d6f3eb9f5d4e52f9e7d945a11ee22b45a5260680762fea70c383aecec48a93c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "90bc8fa6-b918-4d77-b64b-e1b0e7514859": [
+        {
+          "id": "83e5f137-77e2-49c6-a924-edaa095b92d9",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/83e5f137-77e2-49c6-a924-edaa095b92d9.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794894206572,
+          "contentHash": "d6f284e7fe445aeaaf7efca02a8bc921407230e6666a41e5f87291f589db2b14",
+          "revision": "90bc8fa6-b918-4d77-b64b-e1b0e7514859",
+          "inputFingerprint": "d1cdf493e586f9ac4691dcbdfadce900fa6e7d6cf513776b15c1ca1c2ca782e2",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "359cc889-55d8-48f2-8968-b75bb29fb5dc": [
+        {
+          "id": "eafabbce-a299-473c-b268-a70637eee0be",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/eafabbce-a299-473c-b268-a70637eee0be.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794894767897,
+          "contentHash": "d6f284e7fe445aeaaf7efca02a8bc921407230e6666a41e5f87291f589db2b14",
+          "revision": "359cc889-55d8-48f2-8968-b75bb29fb5dc",
+          "inputFingerprint": "0153f3526d9ca6ce27f98e08ba77814b5cdeef50d7b995f39296f15b315db2f7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "0dc3d713-8aa2-4f53-8714-a84c6f5ad1e4": [
+        {
+          "id": "2afc8a13-215a-41a8-a4a1-0d041f2959c8",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/2afc8a13-215a-41a8-a4a1-0d041f2959c8.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794894822214,
+          "contentHash": "d6f284e7fe445aeaaf7efca02a8bc921407230e6666a41e5f87291f589db2b14",
+          "revision": "0dc3d713-8aa2-4f53-8714-a84c6f5ad1e4",
+          "inputFingerprint": "a1daa0643de0dadb8b269bdd59a20578b08eef85de0fb2cf6290f6d1e07f94fb",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "04130b8b-88b7-48ff-a74c-16917631dd49": [
+        {
+          "id": "3766e492-8297-4ff0-918d-240503c2a5e9",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/3766e492-8297-4ff0-918d-240503c2a5e9.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1794894892966,
+          "contentHash": "d6f284e7fe445aeaaf7efca02a8bc921407230e6666a41e5f87291f589db2b14",
+          "revision": "04130b8b-88b7-48ff-a74c-16917631dd49",
+          "inputFingerprint": "b89ec805a9c5cfc94eebd014a71eab79b6ee915fad0b147eba5f9871785ed80f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "057ce5c8-eda7-4b97-b0fb-418abc53c227",
+        "scope": "project",
+        "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/checks/057ce5c8-eda7-4b97-b0fb-418abc53c227.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1794830544811,
+        "contentHash": "b519d8eeb9db8cfc3469d26082451a075e109f3a5888c09590f2d38bcafcdcb4",
+        "revision": null,
+        "inputFingerprint": "790babb3aef75811f20a85a70b0d705c1a6b8011397b9c028819b2dc54625c32",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "04130b8b-88b7-48ff-a74c-16917631dd49",
+      "id": "3c4b68c7-53c3-4443-86f5-bdd7a981a112-1"
+    },
+    "revisions": {
+      "1f955edc-b72f-4f23-8aa8-3ca662f143ad": [
+        {
+          "scope": "full",
+          "id": "28fcf10f-d12d-4749-a94e-66fddbe6501f-0",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/5392de57-fa24-4eec-9e9d-f7db6f6d0d23/frame-00-at-2s.png",
+          "time": 2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794831097312,
+          "contentHash": "3bb8122b8371c2364d4c07cc9f0c367754796b8c1c7c4d1d3b7b13ee57ebca38",
+          "revision": "1f955edc-b72f-4f23-8aa8-3ca662f143ad",
+          "inputFingerprint": "11ef7cbcf33cb7bc2d879e7a416c396bf5a029f507551d67393cb3416170e419",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "28fcf10f-d12d-4749-a94e-66fddbe6501f-1",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/5392de57-fa24-4eec-9e9d-f7db6f6d0d23/frame-01-at-7s.png",
+          "time": 7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794831097312,
+          "contentHash": "392189eab05b707e6e79792885c74fb05d0b0880c2908be36d38483eacb14c7d",
+          "revision": "1f955edc-b72f-4f23-8aa8-3ca662f143ad",
+          "inputFingerprint": "11ef7cbcf33cb7bc2d879e7a416c396bf5a029f507551d67393cb3416170e419",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "28fcf10f-d12d-4749-a94e-66fddbe6501f-2",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/5392de57-fa24-4eec-9e9d-f7db6f6d0d23/frame-02-at-13s.png",
+          "time": 13,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794831097312,
+          "contentHash": "29bf25964d5157fc9494ba1cf7f1c016a347a54a43a12854302a8f30a7679fd9",
+          "revision": "1f955edc-b72f-4f23-8aa8-3ca662f143ad",
+          "inputFingerprint": "11ef7cbcf33cb7bc2d879e7a416c396bf5a029f507551d67393cb3416170e419",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "28fcf10f-d12d-4749-a94e-66fddbe6501f-3",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/5392de57-fa24-4eec-9e9d-f7db6f6d0d23/frame-03-at-18.5s.png",
+          "time": 18.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794831097312,
+          "contentHash": "06ef8e7cd551be7bc8780cb6c14d22e4c835ebe0b0cdebf8aba93fd5dff094a4",
+          "revision": "1f955edc-b72f-4f23-8aa8-3ca662f143ad",
+          "inputFingerprint": "11ef7cbcf33cb7bc2d879e7a416c396bf5a029f507551d67393cb3416170e419",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "28fcf10f-d12d-4749-a94e-66fddbe6501f-4",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/5392de57-fa24-4eec-9e9d-f7db6f6d0d23/frame-04-at-22.5s.png",
+          "time": 22.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794831097312,
+          "contentHash": "d5048fcbee693340415fd4397861d913bee9a78baf8aea46cc5dd2fd263194b1",
+          "revision": "1f955edc-b72f-4f23-8aa8-3ca662f143ad",
+          "inputFingerprint": "11ef7cbcf33cb7bc2d879e7a416c396bf5a029f507551d67393cb3416170e419",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "28fcf10f-d12d-4749-a94e-66fddbe6501f-5",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/5392de57-fa24-4eec-9e9d-f7db6f6d0d23/frame-05-at-23.75s.png",
+          "time": 23.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794831097312,
+          "contentHash": "ada3d54e11bccb1d2fa26e1d2bd1f1b4fb0ddf574a9a77e8b804cbf69ea6a86b",
+          "revision": "1f955edc-b72f-4f23-8aa8-3ca662f143ad",
+          "inputFingerprint": "11ef7cbcf33cb7bc2d879e7a416c396bf5a029f507551d67393cb3416170e419",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "bd249105-6ef3-4384-98cd-c82ac491b1a4": [
+        {
+          "scope": "full",
+          "id": "3ef6888f-c9f1-4875-8fb5-45645f2693d9-0",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/178a8583-4739-4f28-b7aa-d81af7218bb0/frame-00-at-2s.png",
+          "time": 2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894010339,
+          "contentHash": "2a99d294d1b9cab081f56b3bdd062d481b27a62ed34033c5c3f0118cd4fa5b59",
+          "revision": "bd249105-6ef3-4384-98cd-c82ac491b1a4",
+          "inputFingerprint": "6d6f3eb9f5d4e52f9e7d945a11ee22b45a5260680762fea70c383aecec48a93c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3ef6888f-c9f1-4875-8fb5-45645f2693d9-1",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/178a8583-4739-4f28-b7aa-d81af7218bb0/frame-01-at-7s.png",
+          "time": 7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894010339,
+          "contentHash": "1c6b617d5241f83fc9bc22e8dfeabc090bef717e2908535f1b03e22482680dc9",
+          "revision": "bd249105-6ef3-4384-98cd-c82ac491b1a4",
+          "inputFingerprint": "6d6f3eb9f5d4e52f9e7d945a11ee22b45a5260680762fea70c383aecec48a93c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3ef6888f-c9f1-4875-8fb5-45645f2693d9-2",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/178a8583-4739-4f28-b7aa-d81af7218bb0/frame-02-at-13s.png",
+          "time": 13,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894010339,
+          "contentHash": "839a8736362bdeca9582b3c20fb091bfcdf5f1a621b37436d3f23f185fce2b86",
+          "revision": "bd249105-6ef3-4384-98cd-c82ac491b1a4",
+          "inputFingerprint": "6d6f3eb9f5d4e52f9e7d945a11ee22b45a5260680762fea70c383aecec48a93c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3ef6888f-c9f1-4875-8fb5-45645f2693d9-3",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/178a8583-4739-4f28-b7aa-d81af7218bb0/frame-03-at-18.5s.png",
+          "time": 18.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894010339,
+          "contentHash": "4bb5e4a620a999e56c9517e42d301754f462d7da57a2cf487cfb95bab7979067",
+          "revision": "bd249105-6ef3-4384-98cd-c82ac491b1a4",
+          "inputFingerprint": "6d6f3eb9f5d4e52f9e7d945a11ee22b45a5260680762fea70c383aecec48a93c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3ef6888f-c9f1-4875-8fb5-45645f2693d9-4",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/178a8583-4739-4f28-b7aa-d81af7218bb0/frame-04-at-22.5s.png",
+          "time": 22.5,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894010339,
+          "contentHash": "19f3373f2de6df2184eda13bcaa91e25466c2392dcacba98ff74c1dc4affd748",
+          "revision": "bd249105-6ef3-4384-98cd-c82ac491b1a4",
+          "inputFingerprint": "6d6f3eb9f5d4e52f9e7d945a11ee22b45a5260680762fea70c383aecec48a93c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3ef6888f-c9f1-4875-8fb5-45645f2693d9-5",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/178a8583-4739-4f28-b7aa-d81af7218bb0/frame-05-at-23.75s.png",
+          "time": 23.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894010339,
+          "contentHash": "66e5d48e68ccce08eb640e57c101a9148c0a5d9321809c8bcdade39ee4bb3e92",
+          "revision": "bd249105-6ef3-4384-98cd-c82ac491b1a4",
+          "inputFingerprint": "6d6f3eb9f5d4e52f9e7d945a11ee22b45a5260680762fea70c383aecec48a93c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "62b9839a-848b-4533-af8b-38ff614d1c8c-0",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/35acb3ca-5156-402a-b860-d56439960775/frame-00-at-17s.png",
+          "time": 17,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894030917,
+          "contentHash": "6a5a9dc5ae2b1dcf9d2c0d833e8d55098c2be4c306a532a7b558b6d5f48937c5",
+          "revision": "bd249105-6ef3-4384-98cd-c82ac491b1a4",
+          "inputFingerprint": "6d6f3eb9f5d4e52f9e7d945a11ee22b45a5260680762fea70c383aecec48a93c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "62b9839a-848b-4533-af8b-38ff614d1c8c-1",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/35acb3ca-5156-402a-b860-d56439960775/frame-01-at-23.75s.png",
+          "time": 23.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894030917,
+          "contentHash": "66e5d48e68ccce08eb640e57c101a9148c0a5d9321809c8bcdade39ee4bb3e92",
+          "revision": "bd249105-6ef3-4384-98cd-c82ac491b1a4",
+          "inputFingerprint": "6d6f3eb9f5d4e52f9e7d945a11ee22b45a5260680762fea70c383aecec48a93c",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "359cc889-55d8-48f2-8968-b75bb29fb5dc": [
+        {
+          "scope": "full",
+          "id": "885078d6-b16f-47fe-a60c-cdb2b6bacc2e-0",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/f3752374-8b24-4b0f-bc41-efe25dfe6cc6/frame-00-at-2s.png",
+          "time": 2,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894776630,
+          "contentHash": "b48702d99f3d98bd162addcf17764f923b1a9d52332947743827ed426607aa79",
+          "revision": "359cc889-55d8-48f2-8968-b75bb29fb5dc",
+          "inputFingerprint": "0153f3526d9ca6ce27f98e08ba77814b5cdeef50d7b995f39296f15b315db2f7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "885078d6-b16f-47fe-a60c-cdb2b6bacc2e-1",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/f3752374-8b24-4b0f-bc41-efe25dfe6cc6/frame-01-at-7s.png",
+          "time": 7,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894776630,
+          "contentHash": "a7ff7a7a2f5de91cbfb795e2bafe91f8f71bf09767cd4276c40d162b73a4c2f8",
+          "revision": "359cc889-55d8-48f2-8968-b75bb29fb5dc",
+          "inputFingerprint": "0153f3526d9ca6ce27f98e08ba77814b5cdeef50d7b995f39296f15b315db2f7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "885078d6-b16f-47fe-a60c-cdb2b6bacc2e-2",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/f3752374-8b24-4b0f-bc41-efe25dfe6cc6/frame-02-at-13s.png",
+          "time": 13,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894776630,
+          "contentHash": "8d2f33f9b57dfb99b5b74c3a5297c03e1422e1988e0e0fb315450e95bebdf5f2",
+          "revision": "359cc889-55d8-48f2-8968-b75bb29fb5dc",
+          "inputFingerprint": "0153f3526d9ca6ce27f98e08ba77814b5cdeef50d7b995f39296f15b315db2f7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "885078d6-b16f-47fe-a60c-cdb2b6bacc2e-3",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/f3752374-8b24-4b0f-bc41-efe25dfe6cc6/frame-03-at-17s.png",
+          "time": 17,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894776630,
+          "contentHash": "71b6ba1f721b42ed49933ebcc5ce4a8c3c87968ca2e6059d47e680bc9acddbe6",
+          "revision": "359cc889-55d8-48f2-8968-b75bb29fb5dc",
+          "inputFingerprint": "0153f3526d9ca6ce27f98e08ba77814b5cdeef50d7b995f39296f15b315db2f7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "885078d6-b16f-47fe-a60c-cdb2b6bacc2e-4",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/f3752374-8b24-4b0f-bc41-efe25dfe6cc6/frame-04-at-23.75s.png",
+          "time": 23.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894776630,
+          "contentHash": "66e5d48e68ccce08eb640e57c101a9148c0a5d9321809c8bcdade39ee4bb3e92",
+          "revision": "359cc889-55d8-48f2-8968-b75bb29fb5dc",
+          "inputFingerprint": "0153f3526d9ca6ce27f98e08ba77814b5cdeef50d7b995f39296f15b315db2f7",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "0dc3d713-8aa2-4f53-8714-a84c6f5ad1e4": [
+        {
+          "scope": "full",
+          "id": "38b09581-d1e3-4131-be33-70aa040fdede-0",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/078298cd-b362-43f6-9eb0-7df43f5f79a8/frame-00-at-13s.png",
+          "time": 13,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894831124,
+          "contentHash": "ec01e856997338ac2e6de7bde9bc5085f122141a770a041031584e34a6ce77ca",
+          "revision": "0dc3d713-8aa2-4f53-8714-a84c6f5ad1e4",
+          "inputFingerprint": "a1daa0643de0dadb8b269bdd59a20578b08eef85de0fb2cf6290f6d1e07f94fb",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "38b09581-d1e3-4131-be33-70aa040fdede-1",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/078298cd-b362-43f6-9eb0-7df43f5f79a8/frame-01-at-23.75s.png",
+          "time": 23.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894831124,
+          "contentHash": "66e5d48e68ccce08eb640e57c101a9148c0a5d9321809c8bcdade39ee4bb3e92",
+          "revision": "0dc3d713-8aa2-4f53-8714-a84c6f5ad1e4",
+          "inputFingerprint": "a1daa0643de0dadb8b269bdd59a20578b08eef85de0fb2cf6290f6d1e07f94fb",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "04130b8b-88b7-48ff-a74c-16917631dd49": [
+        {
+          "scope": "full",
+          "id": "3c4b68c7-53c3-4443-86f5-bdd7a981a112-0",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/af61d3d8-f851-4b30-93cd-da1c3d1e076c/frame-00-at-13s.png",
+          "time": 13,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894875798,
+          "contentHash": "d8f0be30646020187a75c16ed0110e1c01dc4981831e31cdfcbed52739722cbc",
+          "revision": "04130b8b-88b7-48ff-a74c-16917631dd49",
+          "inputFingerprint": "b89ec805a9c5cfc94eebd014a71eab79b6ee915fad0b147eba5f9871785ed80f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "3c4b68c7-53c3-4443-86f5-bdd7a981a112-1",
+          "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-video/.hyperframes/artifacts/snapshots/af61d3d8-f851-4b30-93cd-da1c3d1e076c/frame-01-at-23.75s.png",
+          "time": 23.75,
+          "metadata": {
+            "width": 1080,
+            "height": 1920,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1794894875798,
+          "contentHash": "66e5d48e68ccce08eb640e57c101a9148c0a5d9321809c8bcdade39ee4bb3e92",
+          "revision": "04130b8b-88b7-48ff-a74c-16917631dd49",
+          "inputFingerprint": "b89ec805a9c5cfc94eebd014a71eab79b6ee915fad0b147eba5f9871785ed80f",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": []
+  }
+}

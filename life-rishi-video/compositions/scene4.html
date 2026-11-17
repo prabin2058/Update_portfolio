@@ -1,0 +1,291 @@
+<template>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    #root {
+      position: absolute;
+      inset: 0;
+      width: 1080px;
+      height: 1920px;
+      background: radial-gradient(circle at 50% 15%, #FFEBD9 0%, #FFF7F0 60%, #FFFFFF 100%);
+      font-family: 'Outfit', sans-serif;
+      overflow: hidden;
+      color: #2A1608;
+    }
+
+    /* Ambient Warm Vedic Rings */
+    .bg-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1.5px dashed rgba(250, 93, 0, 0.16);
+      pointer-events: none;
+    }
+    #s4-ring-1 {
+      width: 800px;
+      height: 800px;
+      top: 160px;
+      left: 140px;
+    }
+    #s4-ring-2 {
+      width: 1120px;
+      height: 1120px;
+      top: 20px;
+      left: -20px;
+    }
+
+    /* Scene Header within Title-Safe Area */
+    .scene-header {
+      position: absolute;
+      top: 130px;
+      left: 100px;
+      right: 100px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      z-index: 20;
+    }
+    .scene-eyebrow {
+      font-size: 28px;
+      font-weight: 800;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #D63E00;
+      background: rgba(250, 93, 0, 0.08);
+      padding: 8px 26px;
+      border-radius: 20px;
+      border: 1px solid rgba(250, 93, 0, 0.2);
+    }
+    .scene-title {
+      font-size: 44px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      line-height: 1.18;
+      color: #2A1608;
+    }
+    .scene-title span {
+      color: #D63E00;
+    }
+
+    /* iPhone 16 Pro Device Frame */
+    .phone-stage {
+      position: absolute;
+      top: 310px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 720px;
+      height: 1460px;
+      z-index: 10;
+    }
+
+    .iphone-chassis {
+      width: 100%;
+      height: 100%;
+      border-radius: 56px;
+      padding: 10px;
+      background: linear-gradient(150deg, #4F4741 0%, #2A2420 25%, #181412 100%);
+      box-shadow:
+        0 0 0 1.5px rgba(255, 255, 255, 0.15),
+        inset 0 0 0 1px rgba(0, 0, 0, 0.8),
+        0 36px 95px rgba(26, 18, 11, 0.28),
+        0 8px 28px rgba(250, 93, 0, 0.1);
+      position: relative;
+    }
+
+    /* Physical Hardware Side Buttons */
+    .iphone-btn-action {
+      position: absolute;
+      left: -4px;
+      top: 210px;
+      width: 4px;
+      height: 40px;
+      border-radius: 3px 0 0 3px;
+      background: #3C3632;
+      box-shadow: inset 1px 0 1px rgba(255, 255, 255, 0.25);
+    }
+    .iphone-btn-vol-up {
+      position: absolute;
+      left: -4px;
+      top: 275px;
+      width: 4px;
+      height: 72px;
+      border-radius: 3px 0 0 3px;
+      background: #3C3632;
+      box-shadow: inset 1px 0 1px rgba(255, 255, 255, 0.25);
+    }
+    .iphone-btn-vol-down {
+      position: absolute;
+      left: -4px;
+      top: 368px;
+      width: 4px;
+      height: 72px;
+      border-radius: 3px 0 0 3px;
+      background: #3C3632;
+      box-shadow: inset 1px 0 1px rgba(255, 255, 255, 0.25);
+    }
+    .iphone-btn-power {
+      position: absolute;
+      right: -4px;
+      top: 300px;
+      width: 4px;
+      height: 105px;
+      border-radius: 0 3px 3px 0;
+      background: #3C3632;
+      box-shadow: inset -1px 0 1px rgba(255, 255, 255, 0.25);
+    }
+
+    /* iPhone Screen Area */
+    .iphone-screen {
+      width: 100%;
+      height: 100%;
+      border-radius: 46px;
+      overflow: hidden;
+      background: #FFFFFF;
+      position: relative;
+    }
+
+    /* iPhone Dynamic Island */
+    .iphone-dynamic-island {
+      position: absolute;
+      top: 13px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 144px;
+      height: 36px;
+      border-radius: 18px;
+      background: #000000;
+      z-index: 50;
+      pointer-events: none;
+      box-shadow: 0 0 1px 1px rgba(255, 255, 255, 0.06);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding-right: 12px;
+    }
+    .island-camera {
+      width: 13px;
+      height: 13px;
+      border-radius: 50%;
+      background: #090e18;
+      box-shadow: inset 0 0 2px #1e283d;
+    }
+
+    /* Scrollable track inside phone */
+    .scroll-track {
+      width: 100%;
+      position: relative;
+    }
+
+    .screen-img {
+      width: 100%;
+      height: auto;
+      display: block;
+      image-rendering: -webkit-optimize-contrast;
+    }
+
+    /* Interactive Tap Indicator on "Book Consultation" */
+    .book-btn-tap {
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 580px;
+      height: 85px;
+      border-radius: 45px;
+      border: 3px solid rgba(255, 255, 255, 0.95);
+      box-shadow: 0 0 35px rgba(250, 93, 0, 0.8);
+      pointer-events: none;
+      opacity: 0;
+    }
+  </style>
+
+  <div id="root" data-composition-id="scene4" data-width="1080" data-height="1920">
+    <!-- Ambient Rings -->
+    <div id="s4-ring-1" class="bg-ring clip" data-start="0" data-duration="5" data-track-index="0" data-layout-ignore></div>
+    <div id="s4-ring-2" class="bg-ring clip" data-start="0" data-duration="5" data-track-index="0" data-layout-ignore></div>
+
+    <!-- Header Copy -->
+    <div id="s4-header" class="scene-header clip" data-start="0.1" data-duration="4.9" data-track-index="0">
+      <div class="scene-eyebrow">Verified Gurukul Masters</div>
+      <div class="scene-title">1-on-1 Guidance for <span>Critical Life Decisions</span></div>
+    </div>
+
+    <!-- iPhone Showcase with Original Vikram Rao Astrologer PNG -->
+    <div id="s4-phone-wrap" class="phone-stage clip" data-start="0" data-duration="5" data-track-index="0" data-layout-allow-overflow>
+      <div class="iphone-chassis">
+        <!-- Physical iPhone Hardware Buttons -->
+        <div class="iphone-btn-action" data-layout-ignore></div>
+        <div class="iphone-btn-vol-up" data-layout-ignore></div>
+        <div class="iphone-btn-vol-down" data-layout-ignore></div>
+        <div class="iphone-btn-power" data-layout-ignore></div>
+
+        <div class="iphone-screen">
+          <!-- Dynamic Island -->
+          <div class="iphone-dynamic-island" data-layout-ignore>
+            <div class="island-camera"></div>
+          </div>
+
+          <div id="s4-scroll-track" class="scroll-track">
+            <img src="assets/screen-astrologer.png" class="screen-img" alt="Vikram Rao Astrologer Screen" />
+            <div id="s4-book-tap" class="book-btn-tap" data-layout-ignore></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    // Header entry
+    tl.fromTo("#s4-header",
+      { y: 25, opacity: 0 },
+      { y: 0, opacity: 1, duration: 0.55, ease: "power3.out" },
+      0.1
+    );
+
+    // Phone arrival
+    tl.fromTo("#s4-phone-wrap",
+      { y: 55, scale: 0.96, opacity: 0 },
+      { y: 0, scale: 1, opacity: 1, duration: 0.75, ease: "power3.out" },
+      0.15
+    );
+
+    // Initial position starts directly at top of Vikram Rao profile
+    tl.set("#s4-scroll-track", { y: 0 }, 0);
+
+    // Smooth scroll down to Reviews & "Book Consultation" CTA button
+    tl.to("#s4-scroll-track", {
+      y: -1960,
+      duration: 1.4,
+      ease: "power2.inOut"
+    }, 1.5);
+
+    // Tap highlight on "Book Consultation" button at 3.1s
+    tl.fromTo("#s4-book-tap",
+      { scale: 0.92, opacity: 0 },
+      { scale: 1.04, opacity: 1, duration: 0.35, ease: "power2.out" },
+      3.1
+    );
+    tl.to("#s4-book-tap", {
+      scale: 1.12,
+      opacity: 0,
+      duration: 0.35,
+      ease: "power2.in"
+    }, 3.5);
+
+    // Punch-in zoom into orange consultation button leading into Scene 5
+    tl.to("#s4-phone-wrap", {
+      scale: 1.06,
+      y: -50,
+      duration: 0.9,
+      ease: "power2.in"
+    }, 4.0);
+
+    window.__timelines["scene4"] = tl;
+  </script>
+</template>
