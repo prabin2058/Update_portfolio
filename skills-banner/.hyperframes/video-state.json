@@ -1,0 +1,201 @@
+{
+  "version": 1,
+  "historyId": "c1a128b5-7006-4693-bad6-a7874fdb1670",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/c1a128b5-7006-4693-bad6-a7874fdb1670/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "CLAUDE.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/c1a128b5-7006-4693-bad6-a7874fdb1670/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "compositions/orbit.html": {
+      "hash": "05e2ccd59503e92f5ee478b446b857ce48ebbda00909114c2ed71f2e61f95041",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/c1a128b5-7006-4693-bad6-a7874fdb1670/blobs/05/05e2ccd59503e92f5ee478b446b857ce48ebbda00909114c2ed71f2e61f95041"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/c1a128b5-7006-4693-bad6-a7874fdb1670/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "d6a6e639acba748b790a428f24dce928e5a4e6f06f7ce5ef1e44127359880252",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/c1a128b5-7006-4693-bad6-a7874fdb1670/blobs/d6/d6a6e639acba748b790a428f24dce928e5a4e6f06f7ce5ef1e44127359880252"
+    },
+    "meta.json": {
+      "hash": "12a8ee8673661e8b1d4eca13c9a646fe5800635a1ec5a365a3ea51e7cebe79ac",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/c1a128b5-7006-4693-bad6-a7874fdb1670/blobs/12/12a8ee8673661e8b1d4eca13c9a646fe5800635a1ec5a365a3ea51e7cebe79ac"
+    },
+    "package.json": {
+      "hash": "fac0d5d45b22a55fce5dfc76cc10542cc41124f5fff7aca5dec7e05e4a05162c",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/c1a128b5-7006-4693-bad6-a7874fdb1670/blobs/fa/fac0d5d45b22a55fce5dfc76cc10542cc41124f5fff7aca5dec7e05e4a05162c"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "32b46309-8551-4e9b-a8ca-996bb4358ef9"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "32b46309-8551-4e9b-a8ca-996bb4358ef9",
+        "scope": "project",
+        "report": "/Users/prabinkarki/Desktop/portfolio/skills-banner/.hyperframes/artifacts/checks/32b46309-8551-4e9b-a8ca-996bb4358ef9.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1795073945467,
+        "contentHash": "f9880e7a47d78d1b2cded300f631a0d997b9b19c758be22d86329b8c792ac375",
+        "revision": null,
+        "inputFingerprint": "d348162c6e658ecf25236331d349832f2d13f3d86d08e8cf900c167700822832",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "76cd8873-3036-46d5-8fa4-25381037cbf9-4"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "76cd8873-3036-46d5-8fa4-25381037cbf9-0",
+        "image": "/Users/prabinkarki/Desktop/portfolio/skills-banner/.hyperframes/artifacts/snapshots/ba756b8b-5f95-49e8-b7a8-e65d13e70594/frame-00-at-0s.png",
+        "time": 0,
+        "metadata": {
+          "width": 1920,
+          "height": 640,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795073949098,
+        "contentHash": "bf5821227a982ed26f7ab18c8ae122c374bdda7556fad80c0a142f483c9ced39",
+        "revision": null,
+        "inputFingerprint": "d348162c6e658ecf25236331d349832f2d13f3d86d08e8cf900c167700822832",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "76cd8873-3036-46d5-8fa4-25381037cbf9-1",
+        "image": "/Users/prabinkarki/Desktop/portfolio/skills-banner/.hyperframes/artifacts/snapshots/ba756b8b-5f95-49e8-b7a8-e65d13e70594/frame-01-at-3s.png",
+        "time": 3,
+        "metadata": {
+          "width": 1920,
+          "height": 640,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795073949098,
+        "contentHash": "978dba2ac17145854868cd7726ca2fc5da0bcb6b9a663b74b7fa0fdb62db9868",
+        "revision": null,
+        "inputFingerprint": "d348162c6e658ecf25236331d349832f2d13f3d86d08e8cf900c167700822832",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "76cd8873-3036-46d5-8fa4-25381037cbf9-2",
+        "image": "/Users/prabinkarki/Desktop/portfolio/skills-banner/.hyperframes/artifacts/snapshots/ba756b8b-5f95-49e8-b7a8-e65d13e70594/frame-02-at-6s.png",
+        "time": 6,
+        "metadata": {
+          "width": 1920,
+          "height": 640,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795073949098,
+        "contentHash": "9345d26984e67f160c520e6f9ce86458b2f5865af999e45e18785fe3291bb678",
+        "revision": null,
+        "inputFingerprint": "d348162c6e658ecf25236331d349832f2d13f3d86d08e8cf900c167700822832",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "76cd8873-3036-46d5-8fa4-25381037cbf9-3",
+        "image": "/Users/prabinkarki/Desktop/portfolio/skills-banner/.hyperframes/artifacts/snapshots/ba756b8b-5f95-49e8-b7a8-e65d13e70594/frame-03-at-11.95s.png",
+        "time": 11.95,
+        "metadata": {
+          "width": 1920,
+          "height": 640,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795073949098,
+        "contentHash": "db6e0fe55150dc1c865c45af72c48370e37366a8cf34941774c004afcfe6cb41",
+        "revision": null,
+        "inputFingerprint": "d348162c6e658ecf25236331d349832f2d13f3d86d08e8cf900c167700822832",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "76cd8873-3036-46d5-8fa4-25381037cbf9-4",
+        "image": "/Users/prabinkarki/Desktop/portfolio/skills-banner/.hyperframes/artifacts/snapshots/ba756b8b-5f95-49e8-b7a8-e65d13e70594/frame-04-at-11.75s.png",
+        "time": 11.75,
+        "metadata": {
+          "width": 1920,
+          "height": 640,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795073949098,
+        "contentHash": "aa404d0b7205a5a2028623a16555878113c121261dd25ade063fd7835a671d12",
+        "revision": null,
+        "inputFingerprint": "d348162c6e658ecf25236331d349832f2d13f3d86d08e8cf900c167700822832",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "82fc75a4-9e45-43a3-af18-6ee3cc6e53bd",
+      "completedAt": 1795073971883,
+      "output": "/Users/prabinkarki/Desktop/portfolio/skills-banner/renders/skills-orbit.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

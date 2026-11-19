@@ -1,0 +1,116 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; width: 1920px; height: 1200px; overflow: hidden; font-family: 'Poppins', sans-serif;
+      background: linear-gradient(110deg, #3d1d2a 0%, #33204a 45%, #1a2a58 100%); }
+    .bokeh { position: absolute; border-radius: 50%; pointer-events: none; }
+    .floorglow { position: absolute; left: 160px; top: 1060px; width: 1600px; height: 200px; border-radius: 50%; pointer-events: none;
+      background: radial-gradient(ellipse, rgba(140,120,255,0.35) 0%, rgba(140,120,255,0) 70%); }
+    .streak { position: absolute; height: 10px; border-radius: 10px; pointer-events: none; opacity: 0.55; }
+
+    .stage { position: absolute; inset: 0; perspective: 2200px; perspective-origin: 50% 45%; }
+    .rig { position: absolute; inset: 0; transform-style: preserve-3d; }
+
+    /* Phone */
+    #phone { position: absolute; left: 735px; top: 95px; width: 450px; height: 980px; border-radius: 66px; padding: 12px;
+      background: linear-gradient(150deg, #4f4741 0%, #2a2420 30%, #151210 100%);
+      box-shadow: 0 0 0 2px rgba(255,255,255,0.18), 0 60px 120px rgba(5,5,30,0.6), 0 0 80px rgba(160,140,255,0.25); }
+    .screen { position: relative; width: 426px; height: 956px; border-radius: 55px; overflow: hidden; background: #FFF9F4; }
+    .island { position: absolute; top: 14px; left: 50%; width: 130px; height: 38px; margin-left: -65px; border-radius: 19px; background: #000; z-index: 5; }
+    #dash { position: absolute; left: 0; top: 0; width: 426px; height: auto; display: block; }
+
+    /* Floating screenshot cards */
+    .shotcard { position: absolute; border-radius: 26px; overflow: hidden; background: #fff;
+      box-shadow: 0 0 0 4px rgba(255,255,255,0.85), 0 30px 70px rgba(5,5,30,0.5); }
+    .shotcard img { position: absolute; left: 0; top: 0; width: 100%; height: auto; display: block; }
+
+    /* Floating skill tags */
+    .tag { position: absolute; white-space: nowrap; display: flex; align-items: center; gap: 14px; padding: 18px 28px; border-radius: 20px;
+      background: rgba(255,255,255,0.92); color: #1e1b3a; font-size: 30px; font-weight: 700;
+      box-shadow: 0 20px 50px rgba(5,5,30,0.45), inset 0 0 0 1px rgba(255,255,255,0.9); }
+    .tag i { width: 16px; height: 16px; border-radius: 5px; display: block; }
+  </style>
+
+  <div id="root" data-composition-id="phone" data-width="1920" data-height="1200">
+    <!-- Colour bokeh -->
+    <div id="bk1" class="bokeh" data-layout-ignore="" style="left:120px;top:60px;width:150px;height:150px;background:radial-gradient(circle, rgba(255,196,60,0.75) 0%, rgba(255,196,60,0) 70%)"></div>
+    <div id="bk2" class="bokeh" data-layout-ignore="" style="left:540px;top:-20px;width:120px;height:120px;background:radial-gradient(circle, rgba(70,140,255,0.7) 0%, rgba(70,140,255,0) 70%)"></div>
+    <div id="bk3" class="bokeh" data-layout-ignore="" style="left:1240px;top:30px;width:170px;height:170px;background:radial-gradient(circle, rgba(255,80,80,0.7) 0%, rgba(255,80,80,0) 70%)"></div>
+    <div id="bk4" class="bokeh" data-layout-ignore="" style="left:1660px;top:140px;width:160px;height:160px;background:radial-gradient(circle, rgba(60,220,120,0.7) 0%, rgba(60,220,120,0) 70%)"></div>
+    <div id="bk5" class="bokeh" data-layout-ignore="" style="left:30px;top:520px;width:130px;height:130px;background:radial-gradient(circle, rgba(190,90,255,0.75) 0%, rgba(190,90,255,0) 70%)"></div>
+    <div id="bk6" class="bokeh" data-layout-ignore="" style="left:1760px;top:520px;width:140px;height:140px;background:radial-gradient(circle, rgba(80,160,255,0.75) 0%, rgba(80,160,255,0) 70%)"></div>
+    <div id="bk7" class="bokeh" data-layout-ignore="" style="left:200px;top:880px;width:180px;height:180px;background:radial-gradient(circle, rgba(255,170,60,0.6) 0%, rgba(255,170,60,0) 70%)"></div>
+    <div id="bk8" class="bokeh" data-layout-ignore="" style="left:1560px;top:900px;width:190px;height:190px;background:radial-gradient(circle, rgba(255,210,80,0.6) 0%, rgba(255,210,80,0) 70%)"></div>
+    <div id="bk9" class="bokeh" data-layout-ignore="" style="left:960px;top:-60px;width:140px;height:140px;background:radial-gradient(circle, rgba(255,120,200,0.6) 0%, rgba(255,120,200,0) 70%)"></div>
+    <div id="bk10" class="bokeh" data-layout-ignore="" style="left:640px;top:1000px;width:130px;height:130px;background:radial-gradient(circle, rgba(60,220,200,0.55) 0%, rgba(60,220,200,0) 70%)"></div>
+    <div class="floorglow" data-layout-ignore=""></div>
+    <div class="streak" data-layout-ignore="" style="left:260px;top:1150px;width:220px;background:#ffb347"></div>
+    <div class="streak" data-layout-ignore="" style="left:560px;top:1172px;width:160px;background:#6aa8ff"></div>
+    <div class="streak" data-layout-ignore="" style="left:1180px;top:1160px;width:240px;background:#ff6ec7"></div>
+    <div class="streak" data-layout-ignore="" style="left:1500px;top:1180px;width:180px;background:#5be3a0"></div>
+
+    <div class="stage" data-layout-ignore="">
+      <div id="rig" class="rig clip" data-start="0" data-duration="12" data-track-index="0" data-layout-allow-overlap="" data-layout-allow-overflow="">
+        <!-- Phone with the Life Rishi dashboard scrolling -->
+        <div id="phone">
+          <div class="screen">
+            <div class="island"></div>
+            <img id="dash" src="assets/screen-dashboard.webp" alt="Life Rishi dashboard" />
+          </div>
+        </div>
+
+        <!-- Screens popping out of the phone -->
+        <div id="card-welcome" class="shotcard" style="left:340px;top:150px;width:230px;height:500px"><img src="assets/screen-welcome.png" alt="Life Rishi welcome screen" /></div>
+        <div id="card-ai" class="shotcard" style="left:1350px;top:130px;width:230px;height:500px"><img src="assets/screen-ai-rishi.png" alt="Life Rishi AI chat" /></div>
+        <div id="card-astro" class="shotcard" style="left:1590px;top:560px;width:200px;height:440px"><img src="assets/screen-astrologer.webp" alt="Life Rishi astrologer profile" /></div>
+
+        <!-- Mobile & real-time skills -->
+        <div id="t-rn" class="tag" style="left:230px;top:720px"><i style="background:#22d3ee"></i>React Native</div>
+        <div id="t-expo" class="tag" style="left:470px;top:930px"><i style="background:#a78bfa"></i>Expo &amp; EAS</div>
+        <div id="t-rtc" class="tag" style="left:560px;top:470px"><i style="background:#f472b6"></i>WebRTC &amp; Stream</div>
+        <div id="t-tq" class="tag" style="left:1150px;top:660px"><i style="background:#fb923c"></i>TanStack Query</div>
+        <div id="t-fcm" class="tag" style="left:1290px;top:960px"><i style="background:#facc15"></i>FCM &amp; Push</div>
+        <div id="t-db" class="tag" style="left:1090px;top:330px"><i style="background:#34d399"></i>PostgreSQL &amp; MongoDB</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const LOOP = 12;
+
+    // Depth: items float in front of the phone at different distances.
+    gsap.set("#phone", { z: 0, rotationX: 4, transformOrigin: "50% 50%" });
+    const depth = { "#card-welcome": [140, 16], "#card-ai": [120, -16], "#card-astro": [200, -22],
+      "#t-rn": [260, 10], "#t-expo": [340, 6], "#t-rtc": [420, 8], "#t-tq": [380, -8], "#t-fcm": [300, -10], "#t-db": [220, -6] };
+    Object.entries(depth).forEach(([id, [z, ry]]) => gsap.set(id, { z, rotationY: ry }));
+
+    // Phone sways gently; the dashboard scrolls down and back. Both return to the start at 12s.
+    tl.fromTo("#phone", { rotationY: -12 }, { rotationY: 12, duration: LOOP / 2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+    tl.fromTo("#dash", { y: 0 }, { y: -1372, duration: LOOP / 2, ease: "sine.inOut", yoyo: true, repeat: 1 }, 0);
+
+    // Each item bobs on its own period (4, 6 or 12 s all divide the loop, so it joins seamlessly).
+    function bob(id, amp, period, rot, flip) {
+      const s = flip ? -1 : 1;
+      tl.fromTo(id, { y: -amp * s, rotation: -rot * s }, { y: amp * s, rotation: rot * s, duration: period / 2, ease: "sine.inOut",
+        yoyo: true, repeat: (2 * LOOP) / period - 1 }, 0);
+    }
+    bob("#card-welcome", 26, 6, 2.5, false);
+    bob("#card-ai", 30, 4, -2, true);
+    bob("#card-astro", 22, 6, 3, true);
+    bob("#t-rn", 20, 4, 2, false);
+    bob("#t-expo", 16, 6, -2, true);
+    bob("#t-rtc", 24, 12, 3, false);
+    bob("#t-tq", 20, 6, -3, false);
+    bob("#t-fcm", 18, 4, 2, true);
+    bob("#t-db", 22, 12, -2, true);
+
+    // Bokeh breathes.
+    ["#bk1","#bk2","#bk3","#bk4","#bk5","#bk6","#bk7","#bk8","#bk9","#bk10"].forEach((id, k) => {
+      const period = [4, 6, 12][k % 3];
+      tl.fromTo(id, { opacity: k % 2 ? 0.45 : 1, scale: k % 2 ? 0.9 : 1.05 }, { opacity: k % 2 ? 1 : 0.45, scale: k % 2 ? 1.05 : 0.9,
+        duration: period / 2, ease: "sine.inOut", yoyo: true, repeat: (2 * LOOP) / period - 1 }, 0);
+    });
+
+    window.__timelines["phone"] = tl;
+  </script>
+</template>

@@ -1,0 +1,237 @@
+{
+  "version": 1,
+  "historyId": "90b4e62c-c95c-4354-bd71-57ef315c1e42",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "CLAUDE.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "assets/screen-ai-rishi.png": {
+      "hash": "24d64c9b6ec62e1221970cdf003b11751f338443328fd6ef9f5c1a27350b512d",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/24/24d64c9b6ec62e1221970cdf003b11751f338443328fd6ef9f5c1a27350b512d"
+    },
+    "assets/screen-astrologer.webp": {
+      "hash": "97df29931024d072e4e23ac588b62668a0b2c2d09202c46634df4a0393f9e32a",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/97/97df29931024d072e4e23ac588b62668a0b2c2d09202c46634df4a0393f9e32a"
+    },
+    "assets/screen-dashboard.webp": {
+      "hash": "f06a60a0d7a73635954af8eb14b94a58be04c6e3f5a7c0ab878532bdaf0caa74",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/f0/f06a60a0d7a73635954af8eb14b94a58be04c6e3f5a7c0ab878532bdaf0caa74"
+    },
+    "assets/screen-welcome.png": {
+      "hash": "6cacdeb0720a65237aeeaa66ccce9399cfd07e61dd7edbd490db0c336539a2ac",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/6c/6cacdeb0720a65237aeeaa66ccce9399cfd07e61dd7edbd490db0c336539a2ac"
+    },
+    "compositions/phone.html": {
+      "hash": "699da86d7e6bb3ad6856ffb3a18bc2de8296ea61be185af7126faead6b7dbc5c",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/69/699da86d7e6bb3ad6856ffb3a18bc2de8296ea61be185af7126faead6b7dbc5c"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "960f33101d58a61e961915da9410e98e4d663ccadad8f79da9e8fa08f5d501b6",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/96/960f33101d58a61e961915da9410e98e4d663ccadad8f79da9e8fa08f5d501b6"
+    },
+    "meta.json": {
+      "hash": "6c51e799121603c55ffd4cf0782dac85a3c88ae9530e521897f569d22cc04f85",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/6c/6c51e799121603c55ffd4cf0782dac85a3c88ae9530e521897f569d22cc04f85"
+    },
+    "package.json": {
+      "hash": "cfb3842dc6f0ea576e45dbe715b5d6dab4de3d152e475f6a61c65b40451a3949",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/90b4e62c-c95c-4354-bd71-57ef315c1e42/blobs/cf/cfb3842dc6f0ea576e45dbe715b5d6dab4de3d152e475f6a61c65b40451a3949"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "353b7d0c-05b0-477b-a31b-0d7c046fe62d"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "353b7d0c-05b0-477b-a31b-0d7c046fe62d",
+        "scope": "project",
+        "report": "/Users/prabinkarki/Desktop/portfolio/mobile-skill-card/.hyperframes/artifacts/checks/353b7d0c-05b0-477b-a31b-0d7c046fe62d.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1795075393331,
+        "contentHash": "b7031318fb7e896d33cde9cc34fb434b5cd968c538452f7ee11b801ae2c8a6f1",
+        "revision": null,
+        "inputFingerprint": "99b119c1e0e2e425e50d9bf95f409ddf97bde2f5991f43dbdc1db42ea7087f05",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "edad9ae7-a0c5-46c3-9327-f58b8b8a5f0b-5"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "edad9ae7-a0c5-46c3-9327-f58b8b8a5f0b-0",
+        "image": "/Users/prabinkarki/Desktop/portfolio/mobile-skill-card/.hyperframes/artifacts/snapshots/9fe8f7ba-c0ab-4941-9a7a-a6ce4800c369/frame-00-at-0s.png",
+        "time": 0,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075397740,
+        "contentHash": "fe6845bf9fc8010cb0861708f27bf57417650fc3ce8e124ad627224476aefc4d",
+        "revision": null,
+        "inputFingerprint": "99b119c1e0e2e425e50d9bf95f409ddf97bde2f5991f43dbdc1db42ea7087f05",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "edad9ae7-a0c5-46c3-9327-f58b8b8a5f0b-1",
+        "image": "/Users/prabinkarki/Desktop/portfolio/mobile-skill-card/.hyperframes/artifacts/snapshots/9fe8f7ba-c0ab-4941-9a7a-a6ce4800c369/frame-01-at-3s.png",
+        "time": 3,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075397740,
+        "contentHash": "576184011fe6d9dc3a9b95b894fe34acddf61046fb6a05b0475cfbb164bab3ce",
+        "revision": null,
+        "inputFingerprint": "99b119c1e0e2e425e50d9bf95f409ddf97bde2f5991f43dbdc1db42ea7087f05",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "edad9ae7-a0c5-46c3-9327-f58b8b8a5f0b-2",
+        "image": "/Users/prabinkarki/Desktop/portfolio/mobile-skill-card/.hyperframes/artifacts/snapshots/9fe8f7ba-c0ab-4941-9a7a-a6ce4800c369/frame-02-at-6s.png",
+        "time": 6,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075397740,
+        "contentHash": "49bdda7416eb578fdd3c27826f953f67b7a0556b55852f470430a9bd7616b5d3",
+        "revision": null,
+        "inputFingerprint": "99b119c1e0e2e425e50d9bf95f409ddf97bde2f5991f43dbdc1db42ea7087f05",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "edad9ae7-a0c5-46c3-9327-f58b8b8a5f0b-3",
+        "image": "/Users/prabinkarki/Desktop/portfolio/mobile-skill-card/.hyperframes/artifacts/snapshots/9fe8f7ba-c0ab-4941-9a7a-a6ce4800c369/frame-03-at-9s.png",
+        "time": 9,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075397740,
+        "contentHash": "576184011fe6d9dc3a9b95b894fe34acddf61046fb6a05b0475cfbb164bab3ce",
+        "revision": null,
+        "inputFingerprint": "99b119c1e0e2e425e50d9bf95f409ddf97bde2f5991f43dbdc1db42ea7087f05",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "edad9ae7-a0c5-46c3-9327-f58b8b8a5f0b-4",
+        "image": "/Users/prabinkarki/Desktop/portfolio/mobile-skill-card/.hyperframes/artifacts/snapshots/9fe8f7ba-c0ab-4941-9a7a-a6ce4800c369/frame-04-at-11.95s.png",
+        "time": 11.95,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075397740,
+        "contentHash": "daf995b9e3fb2ff1fdb942c26a118587a6dbab000a6742f860842994a7fa5c19",
+        "revision": null,
+        "inputFingerprint": "99b119c1e0e2e425e50d9bf95f409ddf97bde2f5991f43dbdc1db42ea7087f05",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "edad9ae7-a0c5-46c3-9327-f58b8b8a5f0b-5",
+        "image": "/Users/prabinkarki/Desktop/portfolio/mobile-skill-card/.hyperframes/artifacts/snapshots/9fe8f7ba-c0ab-4941-9a7a-a6ce4800c369/frame-05-at-11.75s.png",
+        "time": 11.75,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075397740,
+        "contentHash": "b1defe3c0062183755d7823580b001fbb1a421efe23ed3d56f459847d16ce691",
+        "revision": null,
+        "inputFingerprint": "99b119c1e0e2e425e50d9bf95f409ddf97bde2f5991f43dbdc1db42ea7087f05",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "91bb8228-7e6c-4d83-82db-c451e1dcd3a1",
+      "completedAt": 1795075422668,
+      "output": "/Users/prabinkarki/Desktop/portfolio/mobile-skill-card/renders/mobile-skill.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

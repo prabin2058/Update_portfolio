@@ -1,0 +1,261 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 2
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "duration": 12,
+    "samples": [
+      0.667,
+      2,
+      3.333,
+      4.667,
+      6,
+      7.333,
+      8.667,
+      10,
+      11.333
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 0,
+    "truncated": false,
+    "faceCheck": {
+      "ran": true,
+      "candidates": 0,
+      "faces": 0
+    }
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.667,
+      3.333,
+      6,
+      8.667,
+      11.333
+    ],
+    "checked": 65,
+    "passed": 65
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"React.js\" (2 words) is on screen 1.86 s (±0.01 s), under the 2.00 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "React.js",
+        "selector": "#w1",
+        "dataAttributes": {},
+        "sourceFile": "compositions/orbit.html",
+        "bbox": {
+          "x": 1255.16,
+          "y": 188.51,
+          "width": 77.47000000000003,
+          "height": 23.379999999999995
+        },
+        "time": 10.141,
+        "words": 2,
+        "seconds": 1.863,
+        "floorSeconds": 2,
+        "measured": [
+          {
+            "time": 9.875,
+            "opacity": 0.48,
+            "heightPx": 23
+          },
+          {
+            "time": 10,
+            "opacity": 0.49,
+            "heightPx": 23
+          },
+          {
+            "time": 10.125,
+            "opacity": 0.49,
+            "heightPx": 23
+          },
+          {
+            "time": 10.25,
+            "opacity": 0.51,
+            "heightPx": 23
+          },
+          {
+            "time": 10.375,
+            "opacity": 0.52,
+            "heightPx": 24
+          },
+          {
+            "time": 10.5,
+            "opacity": 0.53,
+            "heightPx": 24
+          },
+          {
+            "time": 10.625,
+            "opacity": 0.54,
+            "heightPx": 24
+          },
+          {
+            "time": 11.5,
+            "opacity": 0.65,
+            "heightPx": 26
+          },
+          {
+            "time": 11.625,
+            "opacity": 0.67,
+            "heightPx": 26
+          },
+          {
+            "time": 11.75,
+            "opacity": 0.69,
+            "heightPx": 27
+          },
+          {
+            "time": 11.875,
+            "opacity": 0.71,
+            "heightPx": 27
+          }
+        ]
+      },
+      {
+        "code": "line_unread",
+        "severity": "warning",
+        "message": "The film's last line \"TanStack Query\" (2 words) is on screen 0.86 s (±0.01 s), under the 2.00 s a closing line needs: hold it about 0.5 s + 0.3 s a word and at least 2 s before the film ends; see references/motion.md.",
+        "text": "TanStack Query",
+        "selector": "#m4",
+        "dataAttributes": {},
+        "sourceFile": "compositions/orbit.html",
+        "bbox": {
+          "x": 386.54,
+          "y": 124.62,
+          "width": 153.53000000000003,
+          "height": 23.379999999999995
+        },
+        "time": 11.141,
+        "words": 2,
+        "seconds": 0.863,
+        "floorSeconds": 2,
+        "measured": [
+          {
+            "time": 10.875,
+            "opacity": 0.48,
+            "heightPx": 23
+          },
+          {
+            "time": 11,
+            "opacity": 0.49,
+            "heightPx": 23
+          },
+          {
+            "time": 11.125,
+            "opacity": 0.49,
+            "heightPx": 23
+          },
+          {
+            "time": 11.25,
+            "opacity": 0.51,
+            "heightPx": 23
+          },
+          {
+            "time": 11.375,
+            "opacity": 0.52,
+            "heightPx": 24
+          },
+          {
+            "time": 11.5,
+            "opacity": 0.53,
+            "heightPx": 24
+          },
+          {
+            "time": 11.625,
+            "opacity": 0.54,
+            "heightPx": 24
+          },
+          {
+            "time": 11.75,
+            "opacity": 0.56,
+            "heightPx": 24
+          },
+          {
+            "time": 11.875,
+            "opacity": 0.57,
+            "heightPx": 25
+          }
+        ]
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 96
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

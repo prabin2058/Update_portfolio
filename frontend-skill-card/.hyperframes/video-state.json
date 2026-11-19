@@ -1,0 +1,225 @@
+{
+  "version": 1,
+  "historyId": "479bc438-8495-48a7-b540-541c4a458112",
+  "currentRevision": null,
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/479bc438-8495-48a7-b540-541c4a458112/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "CLAUDE.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/479bc438-8495-48a7-b540-541c4a458112/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "assets/dev-roles.png": {
+      "hash": "7d7a499e56d429bbeb156a35a5a41e14f7789bc91e0d7ac2e7ed325d064cd2ff",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/479bc438-8495-48a7-b540-541c4a458112/blobs/7d/7d7a499e56d429bbeb156a35a5a41e14f7789bc91e0d7ac2e7ed325d064cd2ff"
+    },
+    "compositions/laptop.html": {
+      "hash": "ddbe1e2a3166287a3f1aca0c69d4fcbdff0adde7e0dd4a7597bc7be1cbe5e4a2",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/479bc438-8495-48a7-b540-541c4a458112/blobs/dd/ddbe1e2a3166287a3f1aca0c69d4fcbdff0adde7e0dd4a7597bc7be1cbe5e4a2"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/479bc438-8495-48a7-b540-541c4a458112/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "e13ca609f0d4f442816c0cef6752eec4675ef0c1106cf89d884fb97da1f4a95f",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/479bc438-8495-48a7-b540-541c4a458112/blobs/e1/e13ca609f0d4f442816c0cef6752eec4675ef0c1106cf89d884fb97da1f4a95f"
+    },
+    "meta.json": {
+      "hash": "0d72673edc0ae0d91be29971ed80a0410b4988b123687938a4c6093ca9eea1b6",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/479bc438-8495-48a7-b540-541c4a458112/blobs/0d/0d72673edc0ae0d91be29971ed80a0410b4988b123687938a4c6093ca9eea1b6"
+    },
+    "package.json": {
+      "hash": "81e58e0fe5f3184393ed4e160fb8bdb6d4abd4c9c9269d95ff9c88846c0f0146",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/479bc438-8495-48a7-b540-541c4a458112/blobs/81/81e58e0fe5f3184393ed4e160fb8bdb6d4abd4c9c9269d95ff9c88846c0f0146"
+    }
+  },
+  "revisions": {},
+  "checks": {
+    "latest": {
+      "revision": null,
+      "id": "e9b6d935-beda-445f-aba8-484d6127b33d"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "id": "e9b6d935-beda-445f-aba8-484d6127b33d",
+        "scope": "project",
+        "report": "/Users/prabinkarki/Desktop/portfolio/frontend-skill-card/.hyperframes/artifacts/checks/e9b6d935-beda-445f-aba8-484d6127b33d.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1795075081449,
+        "contentHash": "b7031318fb7e896d33cde9cc34fb434b5cd968c538452f7ee11b801ae2c8a6f1",
+        "revision": null,
+        "inputFingerprint": "29822ef2bc4e012d1411f75a6a0d65dbf14c0f5acdb70cb97ffdc53fda27ac64",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "6de020c6-3bd8-4055-b04b-8aad7ff79ea1-5"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "6de020c6-3bd8-4055-b04b-8aad7ff79ea1-0",
+        "image": "/Users/prabinkarki/Desktop/portfolio/frontend-skill-card/.hyperframes/artifacts/snapshots/66c534f8-27b6-4808-9e26-cfc7ace213d9/frame-00-at-0s.png",
+        "time": 0,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075085315,
+        "contentHash": "d253c0a1f4e5b3a833b2fba972101611095f1a6dedcbb05a10cf14014c0c31a7",
+        "revision": null,
+        "inputFingerprint": "29822ef2bc4e012d1411f75a6a0d65dbf14c0f5acdb70cb97ffdc53fda27ac64",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6de020c6-3bd8-4055-b04b-8aad7ff79ea1-1",
+        "image": "/Users/prabinkarki/Desktop/portfolio/frontend-skill-card/.hyperframes/artifacts/snapshots/66c534f8-27b6-4808-9e26-cfc7ace213d9/frame-01-at-3.5s.png",
+        "time": 3.5,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075085315,
+        "contentHash": "3ac2f30219fddc2c499f9249e4d8739b3d5707036d05692df506729fdc777921",
+        "revision": null,
+        "inputFingerprint": "29822ef2bc4e012d1411f75a6a0d65dbf14c0f5acdb70cb97ffdc53fda27ac64",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6de020c6-3bd8-4055-b04b-8aad7ff79ea1-2",
+        "image": "/Users/prabinkarki/Desktop/portfolio/frontend-skill-card/.hyperframes/artifacts/snapshots/66c534f8-27b6-4808-9e26-cfc7ace213d9/frame-02-at-5.9s.png",
+        "time": 5.9,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075085315,
+        "contentHash": "8c60332090bd7e5daae1c5aada038f9530a599d6b4659208d55d62b234479f3f",
+        "revision": null,
+        "inputFingerprint": "29822ef2bc4e012d1411f75a6a0d65dbf14c0f5acdb70cb97ffdc53fda27ac64",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6de020c6-3bd8-4055-b04b-8aad7ff79ea1-3",
+        "image": "/Users/prabinkarki/Desktop/portfolio/frontend-skill-card/.hyperframes/artifacts/snapshots/66c534f8-27b6-4808-9e26-cfc7ace213d9/frame-03-at-8.5s.png",
+        "time": 8.5,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075085315,
+        "contentHash": "c98a6ece2fb67d52273cb9d6ea96fc4c3e22d6ebdc88dea81244253674a085d0",
+        "revision": null,
+        "inputFingerprint": "29822ef2bc4e012d1411f75a6a0d65dbf14c0f5acdb70cb97ffdc53fda27ac64",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6de020c6-3bd8-4055-b04b-8aad7ff79ea1-4",
+        "image": "/Users/prabinkarki/Desktop/portfolio/frontend-skill-card/.hyperframes/artifacts/snapshots/66c534f8-27b6-4808-9e26-cfc7ace213d9/frame-04-at-11.9s.png",
+        "time": 11.9,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075085315,
+        "contentHash": "5a6ec4c13502f2a2b5ad3668cad843cbb5bcf2e2b9dcc8aef9248965a34ba4d7",
+        "revision": null,
+        "inputFingerprint": "29822ef2bc4e012d1411f75a6a0d65dbf14c0f5acdb70cb97ffdc53fda27ac64",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "6de020c6-3bd8-4055-b04b-8aad7ff79ea1-5",
+        "image": "/Users/prabinkarki/Desktop/portfolio/frontend-skill-card/.hyperframes/artifacts/snapshots/66c534f8-27b6-4808-9e26-cfc7ace213d9/frame-05-at-11.75s.png",
+        "time": 11.75,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795075085315,
+        "contentHash": "ec5cba4c79fe89fe25517ca01d1ca634de2ec082d40257a75184fec606f58a3c",
+        "revision": null,
+        "inputFingerprint": "29822ef2bc4e012d1411f75a6a0d65dbf14c0f5acdb70cb97ffdc53fda27ac64",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "bead084f-6dee-46e6-a1e4-a86ca719fdac",
+      "completedAt": 1795075111498,
+      "output": "/Users/prabinkarki/Desktop/portfolio/frontend-skill-card/renders/frontend-skill.mp4",
+      "status": "completed",
+      "revision": null
+    },
+    "retainedRevisions": []
+  },
+  "pendingArtifactCleanup": []
+}

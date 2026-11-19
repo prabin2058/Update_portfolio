@@ -1,0 +1,100 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; width: 1920px; height: 640px; overflow: hidden; font-family: 'Inter', sans-serif;
+      background: radial-gradient(ellipse 55% 80% at 50% 50%, #0f2a2a 0%, #0b1424 45%, #070b16 100%); }
+    .dots { position: absolute; inset: 0; pointer-events: none; opacity: 0.5;
+      background-image: radial-gradient(rgba(148,163,184,0.18) 1.4px, transparent 1.5px); background-size: 30px 30px; }
+    .ring { position: absolute; left: 50%; top: 50%; border-radius: 50%; pointer-events: none; }
+    #ring-in { width: 1080px; height: 300px; margin: -150px 0 0 -540px; border: 1.5px dashed rgba(16,185,129,0.35); }
+    #ring-out { width: 1680px; height: 460px; margin: -230px 0 0 -840px; border: 1.5px dashed rgba(34,211,238,0.28); }
+    .pulse { position: absolute; left: 50%; top: 50%; width: 220px; height: 220px; margin: -110px 0 0 -110px; border-radius: 50%;
+      border: 2px solid rgba(45,212,191,0.55); opacity: 0; pointer-events: none; }
+    #core { position: absolute; left: 50%; top: 50%; width: 150px; height: 150px; margin: -75px 0 0 -75px; border-radius: 40px; z-index: 50;
+      display: flex; align-items: center; justify-content: center; font-family: 'JetBrains Mono', monospace; font-weight: 700; font-size: 54px; color: #34d399;
+      background: linear-gradient(145deg, #0f2e2a, #0b1a24); border: 2px solid rgba(52,211,153,0.55);
+      box-shadow: 0 0 60px rgba(16,185,129,0.35), inset 0 0 30px rgba(16,185,129,0.15); }
+    #core-glow { position: absolute; left: 50%; top: 50%; width: 520px; height: 520px; margin: -260px 0 0 -260px; border-radius: 50%; pointer-events: none;
+      background: radial-gradient(circle, rgba(16,185,129,0.22) 0%, rgba(16,185,129,0) 65%); }
+    .chip { position: absolute; left: 0; top: 0; white-space: nowrap; padding: 14px 24px; border-radius: 999px; font-size: 26px; font-weight: 700;
+      color: #e2e8f0; background: rgba(15,23,42,0.92); display: flex; align-items: center; gap: 12px; }
+    .chip i { width: 12px; height: 12px; border-radius: 50%; display: block; }
+    .web { border: 2px solid rgba(16,185,129,0.55); box-shadow: 0 0 24px rgba(16,185,129,0.20); }
+    .web i { background: #34d399; box-shadow: 0 0 10px #34d399; }
+    .mob { border: 2px solid rgba(34,211,238,0.50); box-shadow: 0 0 24px rgba(34,211,238,0.18); }
+    .mob i { background: #22d3ee; box-shadow: 0 0 10px #22d3ee; }
+  </style>
+
+  <div id="root" data-composition-id="orbit" data-width="1920" data-height="640">
+    <div class="dots" data-layout-ignore=""></div>
+    <div id="core-glow" data-layout-ignore=""></div>
+    <div id="ring-in" class="ring" data-layout-ignore=""></div>
+    <div id="ring-out" class="ring" data-layout-ignore=""></div>
+    <div id="pulse-1" class="pulse" data-layout-ignore=""></div>
+    <div id="pulse-2" class="pulse" data-layout-ignore=""></div>
+    <div id="pulse-3" class="pulse" data-layout-ignore=""></div>
+
+    <div id="stage" class="clip" data-start="0" data-duration="12" data-track-index="0" data-layout-allow-overlap="" data-layout-allow-overflow=""
+      style="position:absolute; inset:0;">
+      <div id="core">PK</div>
+      <!-- Inner ring: Frontend & Full Stack -->
+      <div id="w1" class="chip web" data-ring="in"><i></i>React.js</div>
+      <div id="w2" class="chip web" data-ring="in"><i></i>Next.js</div>
+      <div id="w3" class="chip web" data-ring="in"><i></i>TypeScript</div>
+      <div id="w4" class="chip web" data-ring="in"><i></i>Tailwind CSS</div>
+      <div id="w5" class="chip web" data-ring="in"><i></i>Django &amp; DRF</div>
+      <div id="w6" class="chip web" data-ring="in"><i></i>FastAPI &amp; Node.js</div>
+      <!-- Outer ring: Mobile & Real-Time -->
+      <div id="m1" class="chip mob" data-ring="out"><i></i>React Native</div>
+      <div id="m2" class="chip mob" data-ring="out"><i></i>Expo &amp; EAS</div>
+      <div id="m3" class="chip mob" data-ring="out"><i></i>WebRTC &amp; Stream</div>
+      <div id="m4" class="chip mob" data-ring="out"><i></i>TanStack Query</div>
+      <div id="m5" class="chip mob" data-ring="out"><i></i>FCM &amp; Push</div>
+      <div id="m6" class="chip mob" data-ring="out"><i></i>PostgreSQL &amp; MongoDB</div>
+    </div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    const LOOP = 12;               // seconds; everything below repeats exactly over this span
+    const CX = 960, CY = 320;
+    const RINGS = { in: { rx: 540, ry: 150, dir: 1, turns: 1 }, out: { rx: 840, ry: 230, dir: -1, turns: 1 } };
+
+    const chips = Array.from(document.querySelectorAll('#stage .chip'));
+    const groups = { in: chips.filter(c => c.dataset.ring === 'in'), out: chips.filter(c => c.dataset.ring === 'out') };
+    const sizes = new Map(chips.map(c => [c, { w: c.offsetWidth, h: c.offsetHeight }]));
+
+    // Place every chip on its ellipse for orbit progress p (0..1). Front of the ring is larger and brighter.
+    function place(p) {
+      for (const key of ['in', 'out']) {
+        const r = RINGS[key], list = groups[key];
+        list.forEach((chip, i) => {
+          const a = (i / list.length + r.dir * p * r.turns) * Math.PI * 2 + (key === 'out' ? Math.PI / 6 : 0);
+          const depth = (Math.sin(a) + 1) / 2;               // 0 = back, 1 = front
+          const s = 0.72 + 0.34 * depth;
+          const { w, h } = sizes.get(chip);
+          gsap.set(chip, {
+            x: CX + Math.cos(a) * r.rx - w / 2,
+            y: CY + Math.sin(a) * r.ry - h / 2,
+            scale: s,
+            opacity: 0.45 + 0.55 * depth,
+            zIndex: Math.round(depth * 100) + (depth > 0.5 ? 60 : 0),
+          });
+        });
+      }
+    }
+
+    const orbit = { p: 0 };
+    tl.fromTo(orbit, { p: 0 }, { p: 1, duration: LOOP, ease: "none", onUpdate: () => place(orbit.p) }, 0);
+    place(0);
+
+    // Core breathes twice per loop; pulses ripple out three times per loop.
+    tl.fromTo("#core", { scale: 1 }, { scale: 1.06, duration: LOOP / 4, ease: "sine.inOut", yoyo: true, repeat: 3 }, 0);
+    tl.fromTo("#core-glow", { opacity: 0.7 }, { opacity: 1, duration: LOOP / 4, ease: "sine.inOut", yoyo: true, repeat: 3 }, 0);
+    ["#pulse-1", "#pulse-2", "#pulse-3"].forEach((id, k) => {
+      const at = k * (LOOP / 3);
+      tl.fromTo(id, { scale: 0.6, opacity: 0.8 }, { scale: 5.2, opacity: 0, duration: LOOP / 3, ease: "power1.out", immediateRender: k === 0 }, at);
+    });
+
+    window.__timelines["orbit"] = tl;
+  </script>
+</template>
