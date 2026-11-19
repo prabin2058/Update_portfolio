@@ -3,8 +3,9 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
-  --font-heading: var(--font-space-grotesk), system-ui, sans-serif;
-  --font-body: var(--font-inter), system-ui, sans-serif;
+  /* Site font: Urbanist (loaded in layout.tsx) */
+  --font-heading: var(--font-urbanist), system-ui, sans-serif;
+  --font-body: var(--font-urbanist), system-ui, sans-serif;
   --color-primary-50: #ecfdf5;
   --color-primary-100: #d1fae5;
   --color-primary-200: #a7f3d0;

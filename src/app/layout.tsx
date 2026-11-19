@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Urbanist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/common/ThemeProvider";
 import { HashGuard } from "@/components/common/HashGuard";
@@ -7,14 +7,9 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { siteConfig } from "@/data/site";
 
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
+// Urbanist is a variable font, so every weight (100–900) comes from one file.
+const urbanist = Urbanist({
+  variable: "--font-urbanist",
   subsets: ["latin"],
   display: "swap",
 });
@@ -57,7 +52,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${inter.variable} ${spaceGrotesk.variable} scroll-smooth`}
+      className={`${urbanist.variable} scroll-smooth`}
     >
       <body className="min-h-screen flex flex-col font-body tech-grid-bg antialiased selection:bg-emerald-500/20 selection:text-emerald-500">
         <ThemeProvider
