@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Menu, X, ArrowUpRight } from "lucide-react";
 import { siteConfig } from "@/data/site";
+import { BrandMark } from "@/components/common/BrandMark";
 import { ThemeToggle } from "@/components/common/ThemeToggle";
 import { Container } from "@/components/common/Container";
 
@@ -93,9 +94,7 @@ export function Navbar() {
             className="group flex items-center gap-2.5 font-heading text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white"
             id="nav-logo"
           >
-            <div className="w-8 h-8 rounded-lg bg-emerald-500/10 dark:bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center text-emerald-600 dark:text-emerald-400 font-mono font-bold text-sm group-hover:scale-105 transition-transform">
-              PK
-            </div>
+            <BrandMark className="h-9 w-auto shrink-0 drop-shadow-[0_0_10px_rgba(16,185,129,0.35)] group-hover:scale-105 transition-transform" />
             <span className="group-hover:text-emerald-500 dark:group-hover:text-emerald-400 transition-colors">
               {siteConfig.name}
             </span>
