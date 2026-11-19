@@ -52,9 +52,9 @@ export const experienceData: ExperienceItem[] = [
     company: "Asian School of Management and Technology",
     companyUrl: "https://asmt.edu.np",
     location: "Kathmandu, Nepal",
-    period: "2022 – Present",
+    period: "2022 – 2026",
     description: [
-      "Pursuing Bachelor of Science in CSIT with advanced coursework in Data Structures & Algorithms, Object-Oriented Programming (Java), Web Technology, Database Management Systems (DBMS), Software Engineering, and Artificial Intelligence.",
+      "Completed Bachelor of Science in CSIT with advanced coursework in Data Structures & Algorithms, Object-Oriented Programming (Java), Web Technology, Database Management Systems (DBMS), Software Engineering, and Artificial Intelligence.",
       "Active researcher and builder in applied machine learning, local retrieval-augmented generation (RAG), and high-reliability full-stack systems.",
     ],
     technologies: [
