@@ -1,18 +1,12 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { ArrowUp } from "lucide-react";
-import { GithubIcon, LinkedinIcon, TwitterIcon } from "@/components/common/SocialIcons";
+import { ArrowUp, Download } from "lucide-react";
+import { GithubIcon, LinkedinIcon } from "@/components/common/SocialIcons";
 import { siteConfig } from "@/data/site";
 import { Container } from "@/components/common/Container";
+import { CurrentYear } from "@/components/common/CurrentYear";
 
 export function Footer() {
-  const [currentYear, setCurrentYear] = useState(2026);
-
-  useEffect(() => {
-    setCurrentYear(new Date().getFullYear());
-  }, []);
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -34,13 +28,24 @@ export function Footer() {
               </span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              © {currentYear} {siteConfig.name}. Designed & built with Next.js,
+              © <CurrentYear /> {siteConfig.name}. Designed & built with Next.js,
               TypeScript & Tailwind CSS.
             </p>
           </div>
 
-          {/* Social Links & Back to Top */}
-          <div className="flex items-center gap-4">
+          {/* CV, Social Links & Back to Top */}
+          <div className="flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="/Prabin-Karki-CV.pdf"
+              download="Prabin-Karki-CV.pdf"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold bg-emerald-500 hover:bg-emerald-600 text-white shadow-md shadow-emerald-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-emerald-500 focus-visible:ring-offset-2 dark:focus-visible:ring-offset-slate-950"
+              aria-label="Download CV as PDF"
+              id="footer-download-cv"
+            >
+              <Download className="w-3.5 h-3.5" />
+              <span>Download CV</span>
+            </a>
+
             <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
               {siteConfig.socials.github && (
                 <a
@@ -64,18 +69,6 @@ export function Footer() {
                   id="footer-linkedin"
                 >
                   <LinkedinIcon className="w-4 h-4" />
-                </a>
-              )}
-              {siteConfig.socials.twitter && (
-                <a
-                  href={siteConfig.socials.twitter}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg flex items-center justify-center border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500/30 transition-all"
-                  aria-label="Twitter / X profile"
-                  id="footer-twitter"
-                >
-                  <TwitterIcon className="w-4 h-4" />
                 </a>
               )}
             </div>
