@@ -1,7 +1,7 @@
 {
   "version": 1,
   "historyId": "18374c13-22b1-43ce-a304-ea370566a68f",
-  "currentRevision": "04130b8b-88b7-48ff-a74c-16917631dd49",
+  "currentRevision": "bc58421c-ab18-48b6-847c-934206270bb5",
   "pendingChanges": false,
   "files": {
     "AGENTS.md": {
@@ -49,8 +49,8 @@
       "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/1d/1d3a66788d3668f366b811a26137feba12da3c1cef0a7ad7bcc0e0a52625e0af"
     },
     "compositions/scene1.html": {
-      "hash": "59b883f656d02f1f9402d5d79c02e110d535fdad9694f7f6bb541c6a3f4a987f",
-      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/59/59b883f656d02f1f9402d5d79c02e110d535fdad9694f7f6bb541c6a3f4a987f"
+      "hash": "331d515c1c58cd9743cdd7aad141cba567b5cf47032d4d1bf23691a49e1f7d49",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/33/331d515c1c58cd9743cdd7aad141cba567b5cf47032d4d1bf23691a49e1f7d49"
     },
     "compositions/scene2.html": {
       "hash": "4a192152dde33f62ee51786e090132685bb281075c250eeddc803e7ffb657854",
@@ -669,6 +669,84 @@
         "compositions/scene3.html": {
           "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/b6/b6d073af73b08d31b44a1fedd6a4f9b228987f03971164fa5b03e15691c914cd",
           "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/bd/bd63e22c01b53849188f8fa9e0d57e7686bf3acf5a551e5bdf76e2eec8ba81c3"
+        }
+      }
+    },
+    "f65a21e8-c06f-4ddd-a98a-35b7bc88a0cc": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/scene1.html",
+          "id": "scene1",
+          "hfId": "hf-ebjf",
+          "selector": "#scene1",
+          "name": "Scene1"
+        }
+      ],
+      "label": "Set 3D transform",
+      "startedAt": 1794965710702,
+      "endedAt": 1794965710702,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/59/59b883f656d02f1f9402d5d79c02e110d535fdad9694f7f6bb541c6a3f4a987f",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/ad/ad82688c28d0153837cd324430db42ab0e762dc1a5c81c1126f697e21b4cb2bd"
+        }
+      }
+    },
+    "253be55e-5fd2-4385-8a16-967e68e8bb20": {
+      "actor": {
+        "kind": "person",
+        "name": "You"
+      },
+      "targets": [
+        {
+          "file": "compositions/scene1.html",
+          "id": "scene1",
+          "hfId": "hf-ebjf",
+          "selector": "#scene1",
+          "name": "Scene1"
+        }
+      ],
+      "label": "Set properties",
+      "startedAt": 1794965712867,
+      "endedAt": 1794965712867,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/ad/ad82688c28d0153837cd324430db42ab0e762dc1a5c81c1126f697e21b4cb2bd",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/33/331d515c1c58cd9743cdd7aad141cba567b5cf47032d4d1bf23691a49e1f7d49"
+        }
+      }
+    },
+    "dd32f970-ea84-4098-82a5-0820cb5e07ff": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795075954050,
+      "endedAt": 1795075956051,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/33/331d515c1c58cd9743cdd7aad141cba567b5cf47032d4d1bf23691a49e1f7d49",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/59/59b883f656d02f1f9402d5d79c02e110d535fdad9694f7f6bb541c6a3f4a987f"
+        }
+      }
+    },
+    "bc58421c-ab18-48b6-847c-934206270bb5": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795075970205,
+      "endedAt": 1795075972211,
+      "files": {
+        "compositions/scene1.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/59/59b883f656d02f1f9402d5d79c02e110d535fdad9694f7f6bb541c6a3f4a987f",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/18374c13-22b1-43ce-a304-ea370566a68f/blobs/33/331d515c1c58cd9743cdd7aad141cba567b5cf47032d4d1bf23691a49e1f7d49"
         }
       }
     }

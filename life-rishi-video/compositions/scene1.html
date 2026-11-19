@@ -197,40 +197,42 @@
     }
   </style>
 
-  <div id="root" data-composition-id="scene1" data-width="1080" data-height="1920">
+  <div data-hf-id="hf-dfts" id="root" data-composition-id="scene1" data-width="1080" data-height="1920">
     <!-- Background Vedic Rings -->
-    <div id="s1-ring-1" class="bg-ring clip" data-start="0" data-duration="4" data-track-index="0" data-layout-ignore></div>
-    <div id="s1-ring-2" class="bg-ring clip" data-start="0" data-duration="4" data-track-index="0" data-layout-ignore></div>
+    <div data-hf-id="hf-gs2q" id="s1-ring-1" class="bg-ring clip" data-start="0" data-duration="4" data-track-index="0" data-layout-ignore=""></div>
+    <div data-hf-id="hf-ctyp" id="s1-ring-2" class="bg-ring clip" data-start="0" data-duration="4" data-track-index="0" data-layout-ignore=""></div>
 
     <!-- Header Copy -->
-    <div id="s1-header" class="scene-header clip" data-start="0" data-duration="4" data-track-index="0">
-      <div class="scene-eyebrow">Daily Vedic Alignment</div>
-      <div class="scene-title">Start Each Day Aligned with Your <span>Cosmic Blueprint</span></div>
+    <div data-hf-id="hf-k3qo" id="s1-header" class="scene-header clip" data-start="0" data-duration="4" data-track-index="0">
+      <div data-hf-id="hf-irvd" class="scene-eyebrow">Daily Vedic Alignment</div>
+      <div data-hf-id="hf-y0y5" class="scene-title">Start Each Day Aligned with Your <span data-hf-id="hf-i1qc">Cosmic Blueprint</span></div>
     </div>
 
     <!-- iPhone Showcase with Original Dashboard PNG -->
-    <div id="s1-phone-wrap" class="phone-stage clip" data-start="0" data-duration="4" data-track-index="0" data-layout-allow-overflow>
-      <div class="iphone-chassis">
+    <div data-hf-id="hf-k1ne" id="s1-phone-wrap" class="phone-stage clip" data-start="0" data-duration="4" data-track-index="0" data-layout-allow-overflow="">
+      <div data-hf-id="hf-v8b4" class="iphone-chassis">
         <!-- Physical iPhone Hardware Buttons -->
-        <div class="iphone-btn-action" data-layout-ignore></div>
-        <div class="iphone-btn-vol-up" data-layout-ignore></div>
-        <div class="iphone-btn-vol-down" data-layout-ignore></div>
-        <div class="iphone-btn-power" data-layout-ignore></div>
+        <div data-hf-id="hf-hi2y" class="iphone-btn-action" data-layout-ignore=""></div>
+        <div data-hf-id="hf-aihz" class="iphone-btn-vol-up" data-layout-ignore=""></div>
+        <div data-hf-id="hf-kd0g" class="iphone-btn-vol-down" data-layout-ignore=""></div>
+        <div data-hf-id="hf-2qmt" class="iphone-btn-power" data-layout-ignore=""></div>
 
-        <div class="iphone-screen">
+        <div data-hf-id="hf-h7fc" class="iphone-screen">
           <!-- Dynamic Island -->
-          <div class="iphone-dynamic-island" data-layout-ignore>
-            <div class="island-camera"></div>
+          <div data-hf-id="hf-sx3y" class="iphone-dynamic-island" data-layout-ignore="">
+            <div data-hf-id="hf-nqn1" class="island-camera"></div>
           </div>
 
-          <img src="assets/screen-dashboard.png" class="screen-img" id="s1-dashboard-img" alt="Life Rishi Dashboard" />
-          <div id="s1-hub-glow" class="hub-glow-spot" data-layout-ignore></div>
+          <img data-hf-id="hf-vcml" src="assets/screen-dashboard.png" class="screen-img" id="s1-dashboard-img" alt="Life Rishi Dashboard">
+          <div data-hf-id="hf-ce4r" id="s1-hub-glow" class="hub-glow-spot" data-layout-ignore=""></div>
         </div>
       </div>
     </div>
   </div>
 
   <script>
+gsap.set("#scene1", { z: 0, transformPerspective: 0, rotationX: 0, rotationY: 0, rotationZ: 0 });
+gsap.set("#scene1", { scale: 1 });
     const tl = gsap.timeline({ paused: true });
 
     // Frame 0 is fully visible: subtle settle into place
