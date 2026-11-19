@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/common/ThemeProvider";
+import { HashGuard } from "@/components/common/HashGuard";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { siteConfig } from "@/data/site";
@@ -44,7 +45,6 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.title}`,
     description: siteConfig.shortBio,
-    creator: "@prabinkarki",
   },
   icons: {
     icon: "/favicon.ico",
@@ -69,6 +69,7 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
+          <HashGuard />
           <Navbar />
           <main className="flex-1 pt-16 md:pt-20">{children}</main>
           <Footer />

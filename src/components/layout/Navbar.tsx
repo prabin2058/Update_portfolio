@@ -23,6 +23,7 @@ export function Navbar() {
       // Track active section for nav highlight
       const sections = siteConfig.navLinks.map((link) => link.href.replace("#", ""));
       const scrollPosition = window.scrollY + 200;
+      let found = "";
 
       for (const section of sections) {
         const el = document.getElementById(section);
@@ -30,9 +31,25 @@ export function Navbar() {
           const top = el.offsetTop;
           const height = el.offsetHeight;
           if (scrollPosition >= top && scrollPosition < top + height) {
-            setActiveSection(`#${section}`);
+            found = `#${section}`;
+            setActiveSection(found);
             break;
           }
+        }
+      }
+
+      // Keep the URL in step with where the visitor is: #projects, #contact...
+      // and a clean "/" at the very top. Only touches history when it changes.
+      const nextHash = window.scrollY < 100 ? "" : found || null;
+      if (nextHash !== null && window.location.hash !== nextHash) {
+        try {
+          window.history.replaceState(
+            null,
+            "",
+            window.location.pathname + window.location.search + nextHash
+          );
+        } catch {
+          // Some browsers rate-limit history updates; the URL just stays as is.
         }
       }
     };
@@ -78,9 +95,9 @@ export function Navbar() {
             {siteConfig.navLinks.map((link) => {
               const isActive = activeSection === link.href;
               return (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
+                  href={`/${link.href}`}
                   className={`px-3.5 py-1.5 rounded-full transition-all duration-200 ${
                     isActive
                       ? "text-emerald-600 dark:text-emerald-400 bg-emerald-50 dark:bg-emerald-950/50 font-semibold"
@@ -88,7 +105,7 @@ export function Navbar() {
                   }`}
                 >
                   {link.label}
-                </a>
+                </Link>
               );
             })}
           </nav>
@@ -97,14 +114,14 @@ export function Navbar() {
           <div className="flex items-center gap-2.5 sm:gap-3">
             <ThemeToggle />
 
-            <a
-              href="#contact"
+            <Link
+              href="/#contact"
               className="hidden sm:inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-semibold bg-emerald-500 hover:bg-emerald-600 text-white shadow-sm hover:shadow-emerald-500/20 hover:shadow-md transition-all duration-200 group"
               id="nav-hire-btn"
             >
               <span>Get in touch</span>
               <ArrowUpRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
+            </Link>
 
             {/* Mobile Hamburger Toggle */}
             <button
@@ -132,26 +149,26 @@ export function Navbar() {
           >
             <div className="flex flex-col space-y-1">
               {siteConfig.navLinks.map((link) => (
-                <a
+                <Link
                   key={link.href}
-                  href={link.href}
+                  href={`/${link.href}`}
                   onClick={handleLinkClick}
                   className="px-4 py-2.5 rounded-xl text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-emerald-500 dark:hover:text-emerald-400 transition-colors"
                 >
                   {link.label}
-                </a>
+                </Link>
               ))}
             </div>
 
             <div className="pt-3 border-t border-slate-100 dark:border-slate-800">
-              <a
-                href="#contact"
+              <Link
+                href="/#contact"
                 onClick={handleLinkClick}
                 className="w-full flex items-center justify-center gap-2 py-3 rounded-xl text-center text-sm font-semibold bg-emerald-500 hover:bg-emerald-600 text-white transition-colors"
               >
                 <span>Available for Freelance Opportunities</span>
                 <ArrowUpRight className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </div>
         )}
