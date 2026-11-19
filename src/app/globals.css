@@ -6,6 +6,13 @@
   /* Site font: Urbanist (loaded in layout.tsx) */
   --font-heading: var(--font-urbanist), system-ui, sans-serif;
   --font-body: var(--font-urbanist), system-ui, sans-serif;
+
+  /* Slightly lighter weight scale for Urbanist's wide geometric design */
+  --font-weight-normal: 375;
+  --font-weight-medium: 475;
+  --font-weight-semibold: 550;
+  --font-weight-bold: 625;
+
   --color-primary-50: #ecfdf5;
   --color-primary-100: #d1fae5;
   --color-primary-200: #a7f3d0;
@@ -48,6 +55,8 @@ body {
   background-color: var(--background);
   color: var(--foreground);
   font-family: var(--font-body);
+  font-weight: var(--font-weight-normal, 375);
+  letter-spacing: -0.01em;
   transition: background-color 0.25s ease, color 0.25s ease;
   overflow-x: hidden;
 }
