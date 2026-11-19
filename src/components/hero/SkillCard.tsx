@@ -6,6 +6,11 @@ import { Code2, Smartphone, CheckCircle2 } from "lucide-react";
 interface SkillCardProps {
   category: string;
   subtitle: string;
+  video?: {
+    mp4: string;
+    webm?: string;
+    poster?: string;
+  };
   technologies: {
     name: string;
     iconName?: string;
@@ -16,6 +21,7 @@ interface SkillCardProps {
 export function SkillCard({
   category,
   subtitle,
+  video,
   technologies,
   index,
 }: SkillCardProps) {
@@ -28,6 +34,25 @@ export function SkillCard({
     >
       {/* Subtle top corner gradient highlight */}
       <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-emerald-500/10 to-transparent rounded-tr-3xl pointer-events-none group-hover:scale-110 transition-transform duration-500" />
+
+      {/* Optional looping video, edge to edge at the top of the card (same as project cards) */}
+      {video && (
+        <div className="relative -mx-6 -mt-6 sm:-mx-8 sm:-mt-8 mb-6 aspect-[16/10] overflow-hidden rounded-t-3xl border-b border-slate-200/60 dark:border-slate-800/60 bg-slate-950">
+          <video
+            className="absolute inset-0 h-full w-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            poster={video.poster}
+            aria-label={`${category} preview animation`}
+          >
+            {video.webm && <source src={video.webm} type="video/webm" />}
+            <source src={video.mp4} type="video/mp4" />
+          </video>
+        </div>
+      )}
 
       {/* Card Header */}
       <div className="flex items-start gap-4 mb-5">

@@ -1,10 +1,11 @@
 "use client";
 
-import { ArrowRight, Mail, Sparkles, Quote } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import { Container } from "@/components/common/Container";
 import { MotionWrapper } from "@/components/common/MotionWrapper";
 import { SkillCard } from "@/components/hero/SkillCard";
+import TextPressure from "@/components/TextPressure/TextPressure";
 import { GithubIcon, LinkedinIcon } from "@/components/common/SocialIcons";
 
 export function Hero() {
@@ -26,33 +27,45 @@ export function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
               </span>
-              <span>Available for select freelance opportunities</span>
+              <span>Available for freelance work</span>
             </div>
           </MotionWrapper>
 
-          {/* Headline */}
+          {/* Intro + role */}
           <MotionWrapper delay={0.1}>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold font-heading tracking-tight text-slate-900 dark:text-white leading-[1.1]">
-              Crafting digital products with{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-500 via-teal-400 to-cyan-500">
-                precision & soul
+            <p className="text-2xl sm:text-3xl md:text-4xl font-semibold font-heading tracking-tight text-slate-700 dark:text-slate-200">
+              Hi, I&apos;m{" "}
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">
+                {siteConfig.name}
               </span>
-            </h1>
+            </p>
+            {/* Role with React Bits TextPressure (renders the page's <h1>). Font size follows the box width: 28 characters → width / 14. */}
+            <div className="relative mx-auto mt-6 w-full max-w-4xl aspect-[14/1] text-slate-900 dark:text-white">
+              <TextPressure
+                text="Full Stack & Mobile Engineer"
+                flex={true}
+                alpha={false}
+                stroke={false}
+                width={true}
+                weight={true}
+                italic={true}
+                radius={0.5}
+                smoothing={0.5}
+                idle="wave"
+                idleSpeed={1}
+                clickRipple={true}
+                strokeColor="#ff0000"
+                strokeWidth={3}
+                minFontSize={24}
+              />
+            </div>
           </MotionWrapper>
 
-          {/* Short Bio */}
+          {/* One-line summary */}
           <MotionWrapper delay={0.2}>
-            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 max-w-xl mx-auto leading-relaxed">
               {siteConfig.shortBio}
             </p>
-          </MotionWrapper>
-
-          {/* Stats Line */}
-          <MotionWrapper delay={0.25}>
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-2xl bg-white/60 dark:bg-slate-900/60 border border-slate-200/80 dark:border-slate-800 backdrop-blur-md shadow-sm text-sm font-medium text-slate-700 dark:text-slate-300">
-              <Sparkles className="w-4 h-4 text-emerald-500 shrink-0" />
-              <span>{siteConfig.statsLine}</span>
-            </div>
           </MotionWrapper>
 
           {/* Action Buttons & Quick Socials */}
@@ -63,7 +76,7 @@ export function Hero() {
                 className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 hover:scale-[1.02] active:scale-[0.98] transition-all"
                 id="hero-explore-work-btn"
               >
-                <span>Explore Selected Work</span>
+                <span>View My Work</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
 
@@ -102,21 +115,6 @@ export function Hero() {
               </div>
             </div>
           </MotionWrapper>
-
-          {/* Favorite Quote Banner */}
-          <MotionWrapper delay={0.35}>
-            <div className="mt-6 max-w-xl mx-auto rounded-2xl p-4 sm:p-5 bg-gradient-to-r from-emerald-500/5 via-teal-500/5 to-cyan-500/5 border border-emerald-500/20 backdrop-blur-sm text-left flex items-start gap-3.5">
-              <Quote className="w-5 h-5 text-emerald-500 shrink-0 mt-0.5" />
-              <div>
-                <p className="text-sm italic text-slate-700 dark:text-slate-300 font-serif">
-                  &ldquo;{siteConfig.favoriteQuote.quote}&rdquo;
-                </p>
-                <span className="block mt-1 text-xs font-mono font-semibold text-emerald-600 dark:text-emerald-400">
-                  — {siteConfig.favoriteQuote.author}
-                </span>
-              </div>
-            </div>
-          </MotionWrapper>
         </div>
 
         {/* 2 Skill Cards: Frontend & Mobile */}
@@ -138,6 +136,7 @@ export function Hero() {
                 key={skillGroup.category}
                 category={skillGroup.category}
                 subtitle={skillGroup.subtitle}
+                video={skillGroup.video}
                 technologies={skillGroup.technologies}
                 index={idx}
               />
