@@ -1,10 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
-  <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#10b981"/>
-      <stop offset="1" stop-color="#06b6d4"/>
-    </linearGradient>
-  </defs>
-  <rect width="512" height="512" rx="112" fill="url(#g)"/>
-  <path d="M175 402V140H260a76 76 0 0 1 0 152H175" fill="none" stroke="#ffffff" stroke-width="62" stroke-linejoin="round" stroke-linecap="butt"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 -140 480 480" width="512" height="512">
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#10b981"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+  <rect x="-50" y="-140" width="480" height="480" rx="110" fill="url(#bg)"/>
+  <path fill-opacity="0.6" fill="#ffffff" d="M118 -38C292 -74 408 36 372 160C358 208 322 244 262 262C334 222 352 150 330 86C304 10 232 -22 118 -38Z"/>
+  <g transform="translate(0 200) skewX(-12) translate(0 -200)" fill="#ffffff">
+    <path fill-rule="evenodd" d="M0 0H70A60 60 0 0 1 70 120H46V200H0Z M46 40H70A20 20 0 0 1 70 80H46Z"/>
+    <rect x="160" y="0" width="46" height="200"/>
+    <path d="M206 65.2L252.6 0H304.6L206 138Z"/>
+    <path d="M206 138L235.9 96.1L310 200H256Z"/>
+  </g>
 </svg>
