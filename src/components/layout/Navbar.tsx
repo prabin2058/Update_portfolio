@@ -63,6 +63,19 @@ export function Navbar() {
     setMobileMenuOpen(false);
   };
 
+  const handleLogoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    setMobileMenuOpen(false);
+    // Smooth scroll to top when already on the homepage without triggering a page reload
+    if (window.location.pathname === "/") {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      if (window.location.hash) {
+        window.history.replaceState(null, "", window.location.pathname + window.location.search);
+      }
+      setActiveSection("");
+    }
+  };
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
@@ -76,6 +89,7 @@ export function Navbar() {
           {/* Logo / Name */}
           <Link
             href="/"
+            onClick={handleLogoClick}
             className="group flex items-center gap-2.5 font-heading text-lg sm:text-xl font-bold tracking-tight text-slate-900 dark:text-white"
             id="nav-logo"
           >
