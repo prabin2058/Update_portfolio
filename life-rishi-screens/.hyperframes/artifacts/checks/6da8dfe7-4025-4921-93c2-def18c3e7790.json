@@ -1,0 +1,781 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 4
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 12,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 5.833,
+        "selector": "#dashboard-under",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 10,
+          "top": 243,
+          "right": 670,
+          "bottom": 1677,
+          "width": 660,
+          "height": 1434
+        },
+        "containerSelector": "#dashboard-phone > div:nth-of-type(1) > div:nth-of-type(5)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 210,
+          "top": 243,
+          "right": 870,
+          "bottom": 1677,
+          "width": 660,
+          "height": 1434
+        },
+        "overflow": {
+          "left": 200
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/dashboard.html",
+        "bbox": {
+          "x": 10,
+          "y": 243,
+          "width": 660,
+          "height": 1434
+        },
+        "firstSeen": 5.833,
+        "lastSeen": 9.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          5.833,
+          7.5,
+          9.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 10.833,
+        "selector": "#ai-rishi-under > img:nth-of-type(1)",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 110,
+          "top": -1930,
+          "right": 770,
+          "bottom": 1676.55,
+          "width": 660,
+          "height": 3606.55
+        },
+        "containerSelector": "#ai-rishi-under",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 110,
+          "top": 243,
+          "right": 770,
+          "bottom": 1677,
+          "width": 660,
+          "height": 1434
+        },
+        "overflow": {
+          "top": 2173
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "hf-media-3",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/ai-rishi.html",
+        "bbox": {
+          "x": 110,
+          "y": -1930,
+          "width": 660,
+          "height": 3606.55
+        },
+        "firstSeen": 10.833,
+        "lastSeen": 14.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          10.833,
+          12.5,
+          14.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 0.833,
+        "selector": "#welcome-glow-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -266.4,
+          "top": -176.8,
+          "right": 633.6,
+          "bottom": 723.2,
+          "width": 900,
+          "height": 900
+        },
+        "containerSelector": "#welcome > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 266.4,
+          "top": 176.8
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/welcome.html",
+        "bbox": {
+          "x": -266.4,
+          "y": -176.8,
+          "width": 900,
+          "height": 900
+        },
+        "firstSeen": 0.833,
+        "lastSeen": 4.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          0.833,
+          2.5,
+          4.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 0.833,
+        "selector": "#welcome-glow-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 427.47,
+          "top": 1175.2,
+          "right": 1427.47,
+          "bottom": 2175.2,
+          "width": 1000,
+          "height": 1000
+        },
+        "containerSelector": "#welcome > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 347.47,
+          "bottom": 255.2
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/welcome.html",
+        "bbox": {
+          "x": 427.47,
+          "y": 1175.2,
+          "width": 1000,
+          "height": 1000
+        },
+        "firstSeen": 0.833,
+        "lastSeen": 4.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          0.833,
+          2.5,
+          4.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 0.833,
+        "selector": "#welcome-shot",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 207.64,
+          "top": 240.41,
+          "right": 872.36,
+          "bottom": 1682.51,
+          "width": 664.71,
+          "height": 1442.1
+        },
+        "containerSelector": "#welcome-phone > div:nth-of-type(1) > div:nth-of-type(5) > div:nth-of-type(2)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 210.12,
+          "top": 245.77,
+          "right": 869.88,
+          "bottom": 1678.62,
+          "width": 659.76,
+          "height": 1432.85
+        },
+        "overflow": {
+          "left": 2.48,
+          "right": 2.48,
+          "top": 5.36,
+          "bottom": 3.89
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "welcome-shot",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/welcome.html",
+        "bbox": {
+          "x": 207.64,
+          "y": 240.41,
+          "width": 664.71,
+          "height": 1442.1
+        },
+        "firstSeen": 0.833,
+        "lastSeen": 0.833,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          0.833
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 5.833,
+        "selector": "#dashboard-glow-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -306.4,
+          "top": -156.8,
+          "right": 593.6,
+          "bottom": 743.2,
+          "width": 900,
+          "height": 900
+        },
+        "containerSelector": "#dashboard > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 306.4,
+          "top": 156.8
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/dashboard.html",
+        "bbox": {
+          "x": -306.4,
+          "y": -156.8,
+          "width": 900,
+          "height": 900
+        },
+        "firstSeen": 5.833,
+        "lastSeen": 9.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          5.833,
+          7.5,
+          9.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 5.833,
+        "selector": "#dashboard-glow-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 474.13,
+          "top": 1145.2,
+          "right": 1474.13,
+          "bottom": 2145.2,
+          "width": 1000,
+          "height": 1000
+        },
+        "containerSelector": "#dashboard > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 394.13,
+          "bottom": 225.2
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/dashboard.html",
+        "bbox": {
+          "x": 474.13,
+          "y": 1145.2,
+          "width": 1000,
+          "height": 1000
+        },
+        "firstSeen": 5.833,
+        "lastSeen": 9.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          5.833,
+          7.5,
+          9.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 5.833,
+        "selector": "#dashboard-shot",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 210,
+          "top": 241.72,
+          "right": 870,
+          "bottom": 3848.27,
+          "width": 660,
+          "height": 3606.55
+        },
+        "containerSelector": "#dashboard-top",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 210,
+          "top": 243,
+          "right": 870,
+          "bottom": 1677,
+          "width": 660,
+          "height": 1434
+        },
+        "overflow": {
+          "bottom": 2171.27
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "dashboard-shot",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/dashboard.html",
+        "bbox": {
+          "x": 210,
+          "y": 241.72,
+          "width": 660,
+          "height": 3606.55
+        },
+        "firstSeen": 5.833,
+        "lastSeen": 9.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          5.833,
+          7.5,
+          9.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 10.833,
+        "selector": "#ai-rishi-glow-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -346.4,
+          "top": -136.8,
+          "right": 553.6,
+          "bottom": 763.2,
+          "width": 900,
+          "height": 900
+        },
+        "containerSelector": "#ai-rishi > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "left": 346.4,
+          "top": 136.8
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/ai-rishi.html",
+        "bbox": {
+          "x": -346.4,
+          "y": -136.8,
+          "width": 900,
+          "height": 900
+        },
+        "firstSeen": 10.833,
+        "lastSeen": 14.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          10.833,
+          12.5,
+          14.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 10.833,
+        "selector": "#ai-rishi-glow-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 520.8,
+          "top": 1115.2,
+          "right": 1520.8,
+          "bottom": 2115.2,
+          "width": 1000,
+          "height": 1000
+        },
+        "containerSelector": "#ai-rishi > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 440.8,
+          "bottom": 195.2
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/ai-rishi.html",
+        "bbox": {
+          "x": 520.8,
+          "y": 1115.2,
+          "width": 1000,
+          "height": 1000
+        },
+        "firstSeen": 10.833,
+        "lastSeen": 14.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          10.833,
+          12.5,
+          14.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 10.833,
+        "selector": "#ai-rishi-under",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 110,
+          "top": 243,
+          "right": 770,
+          "bottom": 1677,
+          "width": 660,
+          "height": 1434
+        },
+        "containerSelector": "#ai-rishi-phone > div:nth-of-type(1) > div:nth-of-type(5)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 210,
+          "top": 243,
+          "right": 870,
+          "bottom": 1677,
+          "width": 660,
+          "height": 1434
+        },
+        "overflow": {
+          "left": 100
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/ai-rishi.html",
+        "bbox": {
+          "x": 110,
+          "y": 243,
+          "width": 660,
+          "height": 1434
+        },
+        "firstSeen": 10.833,
+        "lastSeen": 14.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          10.833,
+          12.5,
+          14.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 10.833,
+        "selector": "#ai-rishi-top",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 540,
+          "top": 243,
+          "right": 1200,
+          "bottom": 1677,
+          "width": 660,
+          "height": 1434
+        },
+        "containerSelector": "#ai-rishi-phone > div:nth-of-type(1) > div:nth-of-type(5)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 210,
+          "top": 243,
+          "right": 870,
+          "bottom": 1677,
+          "width": 660,
+          "height": 1434
+        },
+        "overflow": {
+          "right": 330
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/ai-rishi.html",
+        "bbox": {
+          "x": 540,
+          "y": 243,
+          "width": 660,
+          "height": 1434
+        },
+        "firstSeen": 10.833,
+        "lastSeen": 10.833,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          10.833
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 10.833,
+        "selector": "#ai-rishi-shot",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 540,
+          "top": 243,
+          "right": 1200,
+          "bottom": 1756.13,
+          "width": 660,
+          "height": 1513.13
+        },
+        "containerSelector": "#ai-rishi-top",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 540,
+          "top": 243,
+          "right": 1200,
+          "bottom": 1677,
+          "width": 660,
+          "height": 1434
+        },
+        "overflow": {
+          "bottom": 79.13
+        },
+        "dataAttributes": {
+          "data-hf-render-id": "ai-rishi-shot",
+          "data-hf-authored-opacity": ""
+        },
+        "sourceFile": "compositions/ai-rishi.html",
+        "bbox": {
+          "x": 540,
+          "y": 243,
+          "width": 660,
+          "height": 1513.13
+        },
+        "firstSeen": 10.833,
+        "lastSeen": 14.167,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          10.833,
+          12.5,
+          14.167
+        ]
+      },
+      {
+        "code": "panel_out_of_canvas",
+        "severity": "info",
+        "time": 10.833,
+        "selector": "#ai-rishi-top",
+        "message": "Painted panel extends outside the composition canvas.",
+        "rect": {
+          "left": 540,
+          "top": 243,
+          "right": 1200,
+          "bottom": 1677,
+          "width": 660,
+          "height": 1434
+        },
+        "containerSelector": "#root",
+        "text": "",
+        "fixHint": "Move the panel inward, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1080,
+          "bottom": 1920,
+          "width": 1080,
+          "height": 1920
+        },
+        "overflow": {
+          "right": 120
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/ai-rishi.html",
+        "bbox": {
+          "x": 540,
+          "y": 243,
+          "width": 660,
+          "height": 1434
+        },
+        "firstSeen": 10.833,
+        "lastSeen": 10.833,
+        "occurrences": 1,
+        "heldMs": 0,
+        "times": [
+          10.833
+        ]
+      }
+    ],
+    "duration": 15,
+    "samples": [
+      0.833,
+      2.5,
+      4.167,
+      5.833,
+      7.5,
+      9.167,
+      10.833,
+      12.5,
+      14.167
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 14,
+    "truncated": false,
+    "faceCheck": {
+      "ran": true,
+      "candidates": 0,
+      "faces": 0
+    }
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.833,
+      4.167,
+      7.5,
+      10.833,
+      14.167
+    ],
+    "checked": 0,
+    "passed": 0
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "first_frame_empty",
+        "severity": "warning",
+        "message": "Frame 0 shows only the background, and the first frame is the thumbnail on social players: have the title or key image already on screen at 0 s instead of entering from nothing; see references/review.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 120
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

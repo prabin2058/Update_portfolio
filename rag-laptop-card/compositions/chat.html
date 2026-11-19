@@ -1,0 +1,57 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; width: 1920px; height: 1200px; overflow: hidden;
+      background: radial-gradient(ellipse 62% 78% at 50% 40%, #5B4BF5 0%, #3524C4 36%, #1B1170 70%, #0A0630 100%); }
+    .glow { position: absolute; border-radius: 50%; pointer-events: none; }
+    #chat-glow-a { width: 1300px; height: 1100px; left: 310px; top: -480px;
+      background: radial-gradient(circle, rgba(170,160,255,0.30) 0%, rgba(170,160,255,0) 70%); }
+    #chat-glow-b { width: 900px; height: 900px; left: -320px; top: 320px;
+      background: radial-gradient(circle, rgba(5,2,25,0.40) 0%, rgba(5,2,25,0) 70%); }
+    .floor { position: absolute; left: -200px; right: -200px; top: 1010px; height: 700px; border-radius: 50%;
+      background: radial-gradient(ellipse 50% 40% at 50% 0%, #241784 0%, #120A48 60%, #07041F 100%);
+      box-shadow: 0 -2px 0 rgba(170,160,255,0.28); }
+    .floor-shadow { position: absolute; left: 260px; top: 905px; width: 1400px; height: 70px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(3,1,15,0.8) 0%, rgba(3,1,15,0) 70%); }
+    .laptop { position: absolute; left: 0; top: 0; width: 1920px; height: 1200px; }
+    .lid { position: absolute; left: 310px; top: 150px; width: 1300px; height: 740px; border-radius: 30px 30px 10px 10px;
+      background: #0c0c0f; box-shadow: 0 0 0 3px #4a4a52, 0 0 0 5px #1d1d22, 0 40px 90px rgba(3,1,20,0.6); }
+    .notch { position: absolute; left: 50%; top: 0; width: 150px; height: 22px; margin-left: -75px;
+      border-radius: 0 0 12px 12px; background: #000; z-index: 30; }
+    .notch::after { content: ""; position: absolute; left: 70px; top: 7px; width: 9px; height: 9px; border-radius: 50%; background: #10131c; }
+    .display { position: absolute; left: 30px; top: 30px; width: 1240px; height: 680px; overflow: hidden; border-radius: 6px; background: #0b0b0e; }
+    .shot { position: absolute; left: 0; width: 1240px; height: auto; display: block; }
+    .base { position: absolute; left: 200px; top: 888px; width: 1520px; height: 30px; border-radius: 4px 4px 30px 30px;
+      background: linear-gradient(#e2e3e8 0%, #b4b6be 35%, #7d7f88 100%); box-shadow: 0 18px 40px rgba(3,1,20,0.55); }
+    .groove { position: absolute; left: 50%; top: 0; width: 240px; height: 10px; margin-left: -120px;
+      border-radius: 0 0 12px 12px; background: linear-gradient(#8d8f98, #a9abb3); }
+    .cursor { position: absolute; width: 34px; height: 46px; z-index: 40; opacity: 0; }
+    .click { position: absolute; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.9); background: rgba(255,255,255,0.18); opacity: 0; z-index: 39; }
+  </style>
+  <div id="root" data-composition-id="chat" data-width="1920" data-height="1200">
+    <div id="chat-glow-a" class="glow" data-layout-ignore=""></div>
+    <div id="chat-glow-b" class="glow" data-layout-ignore=""></div>
+    <div class="floor" data-layout-ignore=""></div>
+    <div class="floor-shadow" data-layout-ignore=""></div>
+    <div id="chat-laptop" class="laptop clip" data-start="0" data-duration="6.5" data-track-index="0" data-layout-allow-overflow="">
+      <div class="base"><div class="groove"></div></div>
+      <div id="chat-lid" class="lid">
+        <div class="notch"></div>
+        <div class="display" data-layout-allow-overflow="">
+          <img id="chat-under" class="shot" style="top:1px" src="assets/screen-upload.webp" alt="RAG Document Q&amp;A upload dialog" />
+          <img id="chat-shot" class="shot" style="top:-0.5px" src="assets/screen-chat.webp" alt="RAG Document Q&amp;A chat answering from a PDF" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#chat-glow-a", { x: -83.125 }, { x: -140, duration: 6.5, ease: "none" }, 0);
+    tl.fromTo("#chat-glow-b", { x: 95, y: -47.5 }, { x: 160, y: -80, duration: 6.5, ease: "none" }, 0);
+    tl.fromTo("#chat-shot", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.inOut" }, 0);
+    tl.fromTo("#chat-laptop", { scale: 1.07 }, { scale: 1, duration: 0.6, ease: "power2.inOut", transformOrigin: "50% 45%" }, 0);
+    tl.to("#chat-laptop", { scale: 1.42, x: -190, y: 70, duration: 1.6, ease: "power2.inOut", transformOrigin: "50% 45%" }, 1.2);
+    tl.to("#chat-laptop", { scale: 1, x: 0, y: 0, duration: 1.4, ease: "power2.inOut" }, 4.4);
+    window.__timelines["chat"] = tl;
+  </script>
+</template>

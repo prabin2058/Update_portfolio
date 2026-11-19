@@ -1,0 +1,377 @@
+{
+  "version": 1,
+  "historyId": "6a73285e-ecbb-495a-ac82-ad5af8dd62b1",
+  "currentRevision": "ff1df5d8-6c8d-4742-bec4-6f4061eb0c4a",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "CLAUDE.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "assets/screen-ai-rishi.png": {
+      "hash": "24d64c9b6ec62e1221970cdf003b11751f338443328fd6ef9f5c1a27350b512d",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/24/24d64c9b6ec62e1221970cdf003b11751f338443328fd6ef9f5c1a27350b512d"
+    },
+    "assets/screen-astrologer.webp": {
+      "hash": "97df29931024d072e4e23ac588b62668a0b2c2d09202c46634df4a0393f9e32a",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/97/97df29931024d072e4e23ac588b62668a0b2c2d09202c46634df4a0393f9e32a"
+    },
+    "assets/screen-dashboard.webp": {
+      "hash": "f06a60a0d7a73635954af8eb14b94a58be04c6e3f5a7c0ab878532bdaf0caa74",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/f0/f06a60a0d7a73635954af8eb14b94a58be04c6e3f5a7c0ab878532bdaf0caa74"
+    },
+    "assets/screen-welcome.png": {
+      "hash": "6cacdeb0720a65237aeeaa66ccce9399cfd07e61dd7edbd490db0c336539a2ac",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/6c/6cacdeb0720a65237aeeaa66ccce9399cfd07e61dd7edbd490db0c336539a2ac"
+    },
+    "compositions/ai-rishi.html": {
+      "hash": "53deb91a4dc07f5c1e2458d2a3e009a6a2e7dce968d3c48abe0c49352cdac177",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/53/53deb91a4dc07f5c1e2458d2a3e009a6a2e7dce968d3c48abe0c49352cdac177"
+    },
+    "compositions/astrologer.html": {
+      "hash": "f54e7a4e73e336298385a386f420299c7259067ea06a21792ea176a08dd66776",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/f5/f54e7a4e73e336298385a386f420299c7259067ea06a21792ea176a08dd66776"
+    },
+    "compositions/dashboard.html": {
+      "hash": "026d6e162cb2858f43226fb8513cf4d52c79199778baf1eb82b86579a1b33ab5",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/02/026d6e162cb2858f43226fb8513cf4d52c79199778baf1eb82b86579a1b33ab5"
+    },
+    "compositions/welcome.html": {
+      "hash": "f8063eaa2c14eb5d77dd75ae1db8657c99688e94fe069d5dffeb199b4fd6bcc6",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/f8/f8063eaa2c14eb5d77dd75ae1db8657c99688e94fe069d5dffeb199b4fd6bcc6"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "3190ae7c55b6da545948ed712bc74a4cfb2149aeb5f21d90a90486cf33f58fa7",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/31/3190ae7c55b6da545948ed712bc74a4cfb2149aeb5f21d90a90486cf33f58fa7"
+    },
+    "meta.json": {
+      "hash": "1b03ca9702a25cfc89a8bb1c0392d15eddaebdb68bea652b8954678547bcc07d",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/1b/1b03ca9702a25cfc89a8bb1c0392d15eddaebdb68bea652b8954678547bcc07d"
+    },
+    "package.json": {
+      "hash": "e953c902271465a35a2273604960beff72a83c4ba70ea775b53414a524dc43dd",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/e9/e953c902271465a35a2273604960beff72a83c4ba70ea775b53414a524dc43dd"
+    }
+  },
+  "revisions": {
+    "ff1df5d8-6c8d-4742-bec4-6f4061eb0c4a": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795067429906,
+      "endedAt": 1795067429908,
+      "files": {
+        "compositions/ai-rishi.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/a1/a1261b5a95e21a009ff9279102a8e48f6890bf97670d41c612b247b897d80f02",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/53/53deb91a4dc07f5c1e2458d2a3e009a6a2e7dce968d3c48abe0c49352cdac177"
+        },
+        "compositions/astrologer.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/9f/9f7091d5585d1a18b2f6c5ecc69cd97c23f086d9963388dac3c9e633d7da89d1",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/f5/f54e7a4e73e336298385a386f420299c7259067ea06a21792ea176a08dd66776"
+        },
+        "compositions/dashboard.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/fd/fd8a87aca3c6f7b59dd36753d07686d982d1e361c610ec8321d2d5a4aa786e64",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/02/026d6e162cb2858f43226fb8513cf4d52c79199778baf1eb82b86579a1b33ab5"
+        },
+        "compositions/welcome.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/4e/4e470484914c0fd9aa11ead5f32f253711376d88211b384316fe291d46efd0a1",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/6a73285e-ecbb-495a-ac82-ad5af8dd62b1/blobs/f8/f8063eaa2c14eb5d77dd75ae1db8657c99688e94fe069d5dffeb199b4fd6bcc6"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "ff1df5d8-6c8d-4742-bec4-6f4061eb0c4a",
+      "id": "6890e28c-ba8f-4f53-a86d-35edf10b7146"
+    },
+    "revisions": {
+      "ff1df5d8-6c8d-4742-bec4-6f4061eb0c4a": [
+        {
+          "id": "6890e28c-ba8f-4f53-a86d-35edf10b7146",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/checks/6890e28c-ba8f-4f53-a86d-35edf10b7146.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795067431689,
+          "contentHash": "1be5972f5a5704c953daef2f1d1680424b3a2648952966b607278fa56190d3ec",
+          "revision": "ff1df5d8-6c8d-4742-bec4-6f4061eb0c4a",
+          "inputFingerprint": "de33e02fdeeaafbfe4b90ee5c77e77d13cb9739cd6eb62ff199fea733f31fec8",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "4f93c1a1-36fc-459f-b7d6-cf82a3f57c20",
+        "scope": "project",
+        "report": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/checks/4f93c1a1-36fc-459f-b7d6-cf82a3f57c20.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1795067406240,
+        "contentHash": "e877221203d19e0dbdf083dacc086ca5b18fccfbe184e2ce15d17c8af6ee8e79",
+        "revision": null,
+        "inputFingerprint": "101b47ec3beafa1a138c104e7f96736515bcf343052ab4ae670a2df5932d7a51",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": null,
+      "id": "a8cbdf37-02f5-469e-bb03-64a52894b7df-8"
+    },
+    "revisions": {},
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "a8cbdf37-02f5-469e-bb03-64a52894b7df-0",
+        "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/snapshots/6e148b69-16f8-44f1-84d9-94b84759e572/frame-00-at-0s.png",
+        "time": 0,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795067412499,
+        "contentHash": "d118d4f2fcdfa304af1b2313183a9223e64ff305729a4af65886cb8132d96e51",
+        "revision": null,
+        "inputFingerprint": "101b47ec3beafa1a138c104e7f96736515bcf343052ab4ae670a2df5932d7a51",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8cbdf37-02f5-469e-bb03-64a52894b7df-1",
+        "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/snapshots/6e148b69-16f8-44f1-84d9-94b84759e572/frame-01-at-1.5s.png",
+        "time": 1.5,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795067412499,
+        "contentHash": "7b2465ec5865690d3d43378e3e379a8c8006494879c30f9b3658531e2e0b106a",
+        "revision": null,
+        "inputFingerprint": "101b47ec3beafa1a138c104e7f96736515bcf343052ab4ae670a2df5932d7a51",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8cbdf37-02f5-469e-bb03-64a52894b7df-2",
+        "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/snapshots/6e148b69-16f8-44f1-84d9-94b84759e572/frame-02-at-3.6s.png",
+        "time": 3.6,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795067412499,
+        "contentHash": "995d900ae314f4d251feaf836e0058e3500ab46ce61d097c923ee0fd10182d32",
+        "revision": null,
+        "inputFingerprint": "101b47ec3beafa1a138c104e7f96736515bcf343052ab4ae670a2df5932d7a51",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8cbdf37-02f5-469e-bb03-64a52894b7df-3",
+        "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/snapshots/6e148b69-16f8-44f1-84d9-94b84759e572/frame-03-at-7s.png",
+        "time": 7,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795067412499,
+        "contentHash": "56c9faebf7b647525b7cba6fd1c9b26fd0fe1a2810c37d6f26f53473da1b91ee",
+        "revision": null,
+        "inputFingerprint": "101b47ec3beafa1a138c104e7f96736515bcf343052ab4ae670a2df5932d7a51",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8cbdf37-02f5-469e-bb03-64a52894b7df-4",
+        "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/snapshots/6e148b69-16f8-44f1-84d9-94b84759e572/frame-04-at-10.3s.png",
+        "time": 10.3,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795067412499,
+        "contentHash": "d993fdd6abffe4e7d108e136086bd268d7b8cc06815eeb230a7f29b9516f67eb",
+        "revision": null,
+        "inputFingerprint": "101b47ec3beafa1a138c104e7f96736515bcf343052ab4ae670a2df5932d7a51",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8cbdf37-02f5-469e-bb03-64a52894b7df-5",
+        "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/snapshots/6e148b69-16f8-44f1-84d9-94b84759e572/frame-05-at-12.5s.png",
+        "time": 12.5,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795067412499,
+        "contentHash": "7cf7dcc122e21934ea3a05b91ca3840404e2a9fac9e94eb81b8a267c44244717",
+        "revision": null,
+        "inputFingerprint": "101b47ec3beafa1a138c104e7f96736515bcf343052ab4ae670a2df5932d7a51",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8cbdf37-02f5-469e-bb03-64a52894b7df-6",
+        "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/snapshots/6e148b69-16f8-44f1-84d9-94b84759e572/frame-06-at-16.5s.png",
+        "time": 16.5,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795067412499,
+        "contentHash": "b0284f03418bf19dc0d5dc753e81e3e12ca57741f19fcc8e65b5604e0338e51b",
+        "revision": null,
+        "inputFingerprint": "101b47ec3beafa1a138c104e7f96736515bcf343052ab4ae670a2df5932d7a51",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8cbdf37-02f5-469e-bb03-64a52894b7df-7",
+        "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/snapshots/6e148b69-16f8-44f1-84d9-94b84759e572/frame-07-at-20.9s.png",
+        "time": 20.9,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795067412499,
+        "contentHash": "0a720647b2c6d198a4f5d8dd27b671320ea9737fea7626d57c167010dacad061",
+        "revision": null,
+        "inputFingerprint": "101b47ec3beafa1a138c104e7f96736515bcf343052ab4ae670a2df5932d7a51",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "a8cbdf37-02f5-469e-bb03-64a52894b7df-8",
+        "image": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/.hyperframes/artifacts/snapshots/6e148b69-16f8-44f1-84d9-94b84759e572/frame-08-at-20.75s.png",
+        "time": 20.75,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795067412499,
+        "contentHash": "143071a85c400ffb663b73e1b4aa313d4d85bafd993bb7e3bdfc46d9e3bd38a2",
+        "revision": null,
+        "inputFingerprint": "101b47ec3beafa1a138c104e7f96736515bcf343052ab4ae670a2df5932d7a51",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "aee60f78-5efc-4964-893e-b7c845dccd1a",
+      "completedAt": 1795067444711,
+      "output": "/Users/prabinkarki/Desktop/portfolio/life-rishi-card/renders/life-rishi-card.mp4",
+      "status": "completed",
+      "revision": "ff1df5d8-6c8d-4742-bec4-6f4061eb0c4a"
+    },
+    "retainedRevisions": [
+      "ff1df5d8-6c8d-4742-bec4-6f4061eb0c4a"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

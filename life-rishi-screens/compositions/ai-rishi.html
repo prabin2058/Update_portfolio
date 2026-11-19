@@ -1,0 +1,59 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden;
+      background: radial-gradient(ellipse at 50% 30%, #FFF0E2 0%, #FFF9F4 60%, #FDEBDD 100%); }
+    .glow { position: absolute; border-radius: 50%; pointer-events: none; }
+    #ai-rishi-glow-a { width: 900px; height: 900px; left: -260px; top: -180px;
+      background: radial-gradient(circle, rgba(252,170,80,0.38) 0%, rgba(252,170,80,0) 70%); }
+    #ai-rishi-glow-b { width: 1000px; height: 1000px; left: 420px; top: 1180px;
+      background: radial-gradient(circle, rgba(249,125,40,0.22) 0%, rgba(249,125,40,0) 70%); }
+    .stage { position: absolute; left: 198px; top: 231px; width: 684px; height: 1458px; }
+    .chassis { position: absolute; inset: 0; border-radius: 100px; padding: 12px;
+      background: linear-gradient(150deg, #5a524c 0%, #2b2622 30%, #151210 100%);
+      box-shadow: 0 0 0 2px rgba(255,255,255,0.18), inset 0 0 0 1.5px rgba(0,0,0,0.8),
+        0 50px 110px rgba(80,40,10,0.28), 0 12px 32px rgba(250,93,0,0.12); }
+    .btn { position: absolute; width: 5px; background: #3c3632; }
+    .btn-l { left: -5px; border-radius: 3px 0 0 3px; }
+    .btn-r { right: -5px; border-radius: 0 3px 3px 0; }
+    .screen { position: relative; width: 660px; height: 1434px; border-radius: 88px; overflow: hidden; background: #FFF9F4; }
+    .layer { position: absolute; left: 0; top: 0; width: 660px; height: 1434px; overflow: hidden; }
+    .shot { display: block; width: 660px; height: auto; }
+    .dim { position: absolute; inset: 0; background: #000; opacity: 0; }
+    .island { position: absolute; top: 18px; left: 50%; margin-left: -100px; width: 200px; height: 56px;
+      border-radius: 28px; background: #000; z-index: 50; }
+    .tap { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
+      background: rgba(255,255,255,0.45); border: 4px solid rgba(255,255,255,0.95);
+      box-shadow: 0 6px 24px rgba(120,50,0,0.35); opacity: 0; z-index: 60; }
+  </style>
+  <div id="root" data-composition-id="ai-rishi" data-width="1080" data-height="1920">
+    <div id="ai-rishi-glow-a" class="glow"></div>
+    <div id="ai-rishi-glow-b" class="glow"></div>
+    <div id="ai-rishi-phone" class="stage clip" data-start="0" data-duration="4" data-track-index="0">
+      <div class="chassis">
+        <div class="btn btn-l" style="top:250px;height:46px"></div>
+        <div class="btn btn-l" style="top:330px;height:86px"></div>
+        <div class="btn btn-l" style="top:436px;height:86px"></div>
+        <div class="btn btn-r" style="top:360px;height:130px"></div>
+        <div class="screen">
+          <div class="island"></div>
+          <div id="ai-rishi-under" class="layer" data-layout-allow-overflow="" style="background:#FFF9F4">
+            <img class="shot" src="assets/screen-dashboard.webp" alt="" style="transform:translateY(-2173px)" />
+            <div id="ai-rishi-dim" class="dim"></div>
+          </div>
+          <div id="ai-rishi-top" class="layer" data-layout-allow-overflow="" style="background:#FFFFFF">
+            <img id="ai-rishi-shot" class="shot" src="assets/screen-ai-rishi.png" alt="Life Rishi AI Rishi chat" style="width:625px;margin-left:17.5px" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#ai-rishi-glow-a", { x: -60, y: 30 }, { x: -82.85714285714286, y: 41.42857142857143, duration: 4, ease: "none" }, 0);
+    tl.fromTo("#ai-rishi-glow-b", { x: 70, y: -45 }, { x: 96.66666666666667, y: -62.142857142857146, duration: 4, ease: "none" }, 0);
+    tl.fromTo("#ai-rishi-top", { x: 660 }, { x: 0, duration: 0.6, ease: "power3.inOut" }, 0);
+    tl.fromTo("#ai-rishi-under", { x: 0 }, { x: -200, duration: 0.6, ease: "power3.inOut" }, 0);
+    tl.fromTo("#ai-rishi-dim", { opacity: 0 }, { opacity: 0.25, duration: 0.6, ease: "power3.inOut" }, 0);
+    window.__timelines["ai-rishi"] = tl;
+  </script>
+</template>

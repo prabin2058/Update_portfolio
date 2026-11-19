@@ -1,0 +1,127 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; width: 1920px; height: 1200px; overflow: hidden;
+      background: linear-gradient(140deg, #F7F3FF 0%, #EEE6FF 45%, #E3ECFF 100%); }
+    .blob { position: absolute; border-radius: 50%; pointer-events: none; }
+    #blob-purple { width: 1300px; height: 1300px; left: -420px; top: -520px;
+      background: radial-gradient(circle, rgba(147,51,234,0.30) 0%, rgba(147,51,234,0) 68%); }
+    #blob-blue { width: 1200px; height: 1200px; left: 1100px; top: 420px;
+      background: radial-gradient(circle, rgba(59,130,246,0.26) 0%, rgba(6,182,212,0) 68%); }
+    .dots { position: absolute; inset: 0; pointer-events: none; opacity: 0.45;
+      background-image: radial-gradient(rgba(91,33,182,0.22) 1.6px, transparent 1.7px); background-size: 34px 34px; }
+    .stage3d { position: absolute; inset: 0; perspective: 2600px; perspective-origin: 50% 45%; }
+    .rig { position: absolute; left: 0; top: 0; width: 1920px; height: 1200px; transform-style: preserve-3d; }
+    .win { position: absolute; left: 320px; top: 230px; width: 1280px; height: 740px; border-radius: 18px; overflow: hidden;
+      background: #fff; box-shadow: 0 0 0 1px rgba(60,30,120,0.10), 0 40px 90px rgba(60,30,140,0.28), 0 10px 26px rgba(60,30,140,0.14); }
+    .bar { position: absolute; left: 0; top: 0; width: 100%; height: 40px; background: #ECEAF2; border-bottom: 1px solid #DCD8E6; }
+    .light { position: absolute; top: 14px; width: 13px; height: 13px; border-radius: 50%; }
+    .url { position: absolute; left: 50%; top: 9px; width: 420px; height: 22px; margin-left: -210px; border-radius: 7px; background: #FBFAFE; }
+    .content { position: absolute; left: 0; top: 40px; width: 1280px; height: 700px; overflow: hidden; }
+    .shot { position: absolute; left: 0; width: 1280px; height: auto; display: block; }
+    .cursor { position: absolute; left: 0; top: 0; width: 34px; height: 46px; z-index: 40; opacity: 0; }
+    .click { position: absolute; left: 0; top: 0; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.95); background: rgba(147,51,234,0.25); opacity: 0; z-index: 39; }
+  </style>
+
+  <div id="root" data-composition-id="showcase" data-width="1920" data-height="1200">
+    <div id="blob-purple" class="blob" data-layout-ignore=""></div>
+    <div id="blob-blue" class="blob" data-layout-ignore=""></div>
+    <div class="dots" data-layout-ignore=""></div>
+
+    <div class="stage3d" data-layout-ignore="">
+      <div id="rig" class="rig clip" data-start="0" data-duration="16" data-track-index="0" data-layout-allow-overflow="" data-layout-allow-overlap="">
+
+        <!-- Back: About page -->
+        <div id="win-about" class="win">
+          <div class="bar"><div class="light" style="left:16px;background:#FF5F57"></div><div class="light" style="left:38px;background:#FEBC2E"></div><div class="light" style="left:60px;background:#28C840"></div><div class="url"></div></div>
+          <div class="content">
+            <img class="shot" style="top:0" src="assets/screen-about.webp" alt="E-commerce About Us page" />
+          </div>
+        </div>
+
+        <!-- Middle: Home page -->
+        <div id="win-home" class="win">
+          <div class="bar"><div class="light" style="left:16px;background:#FF5F57"></div><div class="light" style="left:38px;background:#FEBC2E"></div><div class="light" style="left:60px;background:#28C840"></div><div class="url"></div></div>
+          <div class="content">
+            <img class="shot" style="top:0" src="assets/screen-home.webp" alt="E-commerce home page with Dashain Offer" />
+            <div id="home-cursor" class="cursor"><svg viewBox="0 0 34 46" width="34" height="46"><path d="M3 2 L3 36 L11 28 L17 42 L23 39 L17 26 L29 26 Z" fill="#fff" stroke="#000" stroke-width="2.4" stroke-linejoin="round"/></svg></div>
+            <div id="home-click" class="click"></div>
+          </div>
+        </div>
+
+        <!-- Front: Login page -->
+        <div id="win-login" class="win">
+          <div class="bar"><div class="light" style="left:16px;background:#FF5F57"></div><div class="light" style="left:38px;background:#FEBC2E"></div><div class="light" style="left:60px;background:#28C840"></div><div class="url"></div></div>
+          <div class="content">
+            <img class="shot" style="top:-6.2px" src="assets/screen-login.webp" alt="E-commerce login page" />
+            <div id="login-cursor" class="cursor"><svg viewBox="0 0 34 46" width="34" height="46"><path d="M3 2 L3 36 L11 28 L17 42 L23 39 L17 26 L29 26 Z" fill="#fff" stroke="#000" stroke-width="2.4" stroke-linejoin="round"/></svg></div>
+            <div id="login-click" class="click"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    // Stack slots: 0 = front, 1 and 2 recede up and back.
+    const S0 = { x: 0, y: 0, z: 0, rotationY: 0, opacity: 1 };
+    const S1 = { x: 0, y: -90, z: -300, rotationY: 0, opacity: 1 };
+    const S2 = { x: 0, y: -180, z: -600, rotationY: 0, opacity: 1 };
+
+    gsap.set("#rig", { transformOrigin: "960px 600px" });
+
+    // Ambient drift of the colour light (whole film).
+    tl.fromTo("#blob-purple", { x: 0, y: 0 }, { x: 160, y: 90, duration: 16, ease: "none" }, 0);
+    tl.fromTo("#blob-blue", { x: 0, y: 0 }, { x: -180, y: -60, duration: 16, ease: "none" }, 0);
+
+    // 0–2.2s: camera at a three-quarter angle, windows rise into a stack, then the camera squares up.
+    tl.fromTo("#rig", { rotationX: 20, rotationY: -26, z: -380 }, { rotationX: 16, rotationY: -20, z: -260, duration: 1.4, ease: "power2.out" }, 0);
+    tl.fromTo("#win-about", { ...S2, y: 140, opacity: 1 }, { ...S2, duration: 1.0, ease: "power3.out" }, 0.0);
+    tl.fromTo("#win-home", { ...S1, y: 230, opacity: 1 }, { ...S1, duration: 1.0, ease: "power3.out" }, 0.12);
+    tl.fromTo("#win-login", { ...S0, y: 320, opacity: 1 }, { ...S0, duration: 1.0, ease: "power3.out" }, 0.24);
+    tl.to("#rig", { rotationX: 3, rotationY: -5, z: 0, duration: 1.2, ease: "power2.inOut" }, 1.4);
+
+    // 2.5–3.7s: pointer clicks Login (807, 440 in the page).
+    tl.fromTo("#login-cursor", { x: 980, y: 620, opacity: 0 }, { opacity: 1, duration: 0.2 }, 2.4);
+    tl.to("#login-cursor", { x: 807, y: 440, duration: 0.9, ease: "power2.inOut" }, 2.5);
+    tl.to("#login-cursor", { scale: 0.85, duration: 0.08, yoyo: true, repeat: 1, transformOrigin: "0 0" }, 3.45);
+    tl.fromTo("#login-click", { x: 807, y: 440, scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.14, ease: "power2.out" }, 3.45);
+    tl.to("#login-click", { scale: 1.5, opacity: 0, duration: 0.4, ease: "power2.out" }, 3.62);
+
+    // 4.0–4.9s: login window flies off left; home and about step forward one slot.
+    tl.to("#win-login", { x: -1700, y: 120, z: 200, rotationY: 34, duration: 0.9, ease: "power3.in" }, 4.0);
+    tl.to("#win-login", { opacity: 0, duration: 0.2, ease: "none" }, 4.7);
+    tl.to("#win-home", { ...S0, duration: 0.9, ease: "power3.inOut" }, 4.25);
+    tl.to("#win-about", { ...S1, duration: 0.9, ease: "power3.inOut" }, 4.35);
+
+    // 5.2–7.9s: slow push on the home page, pointer clicks "About" in the nav (565, 26).
+    tl.to("#rig", { rotationX: 2, rotationY: 4, z: 120, duration: 2.7, ease: "sine.inOut" }, 5.1);
+    tl.fromTo("#home-cursor", { x: 300, y: 420, opacity: 0 }, { opacity: 1, duration: 0.2 }, 6.0);
+    tl.to("#home-cursor", { x: 565, y: 26, duration: 0.9, ease: "power2.inOut" }, 6.1);
+    tl.to("#home-cursor", { scale: 0.85, duration: 0.08, yoyo: true, repeat: 1, transformOrigin: "0 0" }, 7.05);
+    tl.fromTo("#home-click", { x: 565, y: 26, scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.14, ease: "power2.out" }, 7.05);
+    tl.to("#home-click", { scale: 1.5, opacity: 0, duration: 0.4, ease: "power2.out" }, 7.22);
+
+    // 7.7–8.6s: home flies off right; about comes to the front.
+    tl.to("#win-home", { x: 1700, y: 120, z: 200, rotationY: -34, duration: 0.9, ease: "power3.in" }, 7.7);
+    tl.to("#win-home", { opacity: 0, duration: 0.2, ease: "none" }, 8.4);
+    tl.to("#win-about", { ...S0, duration: 0.9, ease: "power3.inOut" }, 7.95);
+
+    // 8.9–11.0s: hold on About with a gentle drift.
+    tl.to("#rig", { rotationX: 4, rotationY: -4, z: 60, duration: 2.1, ease: "sine.inOut" }, 8.8);
+
+    // 11.0–12.8s: all three pages return as a diagonal cascade at a three-quarter angle, then hold.
+    tl.to("#rig", { rotationX: 12, rotationY: -22, z: -760, duration: 1.8, ease: "power3.inOut" }, 11.0);
+    tl.set("#win-login", { x: -1700, y: -140, z: -560 }, 11.05);
+    tl.to("#win-login", { x: -520, y: -140, z: -560, rotationY: 0, opacity: 1, duration: 1.6, ease: "power3.out" }, 11.1);
+    tl.set("#win-home", { x: 1700, y: -20, z: -280 }, 11.2);
+    tl.to("#win-home", { x: 0, y: -20, z: -280, rotationY: 0, opacity: 1, duration: 1.6, ease: "power3.out" }, 11.25);
+    tl.to("#win-about", { x: 520, y: 100, z: 0, duration: 1.6, ease: "power3.inOut" }, 11.0);
+    tl.to("#rig", { rotationY: -20, z: -840, x: -90, duration: 3.1, ease: "sine.inOut" }, 12.85);
+
+    window.__timelines["showcase"] = tl;
+  </script>
+</template>

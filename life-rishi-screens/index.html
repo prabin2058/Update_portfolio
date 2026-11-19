@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" data-resolution="portrait">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1080, height=1920" />
+    <title>Life Rishi — App Screens</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+    <style>
+      :root {
+        --ground: #FFF9F4;
+      }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body {
+        margin: 0;
+        width: 1080px;
+        height: 1920px;
+        overflow: hidden;
+        background: var(--ground);
+      }
+      #root { position: relative; width: 1080px; height: 1920px; overflow: hidden; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="main" data-start="0" data-duration="21" data-width="1080" data-height="1920">
+      <!-- Welcome screen (0–4.5s) -->
+      <div id="welcome" data-composition-id="welcome" data-composition-src="compositions/welcome.html"
+        data-start="0" data-duration="4.5" data-track-index="0" data-track-kind="graphics"
+        data-width="1080" data-height="1920"></div>
+      <!-- Dashboard scroll (4.5–10.5s) -->
+      <div id="dashboard" data-composition-id="dashboard" data-composition-src="compositions/dashboard.html"
+        data-start="4.5" data-duration="6" data-track-index="0" data-track-kind="graphics"
+        data-width="1080" data-height="1920"></div>
+      <!-- AI Rishi chat (10.5–14.5s) -->
+      <div id="ai-rishi" data-composition-id="ai-rishi" data-composition-src="compositions/ai-rishi.html"
+        data-start="10.5" data-duration="4" data-track-index="0" data-track-kind="graphics"
+        data-width="1080" data-height="1920"></div>
+      <!-- Astrologer profile (14.5–21s) -->
+      <div id="astrologer" data-composition-id="astrologer" data-composition-src="compositions/astrologer.html"
+        data-start="14.5" data-duration="6.5" data-track-index="0" data-track-kind="graphics"
+        data-width="1080" data-height="1920"></div>
+    </div>
+    <script>
+      const tl = gsap.timeline({ paused: true });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["main"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

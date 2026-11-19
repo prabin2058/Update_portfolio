@@ -1,0 +1,144 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; width: 1920px; height: 1200px; overflow: hidden;
+      background: radial-gradient(ellipse 70% 70% at 50% 45%, #10204a 0%, #071027 55%, #030712 100%); }
+    .grid { position: absolute; inset: 0; pointer-events: none;
+      background-image: linear-gradient(rgba(34,211,238,0.07) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,0.07) 1px, transparent 1px);
+      background-size: 60px 60px; }
+    .glow { position: absolute; border-radius: 50%; pointer-events: none; }
+    #glow-cyan { width: 1200px; height: 1200px; left: 1100px; top: -300px;
+      background: radial-gradient(circle, rgba(34,211,238,0.20) 0%, rgba(34,211,238,0) 68%); }
+    #glow-indigo { width: 1200px; height: 1200px; left: -420px; top: 380px;
+      background: radial-gradient(circle, rgba(99,102,241,0.24) 0%, rgba(99,102,241,0) 68%); }
+
+    /* Viewport the screens are scanned into */
+    .viewport { position: absolute; left: 240px; top: 205px; width: 1440px; height: 790px; overflow: hidden; border-radius: 10px;
+      background: #050b1a; box-shadow: 0 0 0 1px rgba(34,211,238,0.25), 0 30px 90px rgba(0,0,0,0.55), 0 0 80px rgba(34,211,238,0.10); }
+    .layer { position: absolute; left: 0; top: 0; width: 1440px; height: 790px; overflow: hidden; }
+    .shot { position: absolute; left: 0; width: 1440px; height: auto; display: block; }
+    .scanline { position: absolute; left: 0; top: 0; width: 1440px; height: 4px; z-index: 30; opacity: 0;
+      background: #67e8f9; box-shadow: 0 0 18px 6px rgba(34,211,238,0.75), 0 0 60px 20px rgba(34,211,238,0.30); }
+    .scanwash { position: absolute; left: 0; top: -160px; width: 1440px; height: 160px; z-index: 29; opacity: 0;
+      background: linear-gradient(rgba(34,211,238,0) 0%, rgba(34,211,238,0.16) 100%); }
+
+    /* Face-detection style corner brackets around the viewport */
+    .br { position: absolute; width: 80px; height: 80px; border-color: #22d3ee; border-style: solid; border-width: 0; z-index: 40;
+      filter: drop-shadow(0 0 8px rgba(34,211,238,0.8)); }
+    #br-tl { left: 214px; top: 179px; border-top-width: 5px; border-left-width: 5px; border-top-left-radius: 14px; }
+    #br-tr { left: 1626px; top: 179px; border-top-width: 5px; border-right-width: 5px; border-top-right-radius: 14px; }
+    #br-bl { left: 214px; top: 941px; border-bottom-width: 5px; border-left-width: 5px; border-bottom-left-radius: 14px; }
+    #br-br { left: 1626px; top: 941px; border-bottom-width: 5px; border-right-width: 5px; border-bottom-right-radius: 14px; }
+
+    .cursor { position: absolute; left: 0; top: 0; width: 34px; height: 46px; z-index: 50; opacity: 0; }
+    .click { position: absolute; left: 0; top: 0; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.95); background: rgba(34,211,238,0.30); opacity: 0; z-index: 49; }
+
+    /* Final 2x2 grid */
+    .tile { position: absolute; width: 700px; height: 384px; overflow: hidden; border-radius: 12px; opacity: 0;
+      box-shadow: 0 0 0 1px rgba(34,211,238,0.35), 0 20px 60px rgba(0,0,0,0.5); }
+    .tile img { position: absolute; left: 0; top: 50%; width: 700px; height: auto; transform: translateY(-50%); display: block; }
+    #tile-1 { left: 245px; top: 201px; }
+    #tile-2 { left: 975px; top: 201px; }
+    #tile-3 { left: 245px; top: 615px; }
+    #tile-4 { left: 975px; top: 615px; }
+  </style>
+
+  <div id="root" data-composition-id="scan" data-width="1920" data-height="1200">
+    <div class="grid" data-layout-ignore=""></div>
+    <div id="glow-cyan" class="glow" data-layout-ignore=""></div>
+    <div id="glow-indigo" class="glow" data-layout-ignore=""></div>
+
+    <div id="viewport" class="viewport clip" data-start="0" data-duration="16" data-track-index="0" data-layout-allow-overflow="">
+      <div id="zoom" class="layer" data-layout-allow-overflow="">
+        <div id="layer-home" class="layer" style="clip-path: inset(0% 0% 100% 0%)">
+          <img class="shot" style="top:2.2px" src="assets/screen-home.webp" alt="Attendance System home page" />
+        </div>
+        <div id="layer-admin" class="layer" style="clip-path: inset(0% 0% 100% 0%)">
+          <img class="shot" style="top:1.5px" src="assets/screen-admin-login.webp" alt="Admin Portal login" />
+        </div>
+        <div id="layer-dash" class="layer" style="clip-path: inset(0% 0% 100% 0%)">
+          <img class="shot" style="top:3.3px" src="assets/screen-dashboard.webp" alt="Admin Dashboard with today's attendance" />
+        </div>
+        <div id="layer-face" class="layer" style="clip-path: inset(0% 0% 100% 0%)">
+          <img class="shot" style="top:-0.6px" src="assets/screen-face.webp" alt="Digital Hajir live face recognition" />
+        </div>
+      </div>
+      <div id="scanwash" class="scanwash"></div>
+      <div id="scanline" class="scanline"></div>
+      <div id="cursor" class="cursor"><svg viewBox="0 0 34 46" width="34" height="46"><path d="M3 2 L3 36 L11 28 L17 42 L23 39 L17 26 L29 26 Z" fill="#fff" stroke="#000" stroke-width="2.4" stroke-linejoin="round"/></svg></div>
+      <div id="click" class="click"></div>
+    </div>
+
+    <div id="br-tl" class="br" data-layout-ignore=""></div>
+    <div id="br-tr" class="br" data-layout-ignore=""></div>
+    <div id="br-bl" class="br" data-layout-ignore=""></div>
+    <div id="br-br" class="br" data-layout-ignore=""></div>
+
+    <div id="tile-1" class="tile" data-layout-ignore=""><img src="assets/screen-home.webp" alt="" /></div>
+    <div id="tile-2" class="tile" data-layout-ignore=""><img src="assets/screen-admin-login.webp" alt="" /></div>
+    <div id="tile-3" class="tile" data-layout-ignore=""><img src="assets/screen-dashboard.webp" alt="" /></div>
+    <div id="tile-4" class="tile" data-layout-ignore=""><img src="assets/screen-face.webp" alt="" /></div>
+  </div>
+
+  <script>
+    const tl = gsap.timeline({ paused: true });
+
+    tl.fromTo("#glow-cyan", { x: 0 }, { x: -220, duration: 16, ease: "none" }, 0);
+    tl.fromTo("#glow-indigo", { x: 0 }, { x: 240, duration: 16, ease: "none" }, 0);
+
+    // Brackets lock on: start wide, snap to the viewport corners.
+    tl.fromTo("#br-tl", { x: -90, y: -70 }, { x: 0, y: 0, duration: 0.6, ease: "back.out(2)" }, 0);
+    tl.fromTo("#br-tr", { x: 90, y: -70 }, { x: 0, y: 0, duration: 0.6, ease: "back.out(2)" }, 0);
+    tl.fromTo("#br-bl", { x: -90, y: 70 }, { x: 0, y: 0, duration: 0.6, ease: "back.out(2)" }, 0);
+    tl.fromTo("#br-br", { x: 90, y: 70 }, { x: 0, y: 0, duration: 0.6, ease: "back.out(2)" }, 0);
+
+    // A scan: line sweeps top to bottom, revealing the layer behind it; brackets give a small pulse.
+    function scan(layer, at, dur) {
+      tl.fromTo(layer, { clipPath: "inset(0% 0% 100% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: dur, ease: "power1.inOut", immediateRender: false }, at);
+      tl.fromTo("#scanline", { y: 0, opacity: 1 }, { y: 788, duration: dur, ease: "power1.inOut", immediateRender: false }, at);
+      tl.fromTo("#scanwash", { y: 0, opacity: 1 }, { y: 788, duration: dur, ease: "power1.inOut", immediateRender: false }, at);
+      tl.to(["#scanline", "#scanwash"], { opacity: 0, duration: 0.15 }, at + dur);
+      tl.to(["#br-tl", "#br-br"], { scale: 1.12, duration: 0.15, yoyo: true, repeat: 1, ease: "power1.out" }, at + dur);
+      tl.to(["#br-tr", "#br-bl"], { scale: 1.12, duration: 0.15, yoyo: true, repeat: 1, ease: "power1.out" }, at + dur);
+    }
+    // Pointer glides to (x, y) inside the viewport and clicks.
+    function click(at, x, y) {
+      tl.to("#cursor", { x: x, y: y, duration: 0.9, ease: "power2.inOut" }, at);
+      tl.to("#cursor", { scale: 0.85, duration: 0.08, yoyo: true, repeat: 1, transformOrigin: "0 0" }, at + 0.95);
+      tl.fromTo("#click", { x: x, y: y, scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.14, ease: "power2.out", immediateRender: false }, at + 0.95);
+      tl.to("#click", { scale: 1.5, opacity: 0, duration: 0.4, ease: "power2.out" }, at + 1.12);
+    }
+
+    // 0–3.6s: home page scanned in (already 45% down at frame 0); pointer clicks "Admin Login" (1087, 38).
+    tl.fromTo("#layer-home", { clipPath: "inset(0% 0% 55% 0%)" }, { clipPath: "inset(0% 0% 0% 0%)", duration: 0.8, ease: "power1.out" }, 0);
+    tl.fromTo("#scanline", { y: 355, opacity: 1 }, { y: 788, duration: 0.8, ease: "power1.out" }, 0);
+    tl.fromTo("#scanwash", { y: 355, opacity: 1 }, { y: 788, duration: 0.8, ease: "power1.out" }, 0);
+    tl.to(["#scanline", "#scanwash"], { opacity: 0, duration: 0.15 }, 0.8);
+    tl.fromTo("#cursor", { x: 760, y: 560, opacity: 0 }, { opacity: 1, duration: 0.2 }, 1.5);
+    click(1.6, 1087, 38);
+
+    // 3.6–6.6s: admin login scanned in; pointer clicks "Login as Admin" (720, 495).
+    scan("#layer-admin", 3.4, 0.9);
+    click(4.6, 720, 495);
+
+    // 6.6–9.6s: dashboard scanned in; pointer clicks "Take Attendance" (216, 316).
+    scan("#layer-dash", 6.5, 0.9);
+    click(7.7, 216, 316);
+
+    // 9.4–13s: live face recognition scanned in; pointer leaves, camera pushes in on the recognised face, then eases back.
+    scan("#layer-face", 9.4, 0.9);
+    tl.to("#cursor", { opacity: 0, duration: 0.25 }, 9.3);
+    tl.fromTo("#zoom", { scale: 1 }, { scale: 1.7, duration: 1.4, ease: "power3.inOut", transformOrigin: "695px 360px", immediateRender: false }, 10.5);
+    tl.to("#zoom", { scale: 1, duration: 1.0, ease: "power2.inOut" }, 12.2);
+
+    // 13–16s: viewport steps back and the four screens settle into a 2x2 grid.
+    tl.to("#viewport", { opacity: 0, scale: 0.96, duration: 0.5, ease: "power2.in" }, 13.1);
+    tl.fromTo("#tile-1", { opacity: 0, scale: 0.85, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.7, ease: "power3.out" }, 13.35);
+    tl.fromTo("#tile-2", { opacity: 0, scale: 0.85, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.7, ease: "power3.out" }, 13.5);
+    tl.fromTo("#tile-3", { opacity: 0, scale: 0.85, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.7, ease: "power3.out" }, 13.65);
+    tl.fromTo("#tile-4", { opacity: 0, scale: 0.85, y: 30 }, { opacity: 1, scale: 1, y: 0, duration: 0.7, ease: "power3.out" }, 13.8);
+    tl.to(["#br-tl", "#br-tr", "#br-bl", "#br-br"], { scale: 1.06, duration: 1.4, ease: "sine.inOut" }, 14.4);
+
+    window.__timelines["scan"] = tl;
+  </script>
+</template>

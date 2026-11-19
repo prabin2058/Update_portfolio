@@ -1,0 +1,64 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; width: 1080px; height: 1920px; overflow: hidden;
+      background: radial-gradient(ellipse at 50% 30%, #FFF0E2 0%, #FFF9F4 60%, #FDEBDD 100%); }
+    .glow { position: absolute; border-radius: 50%; pointer-events: none; }
+    #dashboard-glow-a { width: 900px; height: 900px; left: -260px; top: -180px;
+      background: radial-gradient(circle, rgba(252,170,80,0.38) 0%, rgba(252,170,80,0) 70%); }
+    #dashboard-glow-b { width: 1000px; height: 1000px; left: 420px; top: 1180px;
+      background: radial-gradient(circle, rgba(249,125,40,0.22) 0%, rgba(249,125,40,0) 70%); }
+    .stage { position: absolute; left: 198px; top: 231px; width: 684px; height: 1458px; }
+    .chassis { position: absolute; inset: 0; border-radius: 100px; padding: 12px;
+      background: linear-gradient(150deg, #5a524c 0%, #2b2622 30%, #151210 100%);
+      box-shadow: 0 0 0 2px rgba(255,255,255,0.18), inset 0 0 0 1.5px rgba(0,0,0,0.8),
+        0 50px 110px rgba(80,40,10,0.28), 0 12px 32px rgba(250,93,0,0.12); }
+    .btn { position: absolute; width: 5px; background: #3c3632; }
+    .btn-l { left: -5px; border-radius: 3px 0 0 3px; }
+    .btn-r { right: -5px; border-radius: 0 3px 3px 0; }
+    .screen { position: relative; width: 660px; height: 1434px; border-radius: 88px; overflow: hidden; background: #FFF9F4; }
+    .layer { position: absolute; left: 0; top: 0; width: 660px; height: 1434px; overflow: hidden; }
+    .shot { display: block; width: 660px; height: auto; }
+    .dim { position: absolute; inset: 0; background: #000; opacity: 0; }
+    .island { position: absolute; top: 18px; left: 50%; margin-left: -100px; width: 200px; height: 56px;
+      border-radius: 28px; background: #000; z-index: 50; }
+    .tap { position: absolute; width: 110px; height: 110px; margin: -55px 0 0 -55px; border-radius: 50%;
+      background: rgba(255,255,255,0.45); border: 4px solid rgba(255,255,255,0.95);
+      box-shadow: 0 6px 24px rgba(120,50,0,0.35); opacity: 0; z-index: 60; }
+  </style>
+  <div id="root" data-composition-id="dashboard" data-width="1080" data-height="1920">
+    <div id="dashboard-glow-a" class="glow"></div>
+    <div id="dashboard-glow-b" class="glow"></div>
+    <div id="dashboard-phone" class="stage clip" data-start="0" data-duration="6" data-track-index="0">
+      <div class="chassis">
+        <div class="btn btn-l" style="top:250px;height:46px"></div>
+        <div class="btn btn-l" style="top:330px;height:86px"></div>
+        <div class="btn btn-l" style="top:436px;height:86px"></div>
+        <div class="btn btn-r" style="top:360px;height:130px"></div>
+        <div class="screen">
+          <div class="island"></div>
+          <div id="dashboard-under" class="layer" data-layout-allow-overflow="" style="background:linear-gradient(#FDBA60 0%, #FFF6EC 55%, #FFFFFF 100%)">
+            <img class="shot" src="assets/screen-welcome.png" alt="" />
+            <div id="dashboard-dim" class="dim"></div>
+          </div>
+          <div id="dashboard-top" class="layer" data-layout-allow-overflow="" style="background:#FFF9F4">
+            <img id="dashboard-shot" class="shot" src="assets/screen-dashboard.webp" alt="Life Rishi dashboard" />
+          </div>
+          <div id="dashboard-tap" class="tap" style="left:330px;top:1262px"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#dashboard-glow-a", { x: -25.714285714285715, y: 12.857142857142858 }, { x: -60, y: 30, duration: 6, ease: "none" }, 0);
+    tl.fromTo("#dashboard-glow-b", { x: 30, y: -19.285714285714285 }, { x: 70, y: -45, duration: 6, ease: "none" }, 0);
+    tl.fromTo("#dashboard-top", { x: 660 }, { x: 0, duration: 0.6, ease: "power3.inOut" }, 0);
+    tl.fromTo("#dashboard-under", { x: 0 }, { x: -200, duration: 0.6, ease: "power3.inOut" }, 0);
+    tl.fromTo("#dashboard-dim", { opacity: 0 }, { opacity: 0.25, duration: 0.6, ease: "power3.inOut" }, 0);
+    tl.fromTo("#dashboard-shot", { y: 0 }, { y: -1080, duration: 1.5, ease: "power2.inOut" }, 1.2);
+    tl.to("#dashboard-shot", { y: -2173, duration: 1.5, ease: "power2.inOut" }, 3.3);
+    tl.fromTo("#dashboard-tap", { scale: 0.4, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.16, ease: "power2.out" }, 5);
+    tl.to("#dashboard-tap", { scale: 1.5, opacity: 0, duration: 0.45, ease: "power2.out" }, 5.2);
+    window.__timelines["dashboard"] = tl;
+  </script>
+</template>

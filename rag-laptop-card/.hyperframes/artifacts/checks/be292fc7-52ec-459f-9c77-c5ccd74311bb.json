@@ -1,0 +1,406 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 4
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 3,
+    "infoCount": 3,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 0.889,
+        "selector": "#login-glow-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 302.42,
+          "top": -480,
+          "right": 1602.42,
+          "bottom": 620,
+          "width": 1300,
+          "height": 1100
+        },
+        "containerSelector": "#login > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "top": 480
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/login.html",
+        "bbox": {
+          "x": 302.42,
+          "y": -480,
+          "width": 1300,
+          "height": 1100
+        },
+        "firstSeen": 0.889,
+        "lastSeen": 4.444,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          0.889,
+          2.667,
+          4.444
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 6.222,
+        "selector": "#upload-glow-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 255.75,
+          "top": -480,
+          "right": 1555.75,
+          "bottom": 620,
+          "width": 1300,
+          "height": 1100
+        },
+        "containerSelector": "#upload > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "top": 480
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/upload.html",
+        "bbox": {
+          "x": 255.75,
+          "y": -480,
+          "width": 1300,
+          "height": 1100
+        },
+        "firstSeen": 6.222,
+        "lastSeen": 8,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.222,
+          8
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "warning",
+        "time": 9.778,
+        "selector": "#chat-glow-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 224.54,
+          "top": -480,
+          "right": 1524.54,
+          "bottom": 620,
+          "width": 1300,
+          "height": 1100
+        },
+        "containerSelector": "#chat > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "top": 480
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/chat.html",
+        "bbox": {
+          "x": 224.54,
+          "y": -480,
+          "width": 1300,
+          "height": 1100
+        },
+        "firstSeen": 9.778,
+        "lastSeen": 15.111,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          9.778,
+          11.556,
+          13.333,
+          15.111
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 0.889,
+        "selector": "#login-glow-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -311.33,
+          "top": 315.67,
+          "right": 588.67,
+          "bottom": 1215.67,
+          "width": 900,
+          "height": 900
+        },
+        "containerSelector": "#login > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "left": 311.33,
+          "bottom": 15.67
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/login.html",
+        "bbox": {
+          "x": -311.33,
+          "y": 315.67,
+          "width": 900,
+          "height": 900
+        },
+        "firstSeen": 0.889,
+        "lastSeen": 4.444,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          0.889,
+          2.667,
+          4.444
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 6.222,
+        "selector": "#upload-glow-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -258,
+          "top": 289,
+          "right": 642,
+          "bottom": 1189,
+          "width": 900,
+          "height": 900
+        },
+        "containerSelector": "#upload > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "left": 258
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/upload.html",
+        "bbox": {
+          "x": -258,
+          "y": 289,
+          "width": 900,
+          "height": 900
+        },
+        "firstSeen": 6.222,
+        "lastSeen": 8,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          6.222,
+          8
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 9.778,
+        "selector": "#chat-glow-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -222.33,
+          "top": 271.17,
+          "right": 677.67,
+          "bottom": 1171.17,
+          "width": 900,
+          "height": 900
+        },
+        "containerSelector": "#chat > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "left": 222.33
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/chat.html",
+        "bbox": {
+          "x": -222.33,
+          "y": 271.17,
+          "width": 900,
+          "height": 900
+        },
+        "firstSeen": 9.778,
+        "lastSeen": 15.111,
+        "occurrences": 4,
+        "heldMs": 0,
+        "times": [
+          9.778,
+          11.556,
+          13.333,
+          15.111
+        ]
+      }
+    ],
+    "duration": 16,
+    "samples": [
+      0.889,
+      2.667,
+      4.444,
+      6.222,
+      8,
+      9.778,
+      11.556,
+      13.333,
+      15.111
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 6,
+    "truncated": false,
+    "faceCheck": {
+      "ran": true,
+      "candidates": 0,
+      "faces": 0
+    }
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.889,
+      4.444,
+      8,
+      11.556,
+      15.111
+    ],
+    "checked": 0,
+    "passed": 0
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 16 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 128
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}

@@ -1,0 +1,62 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; width: 1920px; height: 1200px; overflow: hidden;
+      background: radial-gradient(ellipse 62% 78% at 50% 40%, #5B4BF5 0%, #3524C4 36%, #1B1170 70%, #0A0630 100%); }
+    .glow { position: absolute; border-radius: 50%; pointer-events: none; }
+    #upload-glow-a { width: 1300px; height: 1100px; left: 310px; top: -480px;
+      background: radial-gradient(circle, rgba(170,160,255,0.30) 0%, rgba(170,160,255,0) 70%); }
+    #upload-glow-b { width: 900px; height: 900px; left: -320px; top: 320px;
+      background: radial-gradient(circle, rgba(5,2,25,0.40) 0%, rgba(5,2,25,0) 70%); }
+    .floor { position: absolute; left: -200px; right: -200px; top: 1010px; height: 700px; border-radius: 50%;
+      background: radial-gradient(ellipse 50% 40% at 50% 0%, #241784 0%, #120A48 60%, #07041F 100%);
+      box-shadow: 0 -2px 0 rgba(170,160,255,0.28); }
+    .floor-shadow { position: absolute; left: 260px; top: 905px; width: 1400px; height: 70px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(3,1,15,0.8) 0%, rgba(3,1,15,0) 70%); }
+    .laptop { position: absolute; left: 0; top: 0; width: 1920px; height: 1200px; }
+    .lid { position: absolute; left: 310px; top: 150px; width: 1300px; height: 740px; border-radius: 30px 30px 10px 10px;
+      background: #0c0c0f; box-shadow: 0 0 0 3px #4a4a52, 0 0 0 5px #1d1d22, 0 40px 90px rgba(3,1,20,0.6); }
+    .notch { position: absolute; left: 50%; top: 0; width: 150px; height: 22px; margin-left: -75px;
+      border-radius: 0 0 12px 12px; background: #000; z-index: 30; }
+    .notch::after { content: ""; position: absolute; left: 70px; top: 7px; width: 9px; height: 9px; border-radius: 50%; background: #10131c; }
+    .display { position: absolute; left: 30px; top: 30px; width: 1240px; height: 680px; overflow: hidden; border-radius: 6px; background: #0b0b0e; }
+    .shot { position: absolute; left: 0; width: 1240px; height: auto; display: block; }
+    .base { position: absolute; left: 200px; top: 888px; width: 1520px; height: 30px; border-radius: 4px 4px 30px 30px;
+      background: linear-gradient(#e2e3e8 0%, #b4b6be 35%, #7d7f88 100%); box-shadow: 0 18px 40px rgba(3,1,20,0.55); }
+    .groove { position: absolute; left: 50%; top: 0; width: 240px; height: 10px; margin-left: -120px;
+      border-radius: 0 0 12px 12px; background: linear-gradient(#8d8f98, #a9abb3); }
+    .cursor { position: absolute; width: 34px; height: 46px; z-index: 40; opacity: 0; }
+    .click { position: absolute; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.9); background: rgba(255,255,255,0.18); opacity: 0; z-index: 39; }
+  </style>
+  <div id="root" data-composition-id="upload" data-width="1920" data-height="1200">
+    <div id="upload-glow-a" class="glow" data-layout-ignore=""></div>
+    <div id="upload-glow-b" class="glow" data-layout-ignore=""></div>
+    <div class="floor" data-layout-ignore=""></div>
+    <div class="floor-shadow" data-layout-ignore=""></div>
+    <div id="upload-laptop" class="laptop clip" data-start="0" data-duration="5" data-track-index="0" data-layout-allow-overflow="">
+      <div class="base"><div class="groove"></div></div>
+      <div id="upload-lid" class="lid">
+        <div class="notch"></div>
+        <div class="display" data-layout-allow-overflow="">
+          <img id="upload-under" class="shot" style="top:2.7px" src="assets/screen-login.webp" alt="RAG Document Q&amp;A sign-in screen" />
+          <img id="upload-shot" class="shot" style="top:1px" src="assets/screen-upload.webp" alt="RAG Document Q&amp;A upload dialog" />
+          <div id="upload-cursor" class="cursor" style="left:0;top:0"><svg viewBox="0 0 34 46" width="34" height="46"><path d="M3 2 L3 36 L11 28 L17 42 L23 39 L17 26 L29 26 Z" fill="#fff" stroke="#000" stroke-width="2.4" stroke-linejoin="round"/></svg></div>
+          <div id="upload-click" class="click" style="left:0;top:0"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    tl.fromTo("#upload-glow-a", { x: -39.375 }, { x: -83.125, duration: 5, ease: "none" }, 0);
+    tl.fromTo("#upload-glow-b", { x: 45, y: -22.5 }, { x: 95, y: -47.5, duration: 5, ease: "none" }, 0);
+    tl.fromTo("#upload-shot", { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.inOut" }, 0);
+    tl.fromTo("#upload-laptop", { scale: 1 }, { scale: 1.07, duration: 4.6, ease: "sine.inOut", transformOrigin: "50% 45%" }, 0.2);
+    tl.fromTo("#upload-cursor", { x: 470, y: 400, opacity: 0 }, { opacity: 1, duration: 0.2 }, 2.2);
+    tl.to("#upload-cursor", { x: 691, y: 363, duration: 0.9, ease: "power2.inOut" }, 2.3000000000000003);
+    tl.to("#upload-cursor", { scale: 0.85, duration: 0.08, yoyo: true, repeat: 1, transformOrigin: "0 0" }, 3.25);
+    tl.fromTo("#upload-click", { x: 691, y: 363, scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.14, ease: "power2.out" }, 3.25);
+    tl.to("#upload-click", { scale: 1.5, opacity: 0, duration: 0.4, ease: "power2.out" }, 3.42);
+    window.__timelines["upload"] = tl;
+  </script>
+</template>

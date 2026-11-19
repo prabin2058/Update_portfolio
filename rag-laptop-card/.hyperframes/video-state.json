@@ -1,0 +1,611 @@
+{
+  "version": 1,
+  "historyId": "ed703ddd-f43a-4695-934c-5c2f75369dc1",
+  "currentRevision": "0bded5af-f228-4444-96f6-b7ae1e402ad0",
+  "pendingChanges": false,
+  "files": {
+    "AGENTS.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "CLAUDE.md": {
+      "hash": "729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/72/729e31835a21c7b42ee006e2aacc63016abc05d26883f871ad3bf206943f2cfb"
+    },
+    "assets/screen-chat.webp": {
+      "hash": "a6dfe842305092a89525650e6f41803b8a5d6b7c170bfb7c1ede813a5afa2ad6",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/a6/a6dfe842305092a89525650e6f41803b8a5d6b7c170bfb7c1ede813a5afa2ad6"
+    },
+    "assets/screen-login.webp": {
+      "hash": "08da1fb93e4289f0477bdbf536817cdb18acef822b146f7037cc9b3aa53b0ca7",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/08/08da1fb93e4289f0477bdbf536817cdb18acef822b146f7037cc9b3aa53b0ca7"
+    },
+    "assets/screen-upload.webp": {
+      "hash": "17a3e610753ee37f44b14d2fa374c5d4cc3a2c6ff31d42d7974f24acfbdf4a14",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/17/17a3e610753ee37f44b14d2fa374c5d4cc3a2c6ff31d42d7974f24acfbdf4a14"
+    },
+    "compositions/chat.html": {
+      "hash": "00363b75815a6974409cf6bb0d6c8345b368100e8965610b81dc5fb0f14a9949",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/00/00363b75815a6974409cf6bb0d6c8345b368100e8965610b81dc5fb0f14a9949"
+    },
+    "compositions/login.html": {
+      "hash": "6384f697216a45180a6b04e493b595e2bcd627e439ba41f4e3f5b04346a3a395",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/63/6384f697216a45180a6b04e493b595e2bcd627e439ba41f4e3f5b04346a3a395"
+    },
+    "compositions/upload.html": {
+      "hash": "e73de743084466c0cfedee46732d2df8fb3329287f0980717cdf543c4bd0978c",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/e7/e73de743084466c0cfedee46732d2df8fb3329287f0980717cdf543c4bd0978c"
+    },
+    "hyperframes.json": {
+      "hash": "35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/35/35a6d4ea79ebe911f0d81705f7aace5d8ff0316b745b0311d56af50c9c237cb7"
+    },
+    "index.html": {
+      "hash": "9078a2ec70aee3624a8f9af0dd7ec27023a981b8934c69f8bf765d5191bbbcc4",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/90/9078a2ec70aee3624a8f9af0dd7ec27023a981b8934c69f8bf765d5191bbbcc4"
+    },
+    "meta.json": {
+      "hash": "0362318735bca3e945f23b6634c6469990874cedeb472da9db1fd809da8ea738",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/03/0362318735bca3e945f23b6634c6469990874cedeb472da9db1fd809da8ea738"
+    },
+    "package.json": {
+      "hash": "87f3642b561e3395a104abb8ac1efcf6a57fc8f827ceae13cbb300bfb96bfaae",
+      "content": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/87/87f3642b561e3395a104abb8ac1efcf6a57fc8f827ceae13cbb300bfb96bfaae"
+    }
+  },
+  "revisions": {
+    "69914235-c7c5-48ea-8fc3-fdc2348a2762": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795069186967,
+      "endedAt": 1795069186969,
+      "files": {
+        "compositions/chat.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/89/89bf46b566c009459a6dc6bd5510ab8e535f9169b8d003d82c338cf7dfd9915d",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/00/00363b75815a6974409cf6bb0d6c8345b368100e8965610b81dc5fb0f14a9949"
+        },
+        "compositions/login.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/aa/aa6e5dfa9e790abd9a6b1b0928e3428f41687ef27da27a1a3c20c937b42c2379",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/a4/a463d74a1a921b9e8e2ae9b6919b3897000d44e2dec2230a39788544c9d29a33"
+        },
+        "compositions/upload.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/86/866cec00a251a8713dddd4dc08a8fce3e5ab3353ca66641b92ddf57c09a6ba95",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/92/9297848c84181da180fcf3853e5976e6c0b7c73c4132392d0381572529f5d0a6"
+        }
+      }
+    },
+    "0bded5af-f228-4444-96f6-b7ae1e402ad0": {
+      "actor": {
+        "kind": "outside",
+        "name": "Outside"
+      },
+      "label": "Changed outside the app",
+      "startedAt": 1795069781044,
+      "endedAt": 1795069781046,
+      "files": {
+        "assets/screen-login.webp": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/d1/d180f471a20b19c41e3e50938706990a9affb5f84a22e5334ac5df62661fd811",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/08/08da1fb93e4289f0477bdbf536817cdb18acef822b146f7037cc9b3aa53b0ca7"
+        },
+        "compositions/login.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/a4/a463d74a1a921b9e8e2ae9b6919b3897000d44e2dec2230a39788544c9d29a33",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/63/6384f697216a45180a6b04e493b595e2bcd627e439ba41f4e3f5b04346a3a395"
+        },
+        "compositions/upload.html": {
+          "before": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/92/9297848c84181da180fcf3853e5976e6c0b7c73c4132392d0381572529f5d0a6",
+          "after": "/Users/prabinkarki/.cache/hyperframes/history/ed703ddd-f43a-4695-934c-5c2f75369dc1/blobs/e7/e73de743084466c0cfedee46732d2df8fb3329287f0980717cdf543c4bd0978c"
+        }
+      }
+    }
+  },
+  "checks": {
+    "latest": {
+      "revision": "0bded5af-f228-4444-96f6-b7ae1e402ad0",
+      "id": "eaffd9a9-5661-47d3-b945-b20b1e10de10"
+    },
+    "revisions": {
+      "69914235-c7c5-48ea-8fc3-fdc2348a2762": [
+        {
+          "id": "21b27659-bce5-4208-9fe0-1e6b463a18c8",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/checks/21b27659-bce5-4208-9fe0-1e6b463a18c8.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795069188391,
+          "contentHash": "61bca0ae7236657b0c5b3a665913d8b9eef720e95bccf9dae7dd2c5ef6f31881",
+          "revision": "69914235-c7c5-48ea-8fc3-fdc2348a2762",
+          "inputFingerprint": "d01dbbe510f5c592a4626db22d9dfec9a117ac099a2b3629578233b05aaef691",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "0bded5af-f228-4444-96f6-b7ae1e402ad0": [
+        {
+          "id": "eaffd9a9-5661-47d3-b945-b20b1e10de10",
+          "scope": "project",
+          "report": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/checks/eaffd9a9-5661-47d3-b945-b20b1e10de10.json",
+          "metadata": {
+            "ok": true,
+            "browserSkipped": false,
+            "options": {
+              "samples": 9,
+              "atTransitions": false,
+              "maxIssues": 80,
+              "collapseStatic": true,
+              "tolerance": 2,
+              "timeout": 45000,
+              "cache": true,
+              "contrast": true,
+              "craft": true,
+              "strict": false,
+              "snapshots": false,
+              "safeZones": [
+                "tiktok",
+                "reels",
+                "shorts"
+              ],
+              "browserGpuMode": "auto",
+              "includeUnmounted": false
+            }
+          },
+          "createdAt": 1795069782744,
+          "contentHash": "61bca0ae7236657b0c5b3a665913d8b9eef720e95bccf9dae7dd2c5ef6f31881",
+          "revision": "0bded5af-f228-4444-96f6-b7ae1e402ad0",
+          "inputFingerprint": "15ceb447ec323510138e43aa9cd9524f7c8304ce6d566911a4de138de7529171",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "id": "be292fc7-52ec-459f-9c77-c5ccd74311bb",
+        "scope": "project",
+        "report": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/checks/be292fc7-52ec-459f-9c77-c5ccd74311bb.json",
+        "metadata": {
+          "ok": true,
+          "browserSkipped": false,
+          "options": {
+            "samples": 9,
+            "atTransitions": false,
+            "maxIssues": 80,
+            "collapseStatic": true,
+            "tolerance": 2,
+            "timeout": 45000,
+            "cache": true,
+            "contrast": true,
+            "craft": true,
+            "strict": false,
+            "snapshots": false,
+            "safeZones": [
+              "tiktok",
+              "reels",
+              "shorts"
+            ],
+            "browserGpuMode": "auto",
+            "includeUnmounted": false
+          }
+        },
+        "createdAt": 1795069164865,
+        "contentHash": "f4adc2794e5aca490c78c495f9b60460f5e3a9ba347c1e92ea54d4468360e133",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "snapshots": {
+    "latest": {
+      "revision": "0bded5af-f228-4444-96f6-b7ae1e402ad0",
+      "id": "b3795016-0d58-466a-8c69-50eeaa8ac849-4"
+    },
+    "revisions": {
+      "69914235-c7c5-48ea-8fc3-fdc2348a2762": [
+        {
+          "scope": "full",
+          "id": "130b7dce-2d72-4f6f-8310-152f9ebfe033-0",
+          "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/193ef7df-3e5f-44f2-b039-31b7af5203fe/frame-00-at-0s.png",
+          "time": 0,
+          "metadata": {
+            "width": 1920,
+            "height": 1200,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795069192282,
+          "contentHash": "ae5b330668710d7bc48e0ad816ddb8fa2fcefc1a12bad59e22eb9abff020940b",
+          "revision": "69914235-c7c5-48ea-8fc3-fdc2348a2762",
+          "inputFingerprint": "d01dbbe510f5c592a4626db22d9dfec9a117ac099a2b3629578233b05aaef691",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "130b7dce-2d72-4f6f-8310-152f9ebfe033-1",
+          "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/193ef7df-3e5f-44f2-b039-31b7af5203fe/frame-01-at-0.5s.png",
+          "time": 0.5,
+          "metadata": {
+            "width": 1920,
+            "height": 1200,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795069192283,
+          "contentHash": "b5f577c7fa8c32be4e92709abfe95cb511b1e0f5988d9ed50b4eb6f2216cc9de",
+          "revision": "69914235-c7c5-48ea-8fc3-fdc2348a2762",
+          "inputFingerprint": "d01dbbe510f5c592a4626db22d9dfec9a117ac099a2b3629578233b05aaef691",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "130b7dce-2d72-4f6f-8310-152f9ebfe033-2",
+          "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/193ef7df-3e5f-44f2-b039-31b7af5203fe/frame-02-at-15.75s.png",
+          "time": 15.75,
+          "metadata": {
+            "width": 1920,
+            "height": 1200,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795069192283,
+          "contentHash": "e5f99af7c0d9c35080dad92c7a3fca242cd95402f4d49e75797b4c8056725cef",
+          "revision": "69914235-c7c5-48ea-8fc3-fdc2348a2762",
+          "inputFingerprint": "d01dbbe510f5c592a4626db22d9dfec9a117ac099a2b3629578233b05aaef691",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ],
+      "0bded5af-f228-4444-96f6-b7ae1e402ad0": [
+        {
+          "scope": "full",
+          "id": "b3795016-0d58-466a-8c69-50eeaa8ac849-0",
+          "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/13dd6675-592c-45a0-9ead-51a57cd3e71e/frame-00-at-0.6s.png",
+          "time": 0.6,
+          "metadata": {
+            "width": 1920,
+            "height": 1200,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795069786645,
+          "contentHash": "ae2fb6d16c3d8013a9c86a57e7c59cbcafbc8b7d6457da7db9655b52b7af8e29",
+          "revision": "0bded5af-f228-4444-96f6-b7ae1e402ad0",
+          "inputFingerprint": "15ceb447ec323510138e43aa9cd9524f7c8304ce6d566911a4de138de7529171",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "b3795016-0d58-466a-8c69-50eeaa8ac849-1",
+          "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/13dd6675-592c-45a0-9ead-51a57cd3e71e/frame-01-at-2.2s.png",
+          "time": 2.2,
+          "metadata": {
+            "width": 1920,
+            "height": 1200,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795069786645,
+          "contentHash": "0d4a056e1e58d318c813a9150909bed5909fa6538aa371fba595ec8617f7c283",
+          "revision": "0bded5af-f228-4444-96f6-b7ae1e402ad0",
+          "inputFingerprint": "15ceb447ec323510138e43aa9cd9524f7c8304ce6d566911a4de138de7529171",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "b3795016-0d58-466a-8c69-50eeaa8ac849-2",
+          "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/13dd6675-592c-45a0-9ead-51a57cd3e71e/frame-02-at-3.4s.png",
+          "time": 3.4,
+          "metadata": {
+            "width": 1920,
+            "height": 1200,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795069786645,
+          "contentHash": "0555d06868836d21c5fd34d05f57e1130e8ac7ba34d1fc198001155233f348ae",
+          "revision": "0bded5af-f228-4444-96f6-b7ae1e402ad0",
+          "inputFingerprint": "15ceb447ec323510138e43aa9cd9524f7c8304ce6d566911a4de138de7529171",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "b3795016-0d58-466a-8c69-50eeaa8ac849-3",
+          "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/13dd6675-592c-45a0-9ead-51a57cd3e71e/frame-03-at-4.7s.png",
+          "time": 4.7,
+          "metadata": {
+            "width": 1920,
+            "height": 1200,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795069786645,
+          "contentHash": "e9b4ccfaf7d48b107cc8d27b1bcf6ce9d039992f175ba4b832288045cb715f94",
+          "revision": "0bded5af-f228-4444-96f6-b7ae1e402ad0",
+          "inputFingerprint": "15ceb447ec323510138e43aa9cd9524f7c8304ce6d566911a4de138de7529171",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        },
+        {
+          "scope": "full",
+          "id": "b3795016-0d58-466a-8c69-50eeaa8ac849-4",
+          "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/13dd6675-592c-45a0-9ead-51a57cd3e71e/frame-04-at-15.75s.png",
+          "time": 15.75,
+          "metadata": {
+            "width": 1920,
+            "height": 1200,
+            "zoomScale": 1,
+            "browserGpuMode": "auto",
+            "warnings": [],
+            "partial": false
+          },
+          "createdAt": 1795069786645,
+          "contentHash": "e5f99af7c0d9c35080dad92c7a3fca242cd95402f4d49e75797b4c8056725cef",
+          "revision": "0bded5af-f228-4444-96f6-b7ae1e402ad0",
+          "inputFingerprint": "15ceb447ec323510138e43aa9cd9524f7c8304ce6d566911a4de138de7529171",
+          "inputScope": "local-project-files",
+          "attribution": "recorded-revision"
+        }
+      ]
+    },
+    "unversioned": [
+      {
+        "scope": "full",
+        "id": "4e6e6859-3f20-403e-a942-dea24a7a8d0c-0",
+        "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/a12f5bba-cc04-4b20-b5d3-ed53f6d4b96b/frame-00-at-0s.png",
+        "time": 0,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795069169743,
+        "contentHash": "a2c630bdabb15872b61f96c69a3aee2e665a0e99418cb5328e139b0defd3794f",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "4e6e6859-3f20-403e-a942-dea24a7a8d0c-1",
+        "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/a12f5bba-cc04-4b20-b5d3-ed53f6d4b96b/frame-01-at-0.8s.png",
+        "time": 0.8,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795069169743,
+        "contentHash": "adf51cafaeabf2b6a55cc56cfbdb8da9c7f15c9a8bac8ddd1a823c4d597d3661",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "4e6e6859-3f20-403e-a942-dea24a7a8d0c-2",
+        "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/a12f5bba-cc04-4b20-b5d3-ed53f6d4b96b/frame-02-at-3.4s.png",
+        "time": 3.4,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795069169743,
+        "contentHash": "22ec38ec57348ccab3c769419739c8062678e8ea9969db67228cf70b628aa7b5",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "4e6e6859-3f20-403e-a942-dea24a7a8d0c-3",
+        "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/a12f5bba-cc04-4b20-b5d3-ed53f6d4b96b/frame-03-at-5s.png",
+        "time": 5,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795069169743,
+        "contentHash": "3b8ed5a8ae22a5c644367a4306c424c495df586f75b63b536002e10817a6e6a2",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "4e6e6859-3f20-403e-a942-dea24a7a8d0c-4",
+        "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/a12f5bba-cc04-4b20-b5d3-ed53f6d4b96b/frame-04-at-7.6s.png",
+        "time": 7.6,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795069169743,
+        "contentHash": "c2be23f3d69afa6d8295fa4e1b57ee545b07f40634c2a9382405f60bda40fd89",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "4e6e6859-3f20-403e-a942-dea24a7a8d0c-5",
+        "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/a12f5bba-cc04-4b20-b5d3-ed53f6d4b96b/frame-05-at-10s.png",
+        "time": 10,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795069169743,
+        "contentHash": "1d75b0abc430557691137ff9b96ee31fea4b9204e302d061fd21cea0ad7bc374",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "4e6e6859-3f20-403e-a942-dea24a7a8d0c-6",
+        "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/a12f5bba-cc04-4b20-b5d3-ed53f6d4b96b/frame-06-at-11.5s.png",
+        "time": 11.5,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795069169743,
+        "contentHash": "58f4f0ac09863adda89defaf7f371fff2aab8644a8b1c3075fdd344a6d7e7d48",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "4e6e6859-3f20-403e-a942-dea24a7a8d0c-7",
+        "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/a12f5bba-cc04-4b20-b5d3-ed53f6d4b96b/frame-07-at-13.5s.png",
+        "time": 13.5,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795069169743,
+        "contentHash": "1aa00415eed80ef0b71e9c8d0d0ee74d64d053b698ec69389cbe2076af177379",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "4e6e6859-3f20-403e-a942-dea24a7a8d0c-8",
+        "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/a12f5bba-cc04-4b20-b5d3-ed53f6d4b96b/frame-08-at-15.9s.png",
+        "time": 15.9,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795069169743,
+        "contentHash": "cf92fbe83e19b0452a90466b212b8cf2fa179e227370100f74853bc26ec8b78d",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      },
+      {
+        "scope": "full",
+        "id": "4e6e6859-3f20-403e-a942-dea24a7a8d0c-9",
+        "image": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/.hyperframes/artifacts/snapshots/a12f5bba-cc04-4b20-b5d3-ed53f6d4b96b/frame-09-at-15.75s.png",
+        "time": 15.75,
+        "metadata": {
+          "width": 1920,
+          "height": 1200,
+          "zoomScale": 1,
+          "browserGpuMode": "auto",
+          "warnings": [],
+          "partial": false
+        },
+        "createdAt": 1795069169744,
+        "contentHash": "e5f99af7c0d9c35080dad92c7a3fca242cd95402f4d49e75797b4c8056725cef",
+        "revision": null,
+        "inputFingerprint": "92f6bd8e8325a5538740e4696cc5b0e39f04f53c254824e7dbca72801b563cce",
+        "inputScope": "local-project-files",
+        "attribution": "unversioned"
+      }
+    ]
+  },
+  "renders": {
+    "latest": {
+      "id": "ad92c10e-a157-468c-9e95-7e83c9dd8db1",
+      "completedAt": 1795069807501,
+      "output": "/Users/prabinkarki/Desktop/portfolio/rag-laptop-card/renders/rag-laptop-card.mp4",
+      "status": "completed",
+      "revision": "0bded5af-f228-4444-96f6-b7ae1e402ad0"
+    },
+    "retainedRevisions": [
+      "0bded5af-f228-4444-96f6-b7ae1e402ad0",
+      "69914235-c7c5-48ea-8fc3-fdc2348a2762"
+    ]
+  },
+  "pendingArtifactCleanup": []
+}

@@ -1,0 +1,92 @@
+<template>
+  <style>
+    #root { position: absolute; inset: 0; width: 1920px; height: 1200px; overflow: hidden;
+      background: radial-gradient(ellipse 70% 60% at 30% 30%, #0f3a22 0%, #08180f 45%, #030705 100%); }
+    .amb { position: absolute; border-radius: 50%; pointer-events: none; }
+    #login-amb-a { width: 1500px; height: 1100px; left: -380px; top: -420px;
+      background: radial-gradient(circle, rgba(34,197,94,0.32) 0%, rgba(34,197,94,0) 68%); }
+    #login-amb-b { width: 1100px; height: 900px; left: 1150px; top: -260px;
+      background: radial-gradient(circle, rgba(16,185,129,0.16) 0%, rgba(16,185,129,0) 70%); }
+    .bokeh { position: absolute; border-radius: 50%; pointer-events: none; }
+    .desk { position: absolute; left: -100px; right: -100px; top: 560px; height: 760px;
+      background: linear-gradient(rgba(11,16,13,0) 0%, #0b100d 12%, #070a08 45%, #030403 100%); }
+    .desk-sheen { position: absolute; left: 200px; top: 600px; width: 1500px; height: 360px; border-radius: 50%;
+      background: radial-gradient(ellipse, rgba(60,220,130,0.10) 0%, rgba(60,220,130,0) 70%); }
+    .stage3d { position: absolute; inset: 0; perspective: 2300px; perspective-origin: 50% 32%; }
+    .rig { position: absolute; left: 0; top: 0; width: 1920px; height: 1200px; transform-style: preserve-3d; }
+    .deck { position: absolute; left: 270px; top: 890px; width: 1380px; height: 900px; border-radius: 6px 6px 40px 40px;
+      transform-style: preserve-3d;
+      background: radial-gradient(ellipse 60% 45% at 50% 0%, rgba(40,210,120,0.20) 0%, rgba(40,210,120,0) 100%),
+        linear-gradient(#c9ccd2 0%, #b3b6bd 60%, #9c9fa7 100%);
+      box-shadow: 0 0 140px 60px rgba(0,0,0,0.75); }
+    .lip { position: absolute; left: 0; top: 100%; width: 100%; height: 24px; border-radius: 0 0 30px 30px;
+      background: linear-gradient(#8c8f97, #5e6168); }
+    .keys { position: absolute; left: 110px; top: 70px; width: 1160px; height: 450px; border-radius: 14px; padding: 14px;
+      background: #2a2c31; display: flex; flex-direction: column; gap: 10px; }
+    .row { display: flex; gap: 10px; flex: 1; }
+    .row.fn { flex: 0.6; }
+    .k { flex: 1; border-radius: 8px; background: linear-gradient(#202125, #141518);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.07), 0 0 6px rgba(40,210,120,0.10); }
+    .pad { position: absolute; left: 400px; top: 560px; width: 580px; height: 300px; border-radius: 22px;
+      background: linear-gradient(#bfc2c9, #a9acb3); box-shadow: inset 0 0 0 2px rgba(0,0,0,0.10); }
+    .lid { position: absolute; left: 310px; top: 150px; width: 1300px; height: 740px; border-radius: 30px 30px 8px 8px;
+      transform-style: preserve-3d; }
+    .lid-front { position: absolute; inset: 0; border-radius: inherit; background: #0c0c0f; backface-visibility: hidden;
+      box-shadow: 0 0 0 3px #50535b, 0 0 60px rgba(40,210,120,0.25); }
+    .lid-back { position: absolute; inset: 0; border-radius: inherit; backface-visibility: hidden;
+      background: linear-gradient(135deg, #d6d8dd 0%, #a7aab2 60%, #8e9199 100%); }
+    .notch { position: absolute; left: 50%; top: 0; width: 150px; height: 22px; margin-left: -75px;
+      border-radius: 0 0 12px 12px; background: #000; z-index: 30; backface-visibility: hidden; }
+    .display { position: absolute; left: 30px; top: 30px; width: 1240px; height: 680px; overflow: hidden; border-radius: 6px; background: #0b0b0e; backface-visibility: hidden; }
+    .shot { position: absolute; left: 0; width: 1240px; height: auto; display: block; }
+    .cursor { position: absolute; width: 34px; height: 46px; z-index: 40; opacity: 0; }
+    .click { position: absolute; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+      border: 3px solid rgba(255,255,255,0.9); background: rgba(255,255,255,0.18); opacity: 0; z-index: 39; }
+  </style>
+  <div id="root" data-composition-id="login" data-width="1920" data-height="1200">
+    <div id="login-amb-a" class="amb" data-layout-ignore=""></div>
+    <div id="login-amb-b" class="amb" data-layout-ignore=""></div>
+    <div class="bokeh" data-layout-ignore="" style="left:140px;top:180px;width:90px;height:90px;background:radial-gradient(circle, rgba(120,255,170,0.18) 0%, rgba(120,255,170,0) 70%)"></div>
+    <div class="bokeh" data-layout-ignore="" style="left:330px;top:90px;width:50px;height:50px;background:radial-gradient(circle, rgba(120,255,170,0.14) 0%, rgba(120,255,170,0) 70%)"></div>
+    <div class="bokeh" data-layout-ignore="" style="left:1580px;top:140px;width:120px;height:120px;background:radial-gradient(circle, rgba(120,255,170,0.12) 0%, rgba(120,255,170,0) 70%)"></div>
+    <div class="bokeh" data-layout-ignore="" style="left:1760px;top:320px;width:70px;height:70px;background:radial-gradient(circle, rgba(120,255,170,0.16) 0%, rgba(120,255,170,0) 70%)"></div>
+    <div class="bokeh" data-layout-ignore="" style="left:1450px;top:60px;width:40px;height:40px;background:radial-gradient(circle, rgba(120,255,170,0.18) 0%, rgba(120,255,170,0) 70%)"></div>
+    <div class="bokeh" data-layout-ignore="" style="left:60px;top:420px;width:60px;height:60px;background:radial-gradient(circle, rgba(120,255,170,0.1) 0%, rgba(120,255,170,0) 70%)"></div>
+    <div class="desk" data-layout-ignore=""></div>
+    <div class="desk-sheen" data-layout-ignore=""></div>
+    <div class="stage3d" data-layout-ignore="">
+      <div id="login-rig" class="rig clip" data-start="0" data-duration="4.5" data-track-index="0" data-layout-allow-overflow="">
+        <div id="login-deck" class="deck"><div class="keys"><div class="row fn"><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div></div><div class="row"><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1.6"></div></div><div class="row"><div class="k" style="flex:1.6"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div></div><div class="row"><div class="k" style="flex:1.9"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1.9"></div></div><div class="row"><div class="k" style="flex:2.4"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:2.4"></div></div><div class="row"><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1.3"></div><div class="k" style="flex:5.6"></div><div class="k" style="flex:1.3"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div><div class="k" style="flex:1"></div></div></div><div class="pad"></div><div id="login-lip" class="lip"></div></div>
+        <div id="login-lid" class="lid">
+          <div id="login-lid-back" class="lid-back"></div>
+          <div class="lid-front"></div>
+          <div class="notch"></div>
+          <div class="display" data-layout-allow-overflow="">
+            <img id="login-shot" class="shot" style="top:-4.1px" src="assets/screen-login.webp" alt="QR Branding sign-in screen" />
+            <div id="login-cursor" class="cursor" style="left:0;top:0"><svg viewBox="0 0 34 46" width="34" height="46"><path d="M3 2 L3 36 L11 28 L17 42 L23 39 L17 26 L29 26 Z" fill="#fff" stroke="#000" stroke-width="2.4" stroke-linejoin="round"/></svg></div>
+            <div id="login-click" class="click" style="left:0;top:0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    const tl = gsap.timeline({ paused: true });
+    gsap.set("#login-rig", { transformOrigin: "960px 760px", y: -60 });
+    gsap.set("#login-deck", { rotationX: 90, transformOrigin: "50% 0%" });
+    gsap.set("#login-lip", { rotationX: -90, transformOrigin: "50% 0%" });
+    gsap.set("#login-lid-back", { rotationY: 180 });
+    gsap.set("#login-lid", { rotationX: -86, transformOrigin: "50% 100%" });
+    tl.fromTo("#login-amb-a", { x: 0, opacity: 0.85 }, { x: -30, opacity: 0.8875, duration: 4.5, ease: "none" }, 0);
+    tl.fromTo("#login-amb-b", { x: 0 }, { x: 22.5, duration: 4.5, ease: "none" }, 0);
+    tl.fromTo("#login-rig", { rotationY: -30, rotationX: -24, z: -1020 }, { rotationY: -26, rotationX: -22.5, z: -955, duration: 4.5, ease: "none" }, 0);
+    tl.to("#login-lid", { rotationX: 12, duration: 1.8, ease: "power2.inOut" }, 0.2);
+    tl.fromTo("#login-shot", { opacity: 0 }, { opacity: 1, duration: 0.9, ease: "power1.out" }, 1.0);
+    tl.fromTo("#login-cursor", { x: 980, y: 640, opacity: 0 }, { opacity: 1, duration: 0.2 }, 2.4);
+    tl.to("#login-cursor", { x: 620, y: 486, duration: 0.9, ease: "power2.inOut" }, 2.5);
+    tl.to("#login-cursor", { scale: 0.85, duration: 0.08, yoyo: true, repeat: 1, transformOrigin: "0 0" }, 3.45);
+    tl.fromTo("#login-click", { x: 620, y: 486, scale: 0.3, opacity: 0 }, { scale: 1, opacity: 1, duration: 0.14, ease: "power2.out" }, 3.45);
+    tl.to("#login-click", { scale: 1.5, opacity: 0, duration: 0.4, ease: "power2.out" }, 3.62);
+    window.__timelines["login"] = tl;
+  </script>
+</template>

@@ -1,0 +1,489 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 5
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 8,
+    "findings": [
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 1.167,
+        "selector": "#welcome-glow-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 403.33,
+          "top": -416.67,
+          "right": 1503.33,
+          "bottom": 683.33,
+          "width": 1100,
+          "height": 1100
+        },
+        "containerSelector": "#welcome > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "top": 416.67
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/welcome.html",
+        "bbox": {
+          "x": 403.33,
+          "y": -416.67,
+          "width": 1100,
+          "height": 1100
+        },
+        "firstSeen": 1.167,
+        "lastSeen": 3.5,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          1.167,
+          3.5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 1.167,
+        "selector": "#welcome-glow-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -292.22,
+          "top": 295,
+          "right": 607.78,
+          "bottom": 1195,
+          "width": 900,
+          "height": 900
+        },
+        "containerSelector": "#welcome > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "left": 292.22
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/welcome.html",
+        "bbox": {
+          "x": -292.22,
+          "y": 295,
+          "width": 900,
+          "height": 900
+        },
+        "firstSeen": 1.167,
+        "lastSeen": 3.5,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          1.167,
+          3.5
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 5.833,
+        "selector": "#dashboard-glow-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 376.86,
+          "top": -403.43,
+          "right": 1476.86,
+          "bottom": 696.57,
+          "width": 1100,
+          "height": 1100
+        },
+        "containerSelector": "#dashboard > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "top": 403.43
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/dashboard.html",
+        "bbox": {
+          "x": 376.86,
+          "y": -403.43,
+          "width": 1100,
+          "height": 1100
+        },
+        "firstSeen": 5.833,
+        "lastSeen": 8.167,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          5.833,
+          8.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 5.833,
+        "selector": "#dashboard-glow-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -261.33,
+          "top": 275.14,
+          "right": 638.67,
+          "bottom": 1175.14,
+          "width": 900,
+          "height": 900
+        },
+        "containerSelector": "#dashboard > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "left": 261.33
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/dashboard.html",
+        "bbox": {
+          "x": -261.33,
+          "y": 275.14,
+          "width": 900,
+          "height": 900
+        },
+        "firstSeen": 5.833,
+        "lastSeen": 8.167,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          5.833,
+          8.167
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 10.5,
+        "selector": "#ai-rishi-glow-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 350,
+          "top": -390,
+          "right": 1450,
+          "bottom": 710,
+          "width": 1100,
+          "height": 1100
+        },
+        "containerSelector": "#ai-rishi > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "top": 390
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/ai-rishi.html",
+        "bbox": {
+          "x": 350,
+          "y": -390,
+          "width": 1100,
+          "height": 1100
+        },
+        "firstSeen": 10.5,
+        "lastSeen": 12.833,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          10.5,
+          12.833
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 10.5,
+        "selector": "#ai-rishi-glow-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -230,
+          "top": 255,
+          "right": 670,
+          "bottom": 1155,
+          "width": 900,
+          "height": 900
+        },
+        "containerSelector": "#ai-rishi > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "left": 230
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/ai-rishi.html",
+        "bbox": {
+          "x": -230,
+          "y": 255,
+          "width": 900,
+          "height": 900
+        },
+        "firstSeen": 10.5,
+        "lastSeen": 12.833,
+        "occurrences": 2,
+        "heldMs": 0,
+        "times": [
+          10.5,
+          12.833
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 15.167,
+        "selector": "#astrologer-glow-a",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 323.33,
+          "top": -376.67,
+          "right": 1423.33,
+          "bottom": 723.33,
+          "width": 1100,
+          "height": 1100
+        },
+        "containerSelector": "#astrologer > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "top": 376.67
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/astrologer.html",
+        "bbox": {
+          "x": 323.33,
+          "y": -376.67,
+          "width": 1100,
+          "height": 1100
+        },
+        "firstSeen": 15.167,
+        "lastSeen": 19.833,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          15.167,
+          17.5,
+          19.833
+        ]
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 15.167,
+        "selector": "#astrologer-glow-b",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -198.89,
+          "top": 235,
+          "right": 701.11,
+          "bottom": 1135,
+          "width": 900,
+          "height": 900
+        },
+        "containerSelector": "#astrologer > div:nth-of-type(1)",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1920,
+          "bottom": 1200,
+          "width": 1920,
+          "height": 1200
+        },
+        "overflow": {
+          "left": 198.89
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/astrologer.html",
+        "bbox": {
+          "x": -198.89,
+          "y": 235,
+          "width": 900,
+          "height": 900
+        },
+        "firstSeen": 15.167,
+        "lastSeen": 19.833,
+        "occurrences": 3,
+        "heldMs": 0,
+        "times": [
+          15.167,
+          17.5,
+          19.833
+        ]
+      }
+    ],
+    "duration": 21,
+    "samples": [
+      1.167,
+      3.5,
+      5.833,
+      8.167,
+      10.5,
+      12.833,
+      15.167,
+      17.5,
+      19.833
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 8,
+    "truncated": false,
+    "faceCheck": {
+      "ran": true,
+      "candidates": 0,
+      "faces": 0
+    }
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      1.167,
+      5.833,
+      10.5,
+      15.167,
+      19.833
+    ],
+    "checked": 0,
+    "passed": 0
+  },
+  "craft": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "film_silent",
+        "severity": "warning",
+        "message": "This 21 s film has no sound source (no <audio>, no <video> with sound): add a music bed and sounds on the visible actions unless the person asked for silence; see references/sound.md.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ],
+    "enabled": true,
+    "step": 0.125,
+    "samples": 168
+  },
+  "audio": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "audio_none",
+        "severity": "info",
+        "message": "The film has no sound: no clip in it plays audio.",
+        "selector": "[data-composition-id]",
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0
+      }
+    ]
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  }
+}
