@@ -4,30 +4,26 @@ export const siteConfig: SiteConfig = {
   name: "Prabin Karki",
   title: "Full Stack & Mobile Engineer",
   shortBio:
-    "Full Stack & Mobile Engineer with a passion for building resilient web platforms and fluid cross-platform mobile apps. Specialized in React, React Native, Next.js, and Django, with hands-on experience in real-time WebRTC communications and local AI/RAG systems.",
-  statsLine: "Engineered scalable mobile & full-stack systems with 10k+ interactions.",
-  favoriteQuote: {
-    quote:
-      "Simplicity is prerequisite for reliability. Make it work, make it right, make it fast.",
-    author: "Edsger W. Dijkstra",
-  },
+    "I build fast, reliable web platforms and cross-platform mobile apps with React, Next.js, React Native and Django.",
   email: "Prabinkarki789@gmail.com",
   socials: {
     github: "https://github.com/prabin2058",
-    linkedin: "https://linkedin.com/in/prabinkarki", // TODO: Update if specific LinkedIn handle differs
-    twitter: "https://x.com",
-  },
+    linkedin: "https://www.linkedin.com/in/prabin-karki-157072306/",  },
   navLinks: [
     { label: "Expertise", href: "#expertise" },
     { label: "Projects", href: "#projects" },
     { label: "Experience", href: "#experience" },
-    { label: "Testimonials", href: "#testimonials" },
     { label: "Contact", href: "#contact" },
   ],
   skills: [
     {
       category: "Frontend & Full Stack",
       subtitle: "Web applications, REST APIs & reactive state architecture",
+      video: {
+        mp4: "/skills/frontend-skill.mp4",
+        webm: "/skills/frontend-skill.webm",
+        poster: "/skills/frontend-skill-poster.jpg",
+      },
       technologies: [
         { name: "React.js" },
         { name: "Next.js" },
@@ -40,6 +36,11 @@ export const siteConfig: SiteConfig = {
     {
       category: "Mobile & Real-Time Engineering",
       subtitle: "Cross-platform mobile apps, WebRTC & native device integrations",
+      video: {
+        mp4: "/skills/mobile-skill.mp4",
+        webm: "/skills/mobile-skill.webm",
+        poster: "/skills/mobile-skill-poster.jpg",
+      },
       technologies: [
         { name: "React Native" },
         { name: "Expo & EAS" },

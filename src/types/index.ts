@@ -13,21 +13,21 @@ export interface SiteConfig {
   name: string;
   title: string;
   shortBio: string;
-  statsLine: string;
-  favoriteQuote: {
-    quote: string;
-    author: string;
-  };
   email: string;
   socials: {
     github: string;
     linkedin: string;
-    twitter?: string;
   };
   navLinks: NavLink[];
   skills: {
     category: string;
     subtitle: string;
+    /** Optional looping video shown at the top of the skill card. */
+    video?: {
+      mp4: string;
+      webm?: string;
+      poster?: string;
+    };
     technologies: {
       name: string;
       iconName?: string;
@@ -41,6 +41,10 @@ export interface ProjectItem {
   description: string;
   category: 'Web Development' | 'Data Visualization' | 'Mobile';
   imageUrl: string;
+  /** Looping preview video for the card header: MP4, optional smaller WebM, and a poster frame. */
+  videoUrl?: string;
+  videoWebmUrl?: string;
+  videoPosterUrl?: string;
   techStack: string[];
   liveUrl?: string;
   githubUrl?: string;
@@ -56,13 +60,4 @@ export interface ExperienceItem {
   period: string;
   description: string[];
   technologies: string[];
-}
-
-export interface TestimonialItem {
-  id: string;
-  quote: string;
-  author: string;
-  role: string;
-  company: string;
-  avatarUrl?: string;
 }
