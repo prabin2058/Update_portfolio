@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ExternalLink, Layers, Smartphone, Database, BarChart3, Code } from "lucide-react";
+import { Layers, Smartphone, Database, BarChart3, Code } from "lucide-react";
 import { ProjectItem } from "@/types";
 import { GithubIcon } from "@/components/common/SocialIcons";
 
@@ -52,7 +52,37 @@ export function ProjectCard({ project }: ProjectCardProps) {
       className="group rounded-3xl overflow-hidden bg-white/70 dark:bg-slate-900/70 border border-slate-200/80 dark:border-slate-800 backdrop-blur-xl shadow-lg hover:shadow-2xl hover:border-emerald-500/40 transition-all duration-300 flex flex-col justify-between"
     >
       <div>
-        {/* Visual Cover / Preview Header (No missing image broken icon!) */}
+        {project.videoUrl ? (
+          /* Looping product video preview */
+          <div className="relative w-full aspect-[16/10] overflow-hidden bg-slate-950 border-b border-slate-200/60 dark:border-slate-800/60">
+            <video
+              className="absolute inset-0 h-full w-full object-cover"
+              autoPlay
+              muted
+              loop
+              playsInline
+              preload="metadata"
+              poster={project.videoPosterUrl}
+              aria-label={`${project.title} app walkthrough`}
+            >
+              {project.videoWebmUrl && <source src={project.videoWebmUrl} type="video/webm" />}
+              <source src={project.videoUrl} type="video/mp4" />
+            </video>
+
+            <div className="absolute inset-x-0 top-0 z-10 flex items-center justify-between gap-2 p-4">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider border border-white/25 bg-black/30 text-white backdrop-blur-md">
+                <CategoryIcon className="w-3.5 h-3.5" />
+                <span>{project.category}</span>
+              </span>
+              {project.featured && (
+                <span className="px-2.5 py-0.5 rounded-full text-[11px] font-mono font-medium border border-amber-300/40 bg-black/30 text-amber-200 backdrop-blur-md">
+                  Featured
+                </span>
+              )}
+            </div>
+          </div>
+        ) : (
+        /* Visual Cover / Preview Header (No missing image broken icon!) */
         <div className={`relative h-48 w-full bg-gradient-to-br ${style.gradient} border-b border-slate-200/60 dark:border-slate-800/60 p-6 flex flex-col justify-between overflow-hidden`}>
           {/* Subtle geometric grid background inside card header */}
           <div className="absolute inset-0 opacity-20 dark:opacity-30 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-white/30 to-transparent pointer-events-none" />
@@ -88,6 +118,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </div>
           </div>
         </div>
+        )}
 
         {/* Content Body */}
         <div className="p-6">
@@ -116,19 +147,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {/* Action Links Footer */}
       <div className="p-6 pt-0 border-t border-slate-100 dark:border-slate-800/60 mt-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-emerald-600 dark:text-emerald-400 hover:text-emerald-500 transition-colors"
-              aria-label={`View live demo of ${project.title}`}
-            >
-              <span>Live Demo</span>
-              <ExternalLink className="w-3.5 h-3.5" />
-            </a>
-          )}
-
           {project.githubUrl && (
             <a
               href={project.githubUrl}

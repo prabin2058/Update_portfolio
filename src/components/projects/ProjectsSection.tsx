@@ -27,7 +27,7 @@ export function ProjectsSection() {
       { id: "Web Development" as CategoryFilter, label: "Web Development", count: counts["Web Development"] },
       { id: "Mobile" as CategoryFilter, label: "Mobile", count: counts.Mobile },
       { id: "Data Visualization" as CategoryFilter, label: "Data Visualization", count: counts["Data Visualization"] },
-    ];
+    ].filter((tab) => tab.count > 0);
   }, []);
 
   // Filter projects by selected category
