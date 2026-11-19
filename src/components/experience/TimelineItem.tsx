@@ -34,7 +34,7 @@ export function TimelineItem({ experience, isLast, index }: TimelineItemProps) {
         <motion.div
           whileHover={{ y: -4 }}
           transition={{ duration: 0.2 }}
-          className="rounded-3xl p-6 sm:p-8 bg-white/70 dark:bg-slate-900/70 border border-slate-200/80 dark:border-slate-800 backdrop-blur-xl shadow-lg hover:shadow-xl hover:border-emerald-500/30 transition-all duration-300"
+          className="rounded-3xl p-6 sm:p-8 bg-white/70 dark:bg-slate-900/70 backdrop-blur-xl shadow-lg hover:shadow-xl transition-all duration-300"
         >
           {/* Header: Role, Period, Company */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 mb-4">
@@ -66,11 +66,11 @@ export function TimelineItem({ experience, isLast, index }: TimelineItemProps) {
 
             {/* Badges: Period & Location */}
             <div className="flex flex-wrap sm:flex-col sm:items-end gap-2 text-xs">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-700 dark:text-emerald-300 font-medium">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-700 dark:text-emerald-300 font-medium">
                 <Calendar className="w-3.5 h-3.5 text-emerald-500" />
                 <span>{experience.period}</span>
               </span>
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 border border-slate-200/60 dark:border-slate-700/60 text-slate-600 dark:text-slate-400">
+              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 dark:bg-slate-800/80 text-slate-600 dark:text-slate-400">
                 <MapPin className="w-3.5 h-3.5 text-slate-400" />
                 <span>{experience.location}</span>
               </span>
@@ -88,11 +88,11 @@ export function TimelineItem({ experience, isLast, index }: TimelineItemProps) {
           </ul>
 
           {/* Tech Stack Chips */}
-          <div className="pt-4 border-t border-slate-100 dark:border-slate-800/80 flex flex-wrap gap-2">
+          <div className="pt-4 flex flex-wrap gap-2">
             {experience.technologies.map((tech) => (
               <span
                 key={tech}
-                className="px-3 py-1 rounded-lg text-xs font-mono font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200/60 dark:border-slate-700/60"
+                className="px-3 py-1 rounded-lg text-xs font-mono font-medium bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300"
               >
                 {tech}
               </span>
