@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/common/ThemeProvider";
+import { CometCursor } from "@/components/common/CometCursor";
 import { HashGuard } from "@/components/common/HashGuard";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
@@ -62,6 +63,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <HashGuard />
+          <CometCursor />
           <Navbar />
           <main className="flex-1 pt-16 md:pt-20">{children}</main>
           <Footer />
