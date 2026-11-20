@@ -1,8 +1,8 @@
 "use client";
 
 import { ArrowUp, Download } from "lucide-react";
-import { GithubIcon, LinkedinIcon } from "@/components/common/SocialIcons";
-import { siteConfig } from "@/data/site";
+import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/common/SocialIcons";
+import { siteConfig, whatsappUrl } from "@/data/site";
 import { Container } from "@/components/common/Container";
 import { CurrentYear } from "@/components/common/CurrentYear";
 
@@ -71,6 +71,16 @@ export function Footer() {
                   <LinkedinIcon className="w-4 h-4" />
                 </a>
               )}
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg flex items-center justify-center border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:text-[#25D366] dark:hover:text-[#25D366] hover:border-[#25D366]/40 transition-all"
+                aria-label="Chat on WhatsApp"
+                id="footer-whatsapp"
+              >
+                <WhatsappIcon className="w-4 h-4" />
+              </a>
             </div>
 
             {/* Back to top button */}
