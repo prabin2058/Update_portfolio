@@ -6,6 +6,7 @@ import { siteConfig } from "@/data/site";
 import { Container } from "@/components/common/Container";
 import { MotionWrapper } from "@/components/common/MotionWrapper";
 import { GithubIcon, LinkedinIcon } from "@/components/common/SocialIcons";
+import { ContactForm } from "@/components/contact/ContactForm";
 
 export function ContactCTA() {
   const [copied, setCopied] = useState(false);
@@ -28,8 +29,10 @@ export function ContactCTA() {
           {/* Subtle accent border line on top */}
           <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-emerald-500 via-teal-400 to-cyan-500" />
 
-          <div className="max-w-3xl mx-auto text-center">
-            <MotionWrapper direction="up">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            {/* Left column: headline, bio and direct contacts */}
+            <div className="lg:col-span-7">
+            <MotionWrapper direction="left">
               <div className="space-y-6">
                 {/* Live Availability Badge */}
                 <div className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-xs sm:text-sm font-semibold text-emerald-700 dark:text-emerald-300">
@@ -47,13 +50,13 @@ export function ContactCTA() {
                   </span>
                 </h2>
 
-                <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-xl mx-auto">
+                <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-xl">
                   Whether you have an upcoming mobile app, need full-stack architecture,
                   or want to consult on real-time WebRTC and AI applications, my inbox is open.
                 </p>
 
                 {/* Primary Contact Actions */}
-                <div className="flex flex-wrap items-center justify-center gap-3 pt-2">
+                <div className="flex flex-wrap items-center gap-3 pt-2">
                   <a
                     href={`mailto:${siteConfig.email}`}
                     className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl font-semibold text-sm bg-emerald-500 hover:bg-emerald-600 text-white shadow-lg shadow-emerald-500/20 hover:scale-[1.02] active:scale-[0.98] transition-all"
@@ -85,7 +88,7 @@ export function ContactCTA() {
                 </div>
 
                 {/* Direct info badges */}
-                <div className="pt-4 flex flex-wrap items-center justify-center gap-4 text-xs text-slate-500 dark:text-slate-400">
+                <div className="pt-4 flex flex-wrap items-center gap-4 text-xs text-slate-500 dark:text-slate-400">
                   <span className="flex items-center gap-1.5">
                     <MapPin className="w-3.5 h-3.5 text-emerald-500" />
                     <span>Kathmandu, Nepal (UTC+5:45)</span>
@@ -97,7 +100,7 @@ export function ContactCTA() {
                 </div>
 
                 {/* Social profiles */}
-                <div className="pt-2 flex items-center justify-center gap-3">
+                <div className="pt-2 flex items-center gap-3">
                   <span className="text-xs font-mono font-medium text-slate-400 uppercase tracking-wider">
                     Connect:
                   </span>
@@ -126,6 +129,14 @@ export function ContactCTA() {
                 </div>
               </div>
             </MotionWrapper>
+            </div>
+
+            {/* Right column: contact form (sends to your inbox through FormSubmit) */}
+            <div className="lg:col-span-5">
+              <MotionWrapper direction="right">
+                <ContactForm />
+              </MotionWrapper>
+            </div>
           </div>
         </div>
       </Container>
