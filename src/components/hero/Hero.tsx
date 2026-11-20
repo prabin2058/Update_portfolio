@@ -1,12 +1,12 @@
 "use client";
 
 import { ArrowRight, Mail } from "lucide-react";
-import { siteConfig } from "@/data/site";
+import { siteConfig, whatsappUrl } from "@/data/site";
 import { Container } from "@/components/common/Container";
 import { MotionWrapper } from "@/components/common/MotionWrapper";
 import { SkillCard } from "@/components/hero/SkillCard";
 import TextPressure from "@/components/TextPressure/TextPressure";
-import { GithubIcon, LinkedinIcon } from "@/components/common/SocialIcons";
+import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/common/SocialIcons";
 
 export function Hero() {
   return (
@@ -112,6 +112,15 @@ export function Hero() {
                     <LinkedinIcon className="w-4 h-4" />
                   </a>
                 )}
+                <a
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-11 h-11 rounded-xl flex items-center justify-center border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:text-[#25D366] dark:hover:text-[#25D366] hover:border-[#25D366]/40 transition-all text-slate-700 dark:text-slate-300"
+                  aria-label="Chat on WhatsApp"
+                >
+                  <WhatsappIcon className="w-4 h-4" />
+                </a>
               </div>
             </div>
           </MotionWrapper>
