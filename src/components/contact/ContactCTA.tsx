@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { Mail, ArrowRight, Check, Copy, Phone, MapPin } from "lucide-react";
-import { siteConfig } from "@/data/site";
+import { siteConfig, whatsappUrl } from "@/data/site";
 import { Container } from "@/components/common/Container";
 import { MotionWrapper } from "@/components/common/MotionWrapper";
-import { GithubIcon, LinkedinIcon } from "@/components/common/SocialIcons";
+import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/common/SocialIcons";
 import { ContactForm } from "@/components/contact/ContactForm";
 
 export function ContactCTA() {
@@ -85,6 +85,17 @@ export function ContactCTA() {
                       </>
                     )}
                   </button>
+
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-3.5 rounded-xl font-semibold text-sm bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 hover:border-[#25D366]/60 hover:text-[#25D366] dark:hover:text-[#25D366] transition-all shadow-sm"
+                    id="contact-whatsapp-btn"
+                  >
+                    <WhatsappIcon className="w-4 h-4 text-[#25D366]" />
+                    <span>Chat on WhatsApp</span>
+                  </a>
                 </div>
 
                 {/* Direct info badges */}
@@ -95,7 +106,7 @@ export function ContactCTA() {
                   </span>
                   <span className="flex items-center gap-1.5">
                     <Phone className="w-3.5 h-3.5 text-emerald-500" />
-                    <span>+977 9803491612</span>
+                    <a href={`tel:${siteConfig.phone.replace(/\s/g, "")}`} className="hover:text-emerald-500 transition-colors">{siteConfig.phone}</a>
                   </span>
                 </div>
 
@@ -109,7 +120,7 @@ export function ContactCTA() {
                       href={siteConfig.socials.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-xl flex items-center justify-center border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-850 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500/30 transition-all text-slate-700 dark:text-slate-300 shadow-sm"
+                      className="w-10 h-10 rounded-xl flex items-center justify-center border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500/30 transition-all text-slate-700 dark:text-slate-300 shadow-sm"
                       aria-label="GitHub profile"
                     >
                       <GithubIcon className="w-4 h-4" />
@@ -120,12 +131,21 @@ export function ContactCTA() {
                       href={siteConfig.socials.linkedin}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-10 h-10 rounded-xl flex items-center justify-center border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-850 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500/30 transition-all text-slate-700 dark:text-slate-300 shadow-sm"
+                      className="w-10 h-10 rounded-xl flex items-center justify-center border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:text-emerald-500 dark:hover:text-emerald-400 hover:border-emerald-500/30 transition-all text-slate-700 dark:text-slate-300 shadow-sm"
                       aria-label="LinkedIn profile"
                     >
                       <LinkedinIcon className="w-4 h-4" />
                     </a>
                   )}
+                  <a
+                    href={whatsappUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-10 h-10 rounded-xl flex items-center justify-center border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 hover:text-[#25D366] dark:hover:text-[#25D366] hover:border-[#25D366]/40 transition-all text-slate-700 dark:text-slate-300 shadow-sm"
+                    aria-label="Chat on WhatsApp"
+                  >
+                    <WhatsappIcon className="w-4 h-4" />
+                  </a>
                 </div>
               </div>
             </MotionWrapper>
