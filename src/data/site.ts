@@ -6,6 +6,11 @@ export const siteConfig: SiteConfig = {
   shortBio:
     "I build fast, reliable web platforms and cross-platform mobile apps with React, Next.js, React Native and Django.",
   email: "Prabinkarki789@gmail.com",
+  phone: "+977 9803491612",
+  whatsapp: {
+    number: "9779803491612",
+    message: "Hi Prabin, I found your portfolio and would like to talk about a project.",
+  },
   socials: {
     github: "https://github.com/prabin2058",
     linkedin: "https://www.linkedin.com/in/prabin-karki-157072306/",  },
@@ -52,3 +57,11 @@ export const siteConfig: SiteConfig = {
     },
   ],
 };
+
+/**
+ * Opens a WhatsApp chat with Prabin: the WhatsApp app on phones, WhatsApp Web or the
+ * desktop app on computers, with the message already typed in.
+ */
+export const whatsappUrl = `https://wa.me/${siteConfig.whatsapp.number}?text=${encodeURIComponent(
+  siteConfig.whatsapp.message
+)}`;

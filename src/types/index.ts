@@ -14,6 +14,14 @@ export interface SiteConfig {
   title: string;
   shortBio: string;
   email: string;
+  /** Phone number as shown on the site. */
+  phone: string;
+  whatsapp: {
+    /** International format, digits only, no "+" or spaces (Nepal = 977...). */
+    number: string;
+    /** Pre-filled text in the visitor's WhatsApp chat. */
+    message: string;
+  };
   socials: {
     github: string;
     linkedin: string;
