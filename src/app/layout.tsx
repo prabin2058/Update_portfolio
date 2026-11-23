@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Urbanist } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/common/ThemeProvider";
@@ -15,33 +15,99 @@ const urbanist = Urbanist({
   display: "swap",
 });
 
+const defaultTitle = `${siteConfig.name} — ${siteConfig.title}`;
+// ~160 characters, so Google shows it in full.
+const description = `${siteConfig.title} based in ${siteConfig.location.country}. ${siteConfig.shortBio}`;
+
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — ${siteConfig.title}`,
-  description: siteConfig.shortBio,
+  // Lets relative URLs (canonical, Open Graph image) resolve to the live domain.
+  metadataBase: new URL(siteConfig.url),
+  title: {
+    default: defaultTitle,
+    template: `%s | ${siteConfig.name}`,
+  },
+  description,
+  applicationName: siteConfig.name,
   keywords: [
-    "Frontend Developer",
-    "React Engineer",
-    "Next.js",
+    siteConfig.name,
+    "Full Stack Developer",
+    "Mobile App Developer",
+    "React Developer",
+    "Next.js Developer",
+    "React Native Developer",
+    "Django Developer",
     "TypeScript",
-    "Mobile Developer",
-    "Flutter",
-    "Portfolio",
+    `Freelance Developer ${siteConfig.location.country}`,
+    `Software Engineer ${siteConfig.location.country}`,
   ],
-  authors: [{ name: siteConfig.name, url: siteConfig.socials.github }],
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+  // The share image comes from app/opengraph-image.tsx.
   openGraph: {
-    type: "website",
+    type: "profile",
     locale: "en_US",
-    url: "https://prabinkarki.dev",
-    title: `${siteConfig.name} — ${siteConfig.title}`,
-    description: siteConfig.shortBio,
+    url: "/",
+    title: defaultTitle,
+    description,
     siteName: siteConfig.name,
+    firstName: siteConfig.name.split(" ")[0],
+    lastName: siteConfig.name.split(" ").slice(1).join(" "),
   },
   twitter: {
     card: "summary_large_image",
-    title: `${siteConfig.name} — ${siteConfig.title}`,
-    description: siteConfig.shortBio,
+    title: defaultTitle,
+    description,
   },
+  // After verifying the domain in Google Search Console, paste the token here:
+  // verification: { google: "your-token" },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f8fafc" },
+    { media: "(prefers-color-scheme: dark)", color: "#090d16" },
+  ],
+};
+
+// Tells Google who this site is about, so the name, role and profiles can show in search.
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: siteConfig.name,
+  url: siteConfig.url,
+  jobTitle: siteConfig.title,
+  description: siteConfig.shortBio,
+  image: `${siteConfig.url}/opengraph-image`,
+  address: {
+    "@type": "PostalAddress",
+    ...(siteConfig.location.city && { addressLocality: siteConfig.location.city }),
+    addressCountry: siteConfig.location.country,
+  },
+  sameAs: [siteConfig.socials.github, siteConfig.socials.linkedin],
+  knowsAbout: siteConfig.skills.flatMap((group) =>
+    group.technologies.map((tech) => tech.name)
+  ),
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteConfig.name,
+  url: siteConfig.url,
 };
 
 export default function RootLayout({
@@ -56,6 +122,12 @@ export default function RootLayout({
       className={`${urbanist.variable} scroll-smooth`}
     >
       <body className="min-h-screen flex flex-col font-body tech-grid-bg antialiased selection:bg-emerald-500/20 selection:text-emerald-500">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify([personJsonLd, websiteJsonLd]).replace(/</g, "\\u003c"),
+          }}
+        />
         <ThemeProvider
           attribute="class"
           defaultTheme="system"

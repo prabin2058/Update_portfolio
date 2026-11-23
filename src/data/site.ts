@@ -5,6 +5,10 @@ export const siteConfig: SiteConfig = {
   title: "Full Stack & Mobile Engineer",
   shortBio:
     "I build fast, reliable web platforms and cross-platform mobile apps with React, Next.js, React Native and Django.",
+  url: "https://www.prabinkarki789.com.np",
+  location: {
+    country: "Nepal",
+  },
   email: "Prabinkarki789@gmail.com",
   phone: "+977 9803491612",
   whatsapp: {
@@ -13,7 +17,8 @@ export const siteConfig: SiteConfig = {
   },
   socials: {
     github: "https://github.com/prabin2058",
-    linkedin: "https://www.linkedin.com/in/prabin-karki-157072306/",  },
+    linkedin: "https://www.linkedin.com/in/prabin-karki-157072306/",
+  },
   navLinks: [
     { label: "Expertise", href: "#expertise" },
     { label: "Projects", href: "#projects" },

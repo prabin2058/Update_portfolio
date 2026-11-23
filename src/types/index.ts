@@ -13,6 +13,14 @@ export interface SiteConfig {
   name: string;
   title: string;
   shortBio: string;
+  /** Live address of the site, with no trailing slash. The one URL search engines should index. */
+  url: string;
+  /** Where Prabin is based; used in search metadata. */
+  location: {
+    /** Optional; add it to show the city in search metadata. */
+    city?: string;
+    country: string;
+  };
   email: string;
   /** Phone number as shown on the site. */
   phone: string;
