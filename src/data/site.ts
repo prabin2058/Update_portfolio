@@ -18,7 +18,7 @@ export const siteConfig: SiteConfig = {
   },
   socials: {
     github: "https://github.com/prabin2058",
-    linkedin: "https://www.linkedin.com/in/prabin-karki-157072306/",
+    linkedin: "https://www.linkedin.com/in/prabin-karkii/",
   },
   navLinks: [
     { label: "Expertise", href: "#expertise" },
