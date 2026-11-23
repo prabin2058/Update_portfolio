@@ -15,9 +15,10 @@ const urbanist = Urbanist({
   display: "swap",
 });
 
-const defaultTitle = `${siteConfig.name} — ${siteConfig.title}`;
-// ~160 characters, so Google shows it in full.
-const description = `${siteConfig.title} based in ${siteConfig.location.country}. ${siteConfig.shortBio}`;
+// Uses the phrases people type into Google: the name, "mobile app developer" and the city.
+const defaultTitle = `${siteConfig.name} — Mobile App & Full Stack Developer in ${siteConfig.location.city}`;
+// Under ~160 characters, so Google shows it in full.
+const description = `Mobile app & full stack developer in ${siteConfig.location.city}, ${siteConfig.location.country}, building fast web platforms and cross-platform apps with React, Next.js, React Native and Django.`;
 
 export const metadata: Metadata = {
   // Lets relative URLs (canonical, Open Graph image) resolve to the live domain.
@@ -37,8 +38,12 @@ export const metadata: Metadata = {
     "React Native Developer",
     "Django Developer",
     "TypeScript",
+    `Mobile App Developer ${siteConfig.location.city}`,
+    `Mobile App Developer ${siteConfig.location.country}`,
+    `React Native Developer ${siteConfig.location.country}`,
+    `Full Stack Developer ${siteConfig.location.city}`,
     `Freelance Developer ${siteConfig.location.country}`,
-    `Software Engineer ${siteConfig.location.country}`,
+    `Software Engineer ${siteConfig.location.city}`,
   ],
   authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,

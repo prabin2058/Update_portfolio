@@ -73,6 +73,8 @@ const TextPressure = ({
   strokeColor = '#FF0000',
   strokeWidth = 3,
   className = '',
+  // Element to render; pass 'p' or 'div' when the page's <h1> lives elsewhere.
+  as: Tag = 'h1',
 
   minFontSize = 24
 }) => {
@@ -370,7 +372,7 @@ const TextPressure = ({
           -webkit-text-stroke-color: var(--text-pressure-stroke-color);
         }
       `}</style>
-      <h1
+      <Tag
         ref={titleRef}
         aria-label={text}
         className={`text-pressure-title ${stroke ? 'is-stroke' : ''} ${className}`}
@@ -389,7 +391,7 @@ const TextPressure = ({
             {char}
           </span>
         ))}
-      </h1>
+      </Tag>
     </div>
   );
 };

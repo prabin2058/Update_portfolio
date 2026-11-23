@@ -33,15 +33,17 @@ export function Hero() {
 
           {/* Intro + role */}
           <MotionWrapper delay={0.1}>
-            <p className="text-2xl sm:text-3xl md:text-4xl font-semibold font-heading tracking-tight text-slate-700 dark:text-slate-200">
+            {/* The page's <h1>: carries the name, which is what people search for. */}
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-semibold font-heading tracking-tight text-slate-700 dark:text-slate-200">
               Hi, I&apos;m{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-teal-300 to-cyan-400">
                 {siteConfig.name}
               </span>
-            </p>
-            {/* Role with React Bits TextPressure (renders the page's <h1>). Font size follows the box width: 28 characters → width / 14. */}
+            </h1>
+            {/* Role with React Bits TextPressure. Font size follows the box width: 28 characters → width / 14. */}
             <div className="relative mx-auto mt-6 w-full max-w-4xl aspect-[14/1] text-slate-900 dark:text-white">
               <TextPressure
+                as="p"
                 text="Full Stack & Mobile Engineer"
                 flex={true}
                 alpha={false}

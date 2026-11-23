@@ -7,6 +7,7 @@ export const siteConfig: SiteConfig = {
     "I build fast, reliable web platforms and cross-platform mobile apps with React, Next.js, React Native and Django.",
   url: "https://www.prabinkarki789.com.np",
   location: {
+    city: "Kathmandu",
     country: "Nepal",
   },
   email: "Prabinkarki789@gmail.com",
